@@ -1,10 +1,10 @@
 import React ,{useState}from 'react';  
-// import Image from 'react-image-resizer';
+import Image from 'react-image-resizer';
 import river from './river.png'
 import { Route, Link, Redirect, BrowserRouter as Router } from 'react-router-dom'
 // import "./center.css"
 
-// import About from './components/About.js'  
+import About from './components/About.js'  
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Home extends React.Component {
