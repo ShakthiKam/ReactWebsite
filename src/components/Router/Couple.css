@@ -1,0 +1,13 @@
+#couple-page{
+    background-image: url("./../images/wellness-individual.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+
+
+}
+.p{
+    margin-left: 100px;
+}

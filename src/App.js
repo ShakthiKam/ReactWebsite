@@ -1,10 +1,10 @@
 
 //
 import React from 'react'  
-import Dashboard from './components/Router/Dashboard'
+import Dashboard from './components/Sample/Dashboard'
 // import About from './components/Router/About'
-import Roster from './components/Router/Roster'
-import Contact from './components/Router/Contact'
+import Roster from './components/Sample/Roster'
+import Contact from './components/Sample/Contact'
 
 import { BrowserRouter as Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 // import App from './App'

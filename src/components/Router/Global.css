@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color:black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.container{
+  max-width: 1140px;
+}
+hr{
+  background-color: black;
+  opacity: 1;
+}
+h1{
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+h4{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h5{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.underline-link{
+  text-decoration: underline;
+}
+
+.white-text{
+  color: white;
+}
+
+.black-text{
+  color: black;
+}
+
+.dark-text{
+  color: dark;
+}
+.title-desc{
+  font-size: 1.25rem;
+}
+
+
+
+@media (max-width: 767.98px) {
+  h1{
+    font-size: 2.8rem;
+  }
+  h2{
+    font-size: 2.6rem;
+  }
+  h4{
+    font-size: 1.8rem;
+  }
+  h5{
+    font-size: 1.1rem;
+  }
+  .title-desc{
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1{
+    font-size: 2.4rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  h4{
+    font-size: 1.6rem;
+  }
+  h5{
+    font-size: 1rem;
+  }
+  .title-desc{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 341.98px) {
+  h1{
+    font-size: 2.2rem;
+  }
+  h2{
+    font-size: 1.8rem;
+  }
+  h4{
+    font-size: 1.4rem;
+  }
+  h5{
+    font-size: .9rem;
+  }
+}

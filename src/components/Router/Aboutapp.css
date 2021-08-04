@@ -1,0 +1,70 @@
+#aboutapp-page{
+    background: linear-gradient(#9adbfd, #53abed);
+    width: 100%;
+    min-height: 100vh;
+
+}
+  
+    .progress-bar .progress{
+      width: 40%;
+      animation: progressFifty 4s; 
+    }
+  
+    .return-link-container .return-link:hover{
+      color: black
+    }
+  
+    
+
+  
+      .counseling{
+        text-align: center;
+        margin-bottom: 1.4em;
+        margin-left:-15px;
+        
+      }
+  
+    
+  
+  .clinets-container{
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+  
+    .clients{
+ 
+      margin-bottom: 1.4em;
+    }
+      .about-client{
+        text-align: right;
+        /* margin-right: 1em; */
+        margin-right:240px
+    
+      }
+        p{
+          margin: 0;
+        }
+      
+        .img-container{
+          width: 76px;
+          height: 76px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-left:330px;
+          margin-top:-70px
+        }
+          img{
+            max-width: 100%;
+            height: auto;
+          }
+        
+        p{
+          margin: 0;
+         
+        }
+
+  
+  @keyframes progressFifty {
+    0%   { width: 20%; background-color: #9acf86;}
+    100% { width: 40%; background-color: green; }
+  }

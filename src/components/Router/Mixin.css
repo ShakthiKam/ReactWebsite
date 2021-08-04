@@ -1,0 +1,37 @@
+.page-height {
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .main-content-padding {
+    padding-top: 2em;
+    padding-bottom: 4em;
+  }
+  
+  .main-bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  .flex-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

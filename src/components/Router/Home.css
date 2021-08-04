@@ -1,0 +1,110 @@
+#home-page{
+    background-image: url("./../images/home.png");
+    background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     width: 100%;
+     height: 650px;
+    /* padding: 250px; */
+    /* margin-top: -20px; */
+    /* margin-left:-200px */
+
+
+}
+  
+      .hero-texts-container{
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin-left:-400px;
+        margin-top:-100px
+      }
+        .hero-title{
+          font-weight: 450;
+          color:white;
+          font-size: 3.5rem;
+          margin-left: 50px;
+          margin-top:10px
+        }
+        .hero-text{
+          font-size: 1.4rem;
+          color:white;
+          margin-left: 50px;
+          margin-top:-23px
+        }
+   
+  
+      .btns-container{
+        padding-top: 3em;
+        padding-bottom: 1em;
+        margin-top:-25px;
+       
+      
+      }
+        .list{
+         
+          align-items: flex-start;
+          margin-left:90px;
+          
+        }
+          .links-list{
+            background-color:transparent;
+            display: inline-block;
+            width: 280px;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            padding: 4px 15px;
+            margin-bottom: .5em;
+            color: #fff;
+            background-color: #4ca9e0;
+            font-size: 1.2rem;
+            box-sizing: border-box;
+            
+            
+           
+          }
+            .links{
+              display: block;
+              padding: 4px 15px;
+              background-color: "blue";
+              border-radius: 20px;
+              font-size: 1.2rem;
+              color: #fff;
+              text-decoration-line: none;
+              
+              
+           
+            padding-left: 24px;
+              }
+              .icon{
+                color: "yellow";
+                font-size: 1.4rem;
+              }
+           
+              @media (max-width: 575.98px) {
+        
+              
+                    .hero-texts-container .hero-text{
+                      font-size: 1rem;
+                    }
+              
+                    .btns-container .list .links-list .links{
+                      font-size: 1rem;
+                      padding: 3px 15px;
+                    }
+                      .icon{
+                        font-size: 1.2rem;
+                      }
+                    }
+              
+           
+              @media (max-width: 374.98px) {
+              
+              
+                
+                      .list .links-list{
+                        width: 100%;
+                      }
+                    }
+              
+                  
+         
