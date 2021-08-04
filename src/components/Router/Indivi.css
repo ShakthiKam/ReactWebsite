@@ -25,6 +25,7 @@
           }
         .linear-btn{
             margin-left:550px;
+    
         }
   
         .checkbox-container{
@@ -41,7 +42,7 @@
               display: flex;
               align-items: center;
               position: relative;
-              background: linear-color;
+              background: #5fb0dc;
               opacity: .8;
               border-radius: 30px;
               padding: 4px 12px;
@@ -52,6 +53,9 @@
   
               .check-box{
                 position: absolute;
+                background-color: initial;
+                appearance: auto;
+                border: initial;
                 left: 20px;
                 top: 0;
                 display: block;
@@ -62,7 +66,7 @@
               }
             
                   .custom-checkbox{
-                    background: linear-color;
+                    background: #5fb0dc;
                   }
                 
               .custom-checkbox{
@@ -72,6 +76,12 @@
                 border-radius: 50%;
                 background: white;
                 margin-right: .5em;
+              }
+              .Arrow{
+                height:25px;
+                width:18px;
+                color: #fff;
+                margin-left:100px
               }
   
               p{
@@ -85,7 +95,7 @@
               }
   
               .check-box:checked + .custom-checkbox{
-                  background: linear-color;
+                  background: #5fb0dc;
                   box-shadow: 2px 2px 2px 0px rgba(95, 194, 219, 0.719);
                 }
   
