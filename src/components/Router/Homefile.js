@@ -34,7 +34,7 @@ class Homefile extends React.Component {
                         <a href="#">Login</a></div> */}
                         <div><img className="menubg" src={menubg} alt="menubg" 
                         style={{marginLeft:"1000px",height:"50px",width:"190px",marginTop:"-70px", padding:"20px"}}/></div>
-                        <h1 className="header-title">Wellness</h1>
+                        <h1 className="header-title">Wellnesss</h1>
                      
                       </div>
                     </div>
