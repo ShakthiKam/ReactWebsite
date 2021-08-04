@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8ac57506.chunk.css",
+    "main.js": "/static/js/main.9411a24e.chunk.js",
+    "main.js.map": "/static/js/main.9411a24e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.978f609b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.978f609b.js.map",
+    "static/js/2.d95f1be1.chunk.js": "/static/js/2.d95f1be1.chunk.js",
+    "static/js/2.d95f1be1.chunk.js.map": "/static/js/2.d95f1be1.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8ac57506.chunk.css.map": "/static/css/main.8ac57506.chunk.css.map",
+    "static/js/2.d95f1be1.chunk.js.LICENSE.txt": "/static/js/2.d95f1be1.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/static/media/home.d68fc2fd.png",
+    "static/media/logo.d44d2dbd.png": "/static/media/logo.d44d2dbd.png",
+    "static/media/Indivi.css": "/static/media/wellness-individual.e4497ee4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.978f609b.js",
+    "static/js/2.d95f1be1.chunk.js",
+    "static/css/main.8ac57506.chunk.css",
+    "static/js/main.9411a24e.chunk.js"
+  ]
+}
