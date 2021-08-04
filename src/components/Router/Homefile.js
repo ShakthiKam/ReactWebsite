@@ -1,18 +1,20 @@
 import React from 'react'; 
 import "./Home.css"
-import "./Header.css"
+// import "./Header.css"
 import "./Footer.css"
 import logo from "../images/logo.png"
 import menubg from "../images/menubg.png"
 import "./bootstrap.min.css"
 
-class Homefile extends React.Component {
+class Home1 extends React.Component {
     render(){
       return (
         <div>
           <meta charSet="UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          {/* browser icon */}
+          <link rel="shortcut icon" type="image/jpg" href="./assets/images/wellness-icon.ico" />
           {/* Bootstrap Link */}
           <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.min.css" />
           {/* Custom CSS Link */}
@@ -21,26 +23,25 @@ class Homefile extends React.Component {
           {/* Start of page content */}
           <div id="home-page">
             {/* Star of Header */}
-         
             <header className="header">
               <div className="container">
                 <div className="row">
                   <div className="col-12 header-content">
+                    <div className="logo">
+                    <div><img className="menubg" src={menubg} alt="menubg" style={{marginLeft:"870px", padding:"20px",width:"230px"}}/></div>
+                      <h4 style={{color:"#FFFFFF",fontWeight:500,fontSize:35,lineHeight:5,marginTop:-130,paddingTop:"1px",padding:"-20px"}}>Wellness</h4></div>
+                   
                     <div className="login-container">
                       <div className="counseling">
-                        <a className="direct-counseling" href="./pages/schedule.html">Member Enrollment</a></div>
-        
-                      {/* <div className="login">
-                        <a href="#">Login</a></div> */}
-                        <div><img className="menubg" src={menubg} alt="menubg" 
-                        style={{marginLeft:"1000px",height:"50px",width:"190px",marginTop:"-70px", padding:"20px"}}/></div>
-                        <h1 className="header-title">Wellnesss</h1>
-                     
+                        <a className="direct-counseling" href="./pages/enrollment.html" >Member Enrollment</a>
                       </div>
+                      {/* <div class="login">
+                  <a href="#">Login</a>
+                </div> */}
                     </div>
                   </div>
                 </div>
- 
+              </div>
             </header>
             {/* End of Header */}
             {/* Start of main content */}
@@ -48,12 +49,12 @@ class Homefile extends React.Component {
               <div className="row">
                 {/* Texts-container */}
                 <div className="col-12 hero-texts-container">
-                  <h1 className="hero-title">Get Well, Stay Well</h1>
-                  <p className="hero-text">We want to be your companion,<br /> helping you to achieve your mental,<br /> emotional, and life goals.</p>
+                  <h1 className="hero-title" style={{marginLeft:"410px",lineHeight:2,marginTop:"35px",fontFamily:"Roboto",fontWeight:400}}>Get Well, Stay Well</h1>
+                  <p className="hero-text" style={{marginLeft:"412px",marginTop:"5px", fontFamily:"Roboto"}}>We want to be your companion,<br /> helping you to achieve your mental,<br /> emotional, and life goals.</p>
                 </div>
                 {/* Buttons container */}
                 <div className="col-12 btns-container">
-                  <ul className="list">
+                  <ul className="list" style={{marginLeft:"5px"}}>
                     {/* Link 1 */}
                     <li className="links-list"><a href="./pages/individual.html" className="links">
                         <span className="icon"><i className="far fa-chevron-double-right" /></span> 
@@ -71,11 +72,67 @@ class Homefile extends React.Component {
                       </a></li>
                   </ul>
                 </div>
-                    {/* Social icons links */}
-            <div className="social-links">
+              </div>
+            </div>
+            {/* End of main content */}
+          </div>
+          {/* Start of page content */}
+          {/* Start of Footer */}
+               
+          <footer className="footer">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-3 col-md-3 col-sm-12 logo-container">
+                  <a href="./../index.html"><img className="logo" src={logo} alt="logo"/></a>
+                  <p style={{color:"#c5c5c5",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus earum possimus.</p>
+                </div>
+                {/* What We offer links */}
+                <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
+                  <h5 style={{lineHeight:2.5,fontSize:16,fontFamily: 'Roboto'}}>What We Offer</h5>
+                  <ul className="footer-links-list" style={{marginLeft:"-16px",}}>
+                    <li><a href="./individual.html" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Individuals</a></li>
+                    <li><a href="./couple.html" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Couples</a></li>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Employers</a></li>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Mobile App</a></li>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Member Enrollment</a></li>
+                  </ul>
+                </div>
+                
+                {/* Condition links */}
+                <div className="col-lg-3 col-md-2 col-sm-3 col-6 links-container">
+                  <div className="condition-links">
+                    <h5 style={{lineHeight:2.5,fontSize:16,fontFamily: 'Roboto'}} >Conditions</h5>
+                    <ul className="footer-links-list"style={{marginLeft:"-17px"}}>
+                      <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Depression</a></li>
+                      <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Anxiety</a></li>
+                      <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Panic Attacks</a></li>
+                      <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>PTSD</a></li>
+                      <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>OCD</a></li>
+                      <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Bipolar</a></li>
+                      <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Other</a></li>
+                    </ul>
+                  </div>
+                </div>
+                {/* Our Company links */}
+                <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
+                  <h5 style={{lineHeight:2.5,fontSize:16,fontFamily: 'Roboto'}}>Our Company</h5>
+                  <ul className="footer-links-list" style={{marginLeft:"-18px",color:"#C5C5C5"  }}>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>About Us</a></li>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Blog</a></li>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Counselors</a></li>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Careers</a></li>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>FAQ</a></li>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Privacy</a></li>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Terms</a></li>
+                  </ul>
+                </div>
+                <div className="cell" style={{border:'0.5px solid',borderColor:"#c5c5c5", width: "1200px",display: 'flex', 
+            alignItems: 'center', justifyContent: 'center', marginLeft:"10px",}}></div>
+                {/* Social icons links */}
+                <div className="social-links">
               <ul className="social-links-list">
                   
-              <li className="first" ><a href="#">< svg className="facebook-square" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
+              <li className="first"><a href="#">< svg className="facebook-square" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
           <path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path>
           </a></li>
           
@@ -90,79 +147,22 @@ class Homefile extends React.Component {
         
               </ul>
             </div>
+ 
+                {/* Copyrights descriptions */}
+                <div className="col-12 copyrights">
+                  <p style={{marginTop:-120,fontFamily: 'Roboto',fontWeight: 400,fontSize:16,color:"white"}}>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255).Additional resource.</p>
+                  <p style={{fontFamily: 'Roboto',fontWeight: 400,fontSize:16,color:"white"}}>Copyright © <span id="copyright_date">2020</span> Wellness Inc, All rights reserved.</p>
+                  
+                </div>
               </div>
             </div>
-            {/* End of main content */}
-          </div>
-          
-             {/* Start of page content */}
-        {/* Start of Footer */}
-        <footer className="footer">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 col-md-3 col-sm-12 logo-container">
-            <a href="#"><img className="logo" src={logo} alt="logo"/></a> 
-              <p style={{marginLeft:"8%",fontSize:18,marginTop:-2,color:"#CCCCCC"}}> Lorem ipsum dolor, sit amet <br></br>consectetur adipisicing elit.<br></br> Repellendus earum possimus.</p>
-            </div>
-         
-            {/* What We offer links */}
-            <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
-              <h5 style={{marginLeft:"28%",marginTop:"-15%",fontSize:20,fontWeight:450}}>What We Offer</h5>
-              <ul className="footer-links-list"style={{color:"transparent"}} >
-                <li><a href="./pages/individual.html">For Individuals</a></li><br></br>
-                <li><a href="./pages/couple.html">For Couples</a></li><br></br>
-                <li><a href="#">For Employers</a></li><br></br>
-                <li><a href="#">Mobile App</a></li>
-              </ul>
-            </div>
-            {/* Condition links */}
-            <div className="col-lg-3 col-md-2 col-sm-3 col-6 links-container">
-              <div className="condition-links">
-                <h5 style={{marginLeft:"45%",marginTop:"-26.5%",fontSize:20,fontWeight:450}}>Conditions</h5>
-                <ul className="footer-links-list">
-                  <li><a href="#">Depression</a></li><br></br>
-                  <li><a href="#">Anxiety</a></li><br></br>
-                  <li><a href="#">Panic Attacks</a></li><br></br>
-                  <li><a href="#">PTSD</a></li><br></br>
-                  <li><a href="#">OCD</a></li><br></br>
-                  <li><a href="#">Bipolar</a></li><br></br>
-                  <li><a href="./pages/self-care.html">Self Care</a></li>
-                </ul>
-              </div>
-            </div>
-            {/* Our Company links */}
-            <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
-              <h5 style={{marginLeft:"66.5%",marginTop:"-26%",fontSize:20,fontWeight:450}}>Our Company</h5>
-              <ul className="footer-links-list" style={{marginLeft:"65%"}}>
-                <li><a href="#">About Us</a></li><br></br>
-                <li><a href="#">Blog</a></li><br></br>
-                <li><a href="#">Counselors</a></li><br></br>
-                <li><a href="#">Careers</a></li><br></br>
-                <li><a href="#">FAQ</a></li><br></br>
-                <li><a href="#">Privacy</a></li><br></br>
-                <li><a href="#">Terms</a></li>
-              </ul>
-            </div>
-           
-            <div className="cell" style={{border:'1px solid', width: "1150px",display: 'flex', 
-            alignItems: 'center', justifyContent: 'center', marginLeft:"95px",color:"white",borderwidth:1}}></div>
-            {/* Copyrights descriptions */}
-            <div className="col-12 copyrights">
-              <p>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). <span className="additionl-resource"><a href="./pages/resources.html" className="underline-link">Additional resource.</a></span></p>
-              <p>Copyright © <span id="copyright_date">2020</span> Wellness Inc, All rights reserved.</p>
-            </div>
-            
-          </div>
+          </footer>
+          {/* End of Footer */}
+          {/* Bootstrap JS link */}
+          {/* FontAwsome JS link */}
+          {/* Custom JS link */}
         </div>
-      </footer>
-      {/* End of Footer */}
-      {/* Bootstrap JS link */}
-      {/* FontAwsome JS link */}
-      {/* Custom JS link */}
-      </div>
-
-          )
-          }
-          }
-export default Homefile
-          
+      );
+    }
+  }
+  export default Home1

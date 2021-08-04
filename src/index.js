@@ -15,6 +15,6 @@ import App from './App';
 
 
 
-ReactDOM.render(<Individual/>,document.getElementById('root'));
+ReactDOM.render(<Homefile/>,document.getElementById('root'));
 
 //
