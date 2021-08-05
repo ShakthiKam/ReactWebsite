@@ -9,7 +9,7 @@ import Enrollment from './components/Router/Enrollment';
 import Aboutapp from './components/Router/Aboutapp';
 // import Homefile from './components/Home';
 import Homefile from './components/Router/Homefile';
-import Home1 from './components/Router/Home1';
+
 // import Header from './components/Router/Header';
 import App from './App';
 
