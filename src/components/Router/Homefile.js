@@ -5,6 +5,8 @@ import "./Footer.css"
 import logo from "../images/logo.png"
 import menubg from "../images/menubg.png"
 import "./bootstrap.min.css"
+import "./Global.css"
+// import "./Individual.css"
 
 class Home1 extends React.Component {
     render(){
@@ -28,8 +30,8 @@ class Home1 extends React.Component {
                 <div className="row">
                   <div className="col-12 header-content">
                     <div className="logo">
-                    <div><img className="menubg" src={menubg} alt="menubg" style={{marginLeft:"870px", padding:"20px",width:"230px"}}/></div>
-                      <h4 style={{color:"#FFFFFF",fontWeight:500,fontSize:35,lineHeight:5,marginTop:-130,paddingTop:"1px",padding:"-20px"}}>Wellness</h4></div>
+                    <div><img className="menubg" src={menubg} alt="menubg" style={{marginLeft:"905px", padding:"3px",width:"190px"}}/></div>
+                      <h4 style={{color:"#FFFFFF",fontWeight:500,fontSize: "2rem",lineHeight:5,marginTop:-124,paddingTop:"22px"}}>Wellness</h4></div>
                    
                     <div className="login-container">
                       <div className="counseling">
@@ -49,25 +51,32 @@ class Home1 extends React.Component {
               <div className="row">
                 {/* Texts-container */}
                 <div className="col-12 hero-texts-container">
-                  <h1 className="hero-title" style={{marginLeft:"410px",lineHeight:2,marginTop:"35px",fontFamily:"Roboto",fontWeight:400}}>Get Well, Stay Well</h1>
+                  <h1 className="hero-title" style={{marginLeft:"410px",lineHeight:1,marginTop:"25px",fontFamily:"Roboto",fontWeight:400}}>Get Well, Stay Well</h1>
                   <p className="hero-text" style={{marginLeft:"412px",marginTop:"5px", fontFamily:"Roboto"}}>We want to be your companion,<br /> helping you to achieve your mental,<br /> emotional, and life goals.</p>
                 </div>
                 {/* Buttons container */}
                 <div className="col-12 btns-container">
-                  <ul className="list" style={{marginLeft:"5px"}}>
+                  <ul className="list" style={{marginLeft:"5px",marginTop:"16px"}}>
                     {/* Link 1 */}
-                    <li className="links-list"><a href="./pages/individual.html" className="links">
-                        <span className="icon"><i className="far fa-chevron-double-right" /></span> 
+                    <li className="links-list" style={{paddingLeft:"-100px"}}><a href="./pages/individual.html" className="links" >
+                        <span className="icon">
+                        <svg className="iconalignment" aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevrons-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M233.344 239.406L57.344 55.401C48.188 45.838 33 45.494 23.406 54.651C18.469 59.37 16 65.682 16 71.995C16 77.964 18.219 83.933 22.656 88.589L182.781 256L22.656 423.411C13.531 433.005 13.813 448.193 23.406 457.349C33 466.506 48.188 466.162 57.344 456.599L233.344 272.594C242.219 263.281 242.219 248.719 233.344 239.406ZM425.344 239.406L249.344 55.401C240.188 45.838 225 45.494 215.406 54.651C210.469 59.37 208 65.682 208 71.995C208 77.964 210.219 83.933 214.656 88.589L374.781 256L214.656 423.411C205.531 433.005 205.813 448.193 215.406 457.349C225 466.506 240.188 466.162 249.344 456.599L425.344 272.594C434.219 263.281 434.219 248.719 425.344 239.406Z"></path></svg>
+                          <i className="far fa-chevron-double-right"  /></span> 
                         Individuals
                       </a></li><br></br>
                     {/* Link 2 */}
                     <li className="links-list"><a href="./pages/couple.html" className="links">
-                        <span className="icon"><i className="far fa-chevron-double-right" /></span> 
+                        <span className="icon">
+                        <svg className="iconalignment" aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevrons-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M233.344 239.406L57.344 55.401C48.188 45.838 33 45.494 23.406 54.651C18.469 59.37 16 65.682 16 71.995C16 77.964 18.219 83.933 22.656 88.589L182.781 256L22.656 423.411C13.531 433.005 13.813 448.193 23.406 457.349C33 466.506 48.188 466.162 57.344 456.599L233.344 272.594C242.219 263.281 242.219 248.719 233.344 239.406ZM425.344 239.406L249.344 55.401C240.188 45.838 225 45.494 215.406 54.651C210.469 59.37 208 65.682 208 71.995C208 77.964 210.219 83.933 214.656 88.589L374.781 256L214.656 423.411C205.531 433.005 205.813 448.193 215.406 457.349C225 466.506 240.188 466.162 249.344 456.599L425.344 272.594C434.219 263.281 434.219 248.719 425.344 239.406Z"></path></svg>
+                          <i className="far fa-chevron-double-right" /></span> 
                         Couples
                       </a></li><br></br>
                     {/* Link 3 */}
                     <li className="links-list"><a href="#" className="links">
-                        <span className="icon"><i className="far fa-chevron-double-right" /></span> 
+                        <span className="icon">
+                        <svg className="iconalignment"aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevrons-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M233.344 239.406L57.344 55.401C48.188 45.838 33 45.494 23.406 54.651C18.469 59.37 16 65.682 16 71.995C16 77.964 18.219 83.933 22.656 88.589L182.781 256L22.656 423.411C13.531 433.005 13.813 448.193 23.406 457.349C33 466.506 48.188 466.162 57.344 456.599L233.344 272.594C242.219 263.281 242.219 248.719 233.344 239.406ZM425.344 239.406L249.344 55.401C240.188 45.838 225 45.494 215.406 54.651C210.469 59.37 208 65.682 208 71.995C208 77.964 210.219 83.933 214.656 88.589L374.781 256L214.656 423.411C205.531 433.005 205.813 448.193 215.406 457.349C225 466.506 240.188 466.162 249.344 456.599L425.344 272.594C434.219 263.281 434.219 248.719 425.344 239.406Z"></path></svg>
+
+                          <i className="far fa-chevron-double-right" /></span> 
                         Employers
                       </a></li>
                   </ul>
@@ -88,7 +97,7 @@ class Home1 extends React.Component {
                 </div>
                 {/* What We offer links */}
                 <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
-                  <h5 style={{lineHeight:2.5,fontSize:16,fontFamily: 'Roboto'}}>What We Offer</h5>
+                  <h5 style={{lineHeight:2.5,fontFamily: 'Roboto',fontSize: "1.2rem"}}>What We Offer</h5>
                   <ul className="footer-links-list" style={{marginLeft:"-16px",}}>
                     <li><a href="./individual.html" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Individuals</a></li>
                     <li><a href="./couple.html" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Couples</a></li>
@@ -101,7 +110,7 @@ class Home1 extends React.Component {
                 {/* Condition links */}
                 <div className="col-lg-3 col-md-2 col-sm-3 col-6 links-container">
                   <div className="condition-links">
-                    <h5 style={{lineHeight:2.5,fontSize:16,fontFamily: 'Roboto'}} >Conditions</h5>
+                    <h5 style={{lineHeight:2.5,fontSize: "1.2rem",fontFamily: 'Roboto'}} >Conditions</h5>
                     <ul className="footer-links-list"style={{marginLeft:"-17px"}}>
                       <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Depression</a></li>
                       <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Anxiety</a></li>
@@ -115,7 +124,7 @@ class Home1 extends React.Component {
                 </div>
                 {/* Our Company links */}
                 <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
-                  <h5 style={{lineHeight:2.5,fontSize:16,fontFamily: 'Roboto'}}>Our Company</h5>
+                  <h5 style={{lineHeight:2.5,fontSize: "1.2rem",fontFamily: 'Roboto'}}>Our Company</h5>
                   <ul className="footer-links-list" style={{marginLeft:"-18px",color:"#C5C5C5"  }}>
                     <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>About Us</a></li>
                     <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Blog</a></li>
@@ -126,7 +135,7 @@ class Home1 extends React.Component {
                     <li><a href="#" style={{color:"#C5C5C5",lineHeight:2,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Terms</a></li>
                   </ul>
                 </div>
-                <div className="cell" style={{border:'0.5px solid',borderColor:"#c5c5c5", width: "1200px",display: 'flex', 
+                <div className="cell" style={{borderTop:'1px solid',borderColor:"#c5c5c5", width: "1200px",display: 'flex', 
             alignItems: 'center', justifyContent: 'center', marginLeft:"10px",}}></div>
                 {/* Social icons links */}
                 <div className="social-links">
@@ -150,8 +159,8 @@ class Home1 extends React.Component {
  
                 {/* Copyrights descriptions */}
                 <div className="col-12 copyrights">
-                  <p style={{marginTop:-120,fontFamily: 'Roboto',fontWeight: 400,fontSize:16,color:"white"}}>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255).Additional resource.</p>
-                  <p style={{fontFamily: 'Roboto',fontWeight: 400,fontSize:16,color:"white"}}>Copyright © <span id="copyright_date">2020</span> Wellness Inc, All rights reserved.</p>
+                  <p style={{marginTop:-120,fontFamily: 'Roboto',fontWeight: 400,fontSize: ".9rem",color:"white"}}>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). Additional resource.</p>
+                  <p style={{fontFamily: 'Roboto',fontWeight: 400,fontSize: ".9rem",color:"white"}}>Copyright © <span id="copyright_date">2020</span> Wellness Inc, All rights reserved.</p>
                   
                 </div>
               </div>
