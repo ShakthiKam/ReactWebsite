@@ -1,7 +1,5 @@
 import React from 'react'; 
 import './Individual.css';
-import './bootstrap.min.css'
-import './Aboutapp.css'
 
 class Individual extends React.Component {
     render(){

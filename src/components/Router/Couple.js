@@ -42,11 +42,11 @@ class Couple extends React.Component {
                 <div className="col-lg-4 col-md-2 col-sm-1 d-sm-block d-none" />
                 <div className="col-lg-4 col-md-8 col-sm-10 individual-content">
                   <div className="hero-text-container">
-                    <h1 className="hero-title" style={{marginLeft:"5px",lineHeight:2,marginTop:"-30px",fontWeight:400}}>Welcome</h1>
+                    <h1 className="hero-title" style={{marginLeft:"5px",lineHeight:2,marginTop:"-65px",fontWeight:400}}>Welcome</h1>
                     <p className="hero-text" style={{marginLeft:"4px"}}>What are some areas that you and<br></br> your partner want to focus on, or<br></br> get help with?</p>
                   </div>
                   <div className="checkbox-container">
-                    <ul className="checkbox-lists" style={{marginLeft:"-1px", fontSize:18}}> 
+                    <ul className="checkbox-lists" style={{marginLeft:"-1px", fontSize:18, marginTop:"15px"}}> 
                       {/* link 1 */}
                       <li className="checkbox-links">
                         <input type="checkbox" className="check-box" />
@@ -85,7 +85,7 @@ class Couple extends React.Component {
                       </li>
                       {/* End of links*/}
                     </ul>
-                    <div className="skip" style={{marginLeft:"30px"}} >
+                    <div className="skip" style={{marginLeft:"18px"}} >
                     <p style={{color:"#fff",fontweight:400,fontSize:20}}>Skip and schedule your free online consultation.</p></div>
                   </div>
                 </div>

@@ -34,7 +34,7 @@ class Aboutapp extends React.Component {
                   <a className="return-link white-text" href="#" onclick="history.go(-1)">
                     <i className="fas fa-chevron-left" />
                   </a>
-                  <h4 className="sub-title">How it works</h4>
+                  <h4 className="sub-title" style={{marginLeft:"10px"}}>How it works</h4>
                 </div>
               </div>
             </div>

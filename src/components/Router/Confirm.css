@@ -1,0 +1,65 @@
+#confirm-page{
+    background: #fff;
+}
+  
+  
+      .progress{
+        width: 100%;
+        animation: progressCompleted 3s;
+      }
+      .enroll-confirmation{
+        animation: enrolled 3s;
+      }
+    
+  
+  .content-container{
+    border: 1px solid #394d5c;
+    padding: 1em .75em;
+  }
+    .texts-wrapper{
+      width: 40%;
+    }
+      @media (max-width: 991.98px) {
+        .texts-wrapper{
+        width: 60%;
+      }
+      @media (max-width: 767.98px) {
+        .texts-wrapper{
+        width: 80%;
+      }
+      @media (max-width: 575.98px) {
+        .texts-wrapper{
+            width: 80%;
+          
+      margin: auto;
+      color: #394d5c;
+        }
+      p{
+        text-align: center;
+      }
+    }
+    .link-text{
+      text-align: center;
+      color: #394d5c;
+      
+      margin-bottom: 0;
+    }
+      a{
+        transition: all .3s ease;
+      }
+        .hover{
+          color: #4ca9e0;
+        }
+      }
+    }
+  
+  
+  @keyframes progressCompleted {
+    0%   { width: 80%; background-color: #9acf86;}
+    100% { width: 100%; background-color: #43b14b; }
+  }
+  
+  @keyframes enrolled {
+    0%   { width: 66%; background-color: #9acf86;}
+    100% { width: 100%; background-color: #43b14b; }
+  }

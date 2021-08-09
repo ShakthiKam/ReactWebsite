@@ -1,20 +1,22 @@
-import React from 'react';  
-import ReactDOM from 'react-dom';  
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'  
-
-import './index.css';   
-import Individual from './components/Router/Individual';
-import Couple from './components/Router/Couple';
-import Enrollment from './components/Router/Enrollment';
-import Aboutapp from './components/Router/Aboutapp';
-// import Homefile from './components/Home';
-import Homefile from './components/Router/Homefile';
-
-// import Header from './components/Router/Header';
-import App from './App';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Homefile from "./components/Router/Homefile"
+import Schedule from "./components/Router/Schedule"
+import Schedulecare from "./components/Router/Schedulecare"
+import Memberschedule from "./components/Router/Memberschedule"
+import Payment from "./components/Router/Payment"
+import Enrollconfirmation from "./components/Router/Enrollconfirmation"
+import Emailconfirmation from "./components/Router/Emailconfirmation"
+import Confirm from "./components/Router/Confirm"
+import Test from "./components/Router/Test"
 
 
-ReactDOM.render(<Homefile/>,document.getElementById('root'));
-
-//
+ReactDOM.render(
+  <React.StrictMode>
+    <App/>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+reportWebVitals();

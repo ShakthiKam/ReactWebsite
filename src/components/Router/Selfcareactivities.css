@@ -1,0 +1,69 @@
+#selfcare-activities-page{
+    background: #f3f3f3;
+    
+  }
+  
+  .cards-wrapper{
+    padding-top: 2em;
+  }
+  
+    .cards-container{
+      display: grid;
+      gap: 2em;
+      grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+      grid-auto-rows: auto;
+    }
+  
+      .activity-cards{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: green;
+      }
+        .card-image img{
+          width: 100%;
+          height: auto;
+        }
+        .card-texts{
+          padding: 1em;
+          text-align: center;
+        }
+        .card-links{
+          background-color: blue;
+          padding: .5em;
+          margin-top: auto;
+        }
+          a{
+            padding: .3em 1em;
+            font-size: 1.125rem;
+            color: #fff;
+            transition: all .3s ease;
+          }
+            .hover{
+              color:#394d5c;
+            }
+          
+        .cards-audio{
+          padding: .3em 1em;
+          margin-top: auto;
+        }
+          audio{
+            width: 100%;
+            height: 28px;
+          }
+    
+  
+    .link-wrapper{
+      padding-top: 2em;
+    }
+      h5{
+        color: black;
+      }
+      span a{
+        color: black;
+        transition: all .3s ease;
+      }
+        .hover{
+          color: blue;
+        }
+    

@@ -1,0 +1,54 @@
+#resources-page{
+    background:#f3f3f3;;
+    
+    color: #394d5c;;
+  
+  }
+  
+ 
+  
+    h2{
+      font-weight: 500;
+      color: black;
+    }
+    .blue-text{
+      color: black;
+      font-size: 1.25rem;
+    }
+  
+    .resource-content{
+      margin-top: 2em;
+      margin-bottom: 3em;
+    }
+      h4{
+        color: black;
+        font-size: 1.8rem;
+      }
+      p{
+        font-size: 1.125rem;
+      }
+ 
+        .underline-link{
+          transition: link-transition;
+        }
+          .hover{
+            color: blue;
+          }
+    
+      .resource-links-list{
+        padding: 0 1em;
+        margin: 1em;
+      }
+        li{
+          list-style-type: disc;
+        }
+          a{
+            font-size: 1.25rem;
+      
+            word-break: break-all;
+            transition: link-transition;
+          }
+            .hover{
+              color: blue;
+            }
+          

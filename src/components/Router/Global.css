@@ -133,3 +133,11 @@ a{
     font-size: .9rem;
   }
 }
+
+body {
+  font-size: 1rem !important;
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+}

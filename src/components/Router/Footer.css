@@ -65,15 +65,14 @@
         margin-bottom: 1em;
     }
       .social-links-list{
-        /* display: block; */
-        font-size: 1.6rem;
-        color: transparent;
-        line-height: 1.5;
-        /* padding: 04px; */
-        /* padding-top:-100px; */
-        width:200px;
-        margin-right:10px;
-        margin-top:-77px;
+      
+    display: block;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 1.2;
+    padding: 0 4px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
         
     
        
@@ -82,7 +81,8 @@
       .facebook-square{
         height:25px;
         color: #fff;
-       
+        margin-top:-100px
+        
        
       
       }
@@ -97,17 +97,20 @@
      
       }
       .first{
-        margin-left:-50px;
-        margin-top:180px;
+        margin-left:0px;
+        margin-top:-300px;
+        /* vertical-align: -.125em; */
+        display: var(--fa-display,inline-block);
+        
       }
       .second{
         /* margin-left:-50px */
-        margin-top:-33px;
-        margin-left:-10px
+        margin-top:0px;
+        margin-left:0px
       }
       .third{
-        margin-left:30px;
-        margin-top:-32px
+        margin-left:0px;
+        margin-top:0px
       }
         li{
           margin-left: .4em;
@@ -128,7 +131,10 @@
       text-align: center;
       padding-top: 1em;
       color:white;
-      border-top: 1px solid gray-100;
+      border-top: 1px solid#c5c5c5;
+      
+     
+     
     }
       p{
         font-size: .9rem;
@@ -169,10 +175,12 @@
   
       .social-links{
         justify-content: flex-start;
+        margin-top:100px
       }
         .social-links-list li{
           margin-left: 0;
           margin-right: .4em;
+         
         }
           .last-child{
             margin-right: 0;
