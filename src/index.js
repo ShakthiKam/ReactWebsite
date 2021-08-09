@@ -10,7 +10,7 @@ import Payment from "./components/Router/Payment"
 import Enrollconfirmation from "./components/Router/Enrollconfirmation"
 import Emailconfirmation from "./components/Router/Emailconfirmation"
 import Confirm from "./components/Router/Confirm"
-import Test from "./components/Router/Test"
+
 
 
 ReactDOM.render(
