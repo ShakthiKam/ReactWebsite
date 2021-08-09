@@ -1,4 +1,5 @@
 import React from 'react'; 
+import { useHistory } from 'react-router-dom';
 import './bootstrap.min.css'
 import './Aboutapp.css'
 import './Module.css'
@@ -8,8 +9,8 @@ import client1 from '../images/client1.png'
 import client from '../images/client.png'
 
 
-class Aboutapp extends React.Component {
-    render(){
+function Aboutapp(){
+  let history = useHistory();
       return (
         <div>
           <meta charSet="UTF-8" />
@@ -97,7 +98,7 @@ class Aboutapp extends React.Component {
                 <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
                 <div className="col-lg-4 col-md-6 col-8">
                   <div className="linear-btn-container">
-                    <button type="button" className="linear-btn" onclick="window.location = './schedule.html'" style={{backgroundColor:"#d7e0e9a6",marginLeft:"40px"}}>Continue</button>
+                  <button  style={{marginLeft:"5px",backgroundColor:"#d7e0e9a6"}} type="button" className="linear-btn" onClick ={() => {history.push("/schedule");}}>Continue</button>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-3 col-2" />
@@ -112,5 +113,5 @@ class Aboutapp extends React.Component {
         </div>
       );
     }
-  }
+  
   export default Aboutapp;

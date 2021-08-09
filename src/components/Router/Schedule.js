@@ -1,14 +1,19 @@
 import React from 'react'; 
+import {useHistory} from "react-router-dom";
 import "./Home.css"
 import "./Header.css"
 import "./Footer.css"
 import "./bootstrap.min.css"
 import "./Global.css"
-import "./Schedulecare.css"
+import "./Schedule.css"
 
 
 
-function Schedulecare() {
+function Schedule() {
+
+    
+  let history = useHistory(); 
+  console.log(history, "ddddd")
 
       return (
         <div>
@@ -157,7 +162,7 @@ function Schedulecare() {
                       </div>
                     </div>
                     <div className="text-center shedule-bnt-wrapper">
-                      <button type="button" onclick="window.location= './email-confirmation.html'">Schedule appointment</button>
+                      <button type="button" onClick ={() => {history.push("/emailconfirmation");}}>Schedule appointment</button>
                     </div>
                   </div>
                 </div>
@@ -174,4 +179,4 @@ function Schedulecare() {
         </div>
       );
     }
-  export default Schedulecare
+  export default Schedule

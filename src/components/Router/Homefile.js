@@ -13,7 +13,7 @@ function Homefile() {
 
     
       let history = useHistory(); 
-      console.log(history, "dfghjklj;")
+      console.log(history, "ddddd")
       return (
         <div>
           {/* Start of page content */}
@@ -162,7 +162,9 @@ function Homefile() {
               </div>
            
                 <div className="col-12 copyrights">
-                  <p style={{fontSize: ".9rem",color:"#fff",lineHeight:2}}>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). Additional resource.</p>
+                <p>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). <span class="additionl-resource"><a 
+onClick ={() => {history.push("/resources");}} class="underline-link">Additional resource.</a></span></p>
+
                   <p style={{fontSize: ".9rem",color:"#fff",lineHeight:2}}>Copyright © <span id="copyright_date">2021</span> Wellness Inc, All rights reserved.</p>
                 </div>
               </div>

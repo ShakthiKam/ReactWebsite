@@ -1,8 +1,14 @@
 import React from 'react'; 
+import {useHistory} from "react-router-dom";
 import './Individual.css';
 
-class Individual extends React.Component {
-    render(){
+
+function Individual() {
+
+    
+  let history = useHistory(); 
+  console.log(history, "ddddd")
+
       return (
         <div>
           <meta charSet="UTF-8" />
@@ -30,7 +36,7 @@ class Individual extends React.Component {
             </div>
             {/* End of Return-link */}
             {/* Start of main content */}
-            <div className="Arrow">
+            <div className="Arrow" onClick ={() => {history.push("/homefile");}}>
                   <svg class="svg-inline--fa fa-chevron-left fa-w-10" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M243.658 43.114C227.69 27.834 202.362 28.365 187.096 44.364L11.098 228.356C-3.699 243.824 -3.699 268.198 11.098 283.666L187.096 467.657C194.955 475.875 205.471 480 216.002 480C225.94 480 235.908 476.313 243.658 468.907C259.611 453.626 260.174 428.315 244.908 412.347L95.363 256.011L244.908 99.674C260.174 83.706 259.611 58.395 243.658 43.114Z"></path></svg>
                   </div>
             <div className="container main-content">
@@ -94,7 +100,7 @@ class Individual extends React.Component {
                 <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
                 <div className="col-lg-4 col-md-6 col-8">
                   <div className="linear-btn-container">
-                    <button style={{marginLeft:"5px",backgroundColor:"#d7e0e9a6"}} type="button" className="linear-btn" onclick="window.location = './about-app.html'">Continue</button>
+                    <button style={{marginLeft:"5px",backgroundColor:"#d7e0e9a6"}} type="button" className="linear-btn" onClick ={() => {history.push("/aboutapp");}}>Continue</button>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-3 col-2" />
@@ -108,6 +114,5 @@ class Individual extends React.Component {
           {/* FontAwsome JS link */}
         </div>
       );
-    }
     }
 export default Individual

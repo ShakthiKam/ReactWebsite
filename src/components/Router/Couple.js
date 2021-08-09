@@ -1,10 +1,15 @@
 import React from 'react';
 import './bootstrap.min.css'
 import './Couple.css' 
+import {useHistory} from "react-router-dom";
 
 
-class Couple extends React.Component {
-    render(){
+
+function Couple() {
+
+    
+  let history = useHistory(); 
+
       return (
         <div>
           <meta charSet="UTF-8" />
@@ -96,7 +101,7 @@ class Couple extends React.Component {
                 <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
                 <div className="col-lg-4 col-md-6 col-8">
                   <div className="linear-btn-container">
-                    <button  style={{marginLeft:"5px",backgroundColor:"#d7e0e9a6"}} type="button" className="linear-btn" onclick="window.location = './about-app.html'">Continue</button>
+                    <button  style={{marginLeft:"5px",backgroundColor:"#d7e0e9a6"}} type="button" className="linear-btn" onClick ={() => {history.push("/aboutapp");}}>Continue</button>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-3 col-2" />
@@ -111,5 +116,5 @@ class Couple extends React.Component {
         </div>
       );
     }
-  };
+  
   export default Couple

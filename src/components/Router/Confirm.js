@@ -1,4 +1,5 @@
 import React from 'react'; 
+import {useHistory} from "react-router-dom";
 import "./Home.css"
 import "./Header.css"
 import "./Footer.css"
@@ -10,6 +11,7 @@ import "./Confirm.css"
 
 
 function Confirm() {
+  let history = useHistory(); 
 
         return (
         <div>
@@ -58,7 +60,9 @@ function Confirm() {
                   <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
                   <div className="col-lg-4 col-md-6 col-8">
                     <div className="linear-btn-container">
-                      <button type="button" className="linear-btn blue-btn" onclick="window.location = './self-care.html'">Finished</button>
+                      
+<button  style={{marginLeft:"5px",backgroundColor:"#d7e0e9a6"}} type="button" className="linear-btn blue-btn" onClick ={() => {history.push("/selfcare");}}>Continue</button>
+
                     </div>
                   </div>
                   <div className="col-lg-4 col-md-3 col-2" />
@@ -81,8 +85,8 @@ function Confirm() {
                 <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
                   <h5>What We Offer</h5>
                   <ul className="footer-links-list">
-                    <li><a href="./individual.html">For Individuals</a></li>
-                    <li><a href="./couple.html">For Couples</a></li>
+                    <li><a onClick ={() => {history.push("/individual");}}>For Individuals</a></li>
+                    <li><a onClick ={() => {history.push("/couple");}}>For Couples</a></li>
                     <li><a href="#">For Employers</a></li>
                     <li><a href="#">Mobile App</a></li>
                     <li><a href="./enrollment.html">Member Enrollment</a></li>
@@ -126,7 +130,8 @@ function Confirm() {
                 </div>
                 {/* Copyrights descriptions */}
                 <div className="col-12 copyrights">
-                  <p>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). <span className="additionl-resource"><a href="./resources.html" className="underline-link">Additional resource.</a></span></p>
+                  <p>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). <span className="additionl-resource"><a 
+onClick ={() => {history.push("/resources");}} className="underline-link">Additional resource.</a></span></p>
                   <p>Copyright © <span id="copyright_date">2020</span> Wellness Inc, All rights reserved.</p>
                 </div>
               </div>
