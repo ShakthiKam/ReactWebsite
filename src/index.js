@@ -10,6 +10,9 @@ import Payment from "./components/Router/Payment"
 import Enrollconfirmation from "./components/Router/Enrollconfirmation"
 import Emailconfirmation from "./components/Router/Emailconfirmation"
 import Confirm from "./components/Router/Confirm"
+import Enrollment from "./components/Router/Enrollment";
+import Resources from "./components/Router/Resources"
+import Selfcare from "./components/Router/Selfcare";
 // import Test from "./components/Router/Test"
 
 

@@ -18,6 +18,7 @@
   }
     .texts-wrapper{
       width: 40%;
+     
     }
       @media (max-width: 991.98px) {
         .texts-wrapper{
@@ -63,3 +64,23 @@
     0%   { width: 66%; background-color: #9acf86;}
     100% { width: 100%; background-color: #43b14b; }
   }
+  .texts-wrapper p{
+    text-align: center;
+  }
+  .body{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  p {
+    margin-top: 0;
+    /* margin-bottom: 1rem; */
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: .4px;
+}

@@ -1,7 +1,7 @@
 /* //Blue header */
 .blue-header{
   background-color:#4ca9e0;
-  box-shadow: header-shadow;
+  box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.16);
 }
 
 /* // Progress Bar */
@@ -33,7 +33,7 @@
   .sub-title{
     text-align: center;
     margin: 0;
-    margin-left:450px;
+    margin-left:10px;
     color: #fff;
     font-size: 2rem;
     font-weight: 500;
@@ -51,14 +51,14 @@
     width: 100%;
     border: none;
     outline: none;
-    background: glassy-color;
+    background: #d7e0e9a6;
     padding: 4px 40px;
     border-radius: 25px;
     font-size: 1.25rem;
     color: white;
   }
   .blue-btn{
-    background: blue;
+    background: #4ca9e0;
   }
   .yellow-btn{
     background: yellow-200;

@@ -1,6 +1,9 @@
 import React from 'react'; 
 import {useHistory} from "react-router-dom";
-import './Selfcare'
+import './Selfcare.css'
+import "./Header.css"
+import "./Global.css"
+import "./Enrollment.css"
 
 function Selfcare() {
     let history = useHistory(); 
@@ -43,7 +46,7 @@ function Selfcare() {
               <div className="row">
                 {/* Texts-container */}
                 <div className="col-12 text-center">
-                  <h2 className="hero-title black-text">Self-Care Resources</h2>
+                  <h2 className="hero-title black-text" style={{fontSize: "3rem", fontWeight: 600,marginLeft:"5px"}} >Self-Care Resources</h2>
                 </div>
                 <div className="col-lg-3 col-sm-2 d-sm-block d-none" />
                 <div className="col-lg-6 col-sm-8 col-xs-12 text-center">

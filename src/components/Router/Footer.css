@@ -1,10 +1,12 @@
 .footer{
     padding: 2em 0 1em 0;
-    background-color: #666666;
+    background-color: #37383d;;
     margin-top: auto;
 }
   
     .logo-container{
+      max-width: 93px;
+      height: auto;
       margin-bottom: 1em;
     }
       .logo{

@@ -5,8 +5,9 @@ import "./bootstrap.min.css"
 import "./Mixin.css"
 import "./Selfcareactivities.css"
 import "./Module.css"
+import "./Resources.css"
 import logo from "../images/logo.png"
-import menubg from "../images/menubg.png"
+// import menubg from "../images/menubg.png"
 
 class Resources extends React.Component {
     render(){
@@ -30,7 +31,7 @@ class Resources extends React.Component {
                 <div className="row">
                   <div className="col-12 header-content">
                     <div className="logo">
-                      <h4 className="black-text">Wellness</h4>
+                      <h4 className="black-text" style={{color:"#FFFFFF"}}>Wellness</h4>
                     </div>
                   </div>
                 </div>
