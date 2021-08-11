@@ -1,4 +1,5 @@
 import React from 'react'; 
+import {useHistory} from "react-router-dom";
 import './Enrollment.css'
 import './Global.css'
 import './Header.css'
@@ -10,8 +11,10 @@ import logo from'../images/logo.png'
 
 
 
-class Enrollment extends React.Component {
-    render(){
+function Enrollment() {
+
+    
+  let history = useHistory(); 
       return (
         <div>
           <meta charSet="UTF-8" />
@@ -58,7 +61,7 @@ class Enrollment extends React.Component {
                 <div className="col-lg-4 col-md-3 col-sm-2 col-1" />
                 <div className="col-lg-4 col-md-6 col-sm-8 col-10">
                   <div className="linear-btn-container">
-                    <button type="button" className="linear-btn yellow-btn" onclick="window.location = './payment.html'" style={{backgroundColor:"#fcea93", marginLeft:"10px"}}>Pay and Enroll</button>
+                    <button type="button" className="linear-btn yellow-btn" onClick ={() => {history.push("/payment");}} style={{backgroundColor:"#fcea93", marginLeft:"10px"}}>Pay and Enroll</button>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-3 col-sm-2 col-1" />
@@ -203,5 +206,5 @@ class Enrollment extends React.Component {
         </div>
       );
     }
-  }
+  
   export default Enrollment

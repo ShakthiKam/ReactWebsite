@@ -1,4 +1,5 @@
 import React from 'react'; 
+import {useHistory} from "react-router-dom";
 import "./Home.css"
 import "./Header.css"
 import "./Footer.css"
@@ -8,6 +9,7 @@ import "./Payment.css"
 
 
 function Payment() {
+  let history = useHistory(); 
 
       return (
         <div>
@@ -95,7 +97,9 @@ function Payment() {
                       <div className="col-lg-4 col-md-3 col-sm-2 col-1" />
                       <div className="col-lg-4 col-md-6 col-sm-8 col-10">
                         <div className="linear-btn-container">
-                          <button type="button" className="linear-btn blue-btn" onclick="window.location= 'member-schedule.html'">Pay and Continue</button>
+                        <button type="button" className="linear-btn blue-btn" onClick ={() => {history.push("/schedule");}} style={{marginLeft:"10px"}}>Pay and Continue</button>
+                        
+
                         </div>
                       </div>
                       <div className="col-lg-4 col-md-3 col-sm-2 col-1" />
