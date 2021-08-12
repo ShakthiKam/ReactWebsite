@@ -78,8 +78,12 @@
         }
           
           @media (max-width: 374.98px) {
+       
+          
+   
+            }
            
-          }
+          
     
           .links{
             display: block;
@@ -146,6 +150,13 @@
                     .icon{
                       font-size: 1.2rem;
                     }
+                    .btns-container {
+                      padding-top: 15em;
+                      padding-bottom: 1em;
+                      margin-left: 20px;
+                   
+                      
+                  }
                   }
             
          
