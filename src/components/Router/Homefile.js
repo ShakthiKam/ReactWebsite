@@ -89,11 +89,11 @@ function Homefile() {
               <div className="row">
                 <div className="col-lg-3 col-md-3 col-sm-12 logo-container">
                 <a href="./../index.html"><img className="logo" src={logo} alt="logo" style={{marginLeft:"-12px"}}/></a>
-                <p style={{color:"#c5c5c5",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus earum possimus.</p>                </div>
+                <p style={{color:"#c5c5c5",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Mental health counseling and life coaching to change your life!</p>                </div>
                 {/* What We offer links */}
                 <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
                   <h5 style={{lineHeight:2,fontFamily: 'Roboto',fontSize: "1.2rem",marginTop:"-8px",color:"#fff",marginLeft:"-2px"}}>What We Offer</h5>
-                  <ul className="footer-links-list" style={{marginLeft:"-33px",}}>
+                  <ul className="footer-links-list" style={{marginLeft:"-33px",cursor: "pointer"}}>
                   <li><a onClick ={() => {history.push("/individual");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Individuals</a></li>
                     <li><a onClick ={() => {history.push("/couple");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Couples</a></li>
                     <li><a onClick ={() => {history.push("/employers");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Employers</a></li>
@@ -107,7 +107,7 @@ function Homefile() {
                 <div className="col-lg-3 col-md-2 col-sm-3 col-6 links-container">
                   <div className="condition-links">
                     <h5 style= {{lineHeight:2,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-8px",color:"#fff",marginLeft:"-4px"}}>Conditions</ h5>
-                    <ul className="footer-links-list" style={{marginLeft:"-35px"}}>
+                    <ul className="footer-links-list" style={{marginLeft:"-35px",cursor: "pointer"}}>
                       <li><a onClick ={() => {history.push("/depression");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Feeling Sad </a></li>
                       <li><a onClick ={() => {history.push("/anxiety");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}} >Anxiety</a></li>
                       <li><a onClick ={() => {history.push("/panicdisorder");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Panic Attacks</a></li>
@@ -121,7 +121,7 @@ function Homefile() {
                 {/* Our Company links */}
                 <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
                   <h5 style= {{lineHeight:2,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-5px",color:"#fff",marginLeft:"-3px"}}>Our Company</h5>
-                  <ul className="footer-links-list" style={{marginLeft:"-35px"}}>
+                  <ul className="footer-links-list" style={{marginLeft:"-35px",cursor: "pointer"}}>
                     <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>About Us</a></li>
                     <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Blog</a></li>
                     {/* <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Counselors</a></li> */}

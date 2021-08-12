@@ -50,14 +50,19 @@
           width: 100%;
         }
       }
-
+   
     .btns-container{
       padding-top: 3em;
       padding-bottom: 1em;
+      cursor: pointer;
+
+      
       /* margin-top:-25px; */
      
     
     }
+ 
+
       .list{
         /* display: flex; */
         /* flex-direction: column; */
@@ -65,6 +70,7 @@
         margin-left:90px;
         
       }
+    
         .links-list{
           background-color: transparent;
           display: inline-block;
@@ -75,6 +81,9 @@
           margin-bottom: .5em;
           border: 2px solid #4ca9e0;
                
+        }
+        .links-list:hover {
+          color: yellow;
         }
           
           @media (max-width: 374.98px) {
@@ -103,7 +112,7 @@
           }
             
             .icon{
-              color: #fedd64;
+              color: #fedd64 !important;
               font-size: 1.4rem;
             
               padding:-20px;
@@ -117,7 +126,7 @@
               height: 1.5em;
               width: .800em;
               -webkit-box-direction: normal;
-              margin-left:-10px;
+              margin-left:-8px;
               box-sizing: border-box;
               
               /* padding-right:5px */
@@ -146,7 +155,9 @@
                   .btns-container .list .links-list .links{
                     font-size: 1rem;
                     padding: 3px 15px;
+                    
                   }
+                  
                     .icon{
                       font-size: 1.2rem;
                     }
@@ -154,6 +165,7 @@
                       padding-top: 15em;
                       padding-bottom: 1em;
                       margin-left: 20px;
+                      
                    
                       
                   }
@@ -184,7 +196,20 @@
                   .btns-container .list .links-list .links{
                     font-size: 1rem;
                     padding: 3px 15px;
+                    
                   }
                 }
-        
-       
+                .btns-container .list .links-list .links:hover {
+                  padding-left: 40px;
+              }
+            
+              .btns-container .list .links-list .links {
+                display: block;
+                padding: 1px 25px;
+                background-color: #4ca9e0;
+                 border-radius: 20px; 
+                font-size: 1.2rem;
+                color: #fff;
+                -webkit-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }

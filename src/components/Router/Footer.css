@@ -123,10 +123,10 @@
             color: #CCCCCC;
             line-height: 1.2;
             padding: 0 4px;
-            transition: link-transition;
+            transition: all .3s ease;
           }
             .hover{
-              color: blue;
+              color: white;
             }
   
     .copyrights{
