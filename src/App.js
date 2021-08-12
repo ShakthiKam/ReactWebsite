@@ -23,6 +23,8 @@ import Panicdisorder from "./components/Router/Panicdisorder";
 import Posttraumatic from "./components/Router/Posttraumatic";
 import Bipolar from "./components/Router/bipolar";
 import Other from "./components/Router/Other";
+import Employerschedule from "./components/Router/Employerschedule"
+import Employerprogram from "./components/Router/Employerprogram"
 
 
 
@@ -51,7 +53,9 @@ function App() {
      <Route exact path={"/posttraumatic"} component={Posttraumatic}/>
      <Route exact path={"/bipolar"} component={Bipolar}/>
      <Route exact path={"/other"} component={Other}/>
- 
+     <Route exact path={"/employerschedule"} component={Employerschedule}/>
+     <Route exact path={"/emailconfirmation"} component={Emailconfirmation}/>
+     <Route exact path={"/employerprogram"} component={Employerprogram}/>
  
 
    </Switch>

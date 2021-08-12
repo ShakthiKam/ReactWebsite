@@ -1,27 +1,13 @@
-import React from 'react'; 
+import React from 'react';
 import {useHistory} from "react-router-dom";
-// import "./Home.css"
-// import "./Header.css"
-// import "./Footer.css"
-import "./bootstrap.min.css"
-import "./Global.css"
-import "./Schedule.css"
-import "./Module.css"
-import "./Theme.css"
-import "./Style.css"
-import "./Confirm.css"
-import "./Emailconfirmation.css"
-// import Calendar from "./components/Router/Calendar"
 
 
-
-function Schedule() {
+function Employerschedule() {
 
     
-  let history = useHistory(); 
-  console.log(history, "ddddd")
+    let history = useHistory();
 
-  return (
+return (
     <div>
       <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -48,7 +34,7 @@ function Schedule() {
               <a className="return-link black-text" href="#" onclick="history.go(-1)">
                 <i className="fas fa-chevron-left" />
               </a>
-              <h4 className="sub-title black-text">Schedule your free online consultation</h4>
+              <h4 className="sub-title black-text">Schedule your consultation</h4>
             </div>
           </div>
         </div>
@@ -168,12 +154,9 @@ function Schedule() {
                   </div>
                 </div>
                 <div className="text-center shedule-bnt-wrapper">
-                  <button type="button" id="schedule-appointment" data-link="email-confirmation.html" onClick ={() => {history.push("/emailconfirmation");}}>Schedule appointment</button>
+                  <button type="button" id="schedule-appointment" onClick ={() => {history.push("/emailconfirmation");}}>Schedule appointment</button>
                 </div>
               </form>
-              <div className="text-center mt-4">
-                <p className="black-text">Session duration is 30 minutes</p>
-              </div>
             </div>
           </div>
         </div>
@@ -188,5 +171,4 @@ function Schedule() {
     </div>
   );
 }
-
-  export default Schedule
+export default Employerschedule

@@ -1,7 +1,9 @@
 #schedule-page{
-    background: white;
+    background: #f3f3f3;
+    width: 100%;
+    min-height: 100vh;
 }
-  
+    
       .progress{
         width: 60%;
         animation: progressSeventy 4s; 
@@ -11,10 +13,14 @@
         animation: sixthySix 4s;
       }
   #scheduling-wrapper{
+    display: flex;
+    justify-content: space-between;
   
     align-items: flex-start;
   }
-    .calendar-container{
+   
+      @media (max-width:767.98px) {
+        .calendar-container{
         position: fixed;
         top: 0;
         left: 0;
@@ -27,19 +33,22 @@
         z-index: 99;
         display: none;
       }
-  
+    }
+    @media (max-width: 767.98px) {
       .calendar-flex{
         background-color: white;
         border-radius: 6px;
         padding: 1em;
         box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.75);
-   
+
+    
           background-color: rgb(197, 197, 197);
           border-radius: 6px;
           padding: 1em;
           margin-top: 3em;
           box-shadow: none;
         }
+      }
   
         .btn-wrapper{
           display: none;
@@ -59,13 +68,13 @@
             padding: .2em 1em;
             transition:  all .3s ease;
           }
-            .hover{
+          .hover{
               color: blue;
               background-color: transparent;
             }
-    
-        .calendar-wrapper{
-          color: dark;
+            @media (max-width: 767.98px) {
+         .calendar-wrapper{
+          color: #394d5c;
         
 
             background-color: white;
@@ -73,25 +82,28 @@
             padding: 1em;
             box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.75);
           }
+        }
         
-  
+   @media (max-width: 767.98px) {
     .pick-date-wrapper{
       display: none;
       display: block;
       padding-bottom: 2em;
       }
+    }
   
       #show-calendar{
-        border: 1.5px solid blue;
+        border: 1.5px solid #4ca9e0;
         border-radius: 6px;
-        background-color: white;
-        color: blue;
+        background-color:#fff;
+        color:#4ca9e0;
         padding: .3em 1em;
       }
     
   
     .availabelity{
-      background-color: white;
+      width: 100%;
+      background-color: #fff;
       border-radius: 6px;
       padding: 1em;
       box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.75);
@@ -116,12 +128,12 @@
               font-size: 1.6rem;
               color: orange;
             }
+            .time-container.h5{
           
-            h5{
               margin-bottom: .4px;
             }
             p{
-              color: gray;
+              color: #696969;
               margin: 0;
             }
         
@@ -131,9 +143,9 @@
         }
   
           .availablity-btn{
-            border: 1.5px solid blue;
+            border: 1.5px solid #4ca9e0;
             border-radius: 6px;
-            background-color: blue;
+            background-color: #4ca9e0;
             color: white;
             width: 124px;
             padding: .4em 1em;
@@ -141,10 +153,11 @@
             margin-bottom: .5em;
             transition: all .3s ease;
           }
-            .hover{
-              background-color: transparent;
-              color: blue;
-            }
+          .active{
+            background-color: transparent;
+            color: #4ca9e0;
+          }
+       
  
   
       .shedule-bnt-wrapper{
@@ -152,9 +165,9 @@
         padding-bottom: 1em;
       }
         button{
-          border: 1.5px solid blue;
+          border: 1.5px solid #4ca9e0;
           border-radius: 30px;
-          background-color: blue;
+          background-color: #4ca9e0;
           color: white;
           font-size: 1.25rem;
           padding: .3em 1.4em;
@@ -162,12 +175,13 @@
         }
           .hover{
             background-color: transparent;
-            color: blue;
+            color: #4ca9e0  ;
           }
     
   
     .displa-calendar{
-      display: flex;
+      visibility: visible;
+      opacity: 1;
     }
 
   
@@ -180,3 +194,22 @@
     0%   { width: 33%; background-color: #9acf86;}
     100% { width: 66%; background-color: green; }
   }
+  .black-text {
+    color: #37383d;
+}
+.main-content {
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+#scheduling-wrapper .availabelity .day-time-wrapper .availablity-times .availablity-btn {
+  border: 1.5px solid #4ca9e0;
+  border-radius: 6px;
+  background-color: #4ca9e0;
+  color: #fff;
+  width: 124px;
+  padding: .4em 1em;
+  margin-right: .3em;
+  margin-bottom: .5em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}

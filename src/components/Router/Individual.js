@@ -1,6 +1,7 @@
 import React from 'react'; 
 import {useHistory} from "react-router-dom";
 import './Individual.css';
+import './Aboutapp.css';
 
 
 function Individual() {
@@ -90,7 +91,7 @@ function Individual() {
                     </ul>
                     </div>
                     <div className="skip" style={{marginLeft:"30px"}}>
-                    <p style={{color:"#fff",fontweight:400,fontSize:20}}>Skip and schedule your free online consultation.</p>
+                    <p style={{color:"#fff",fontweight:400,fontSize:20}}>Skip and <a onClick ={() => {history.push("/schedule");}} style={{display:"inline-block",textDecoration: "underline", fontSize: "1.25rem",marginLeft:"-14px"}}>schedule</a> your free online consultation.</p>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-2 col-sm-1 d-sm-block d-none" />

@@ -81,7 +81,7 @@ function Employers() {
                       </li>
                       {/* End of links */}
                     </ul>
-                    <p>Skip and <span><a onClick ={() => {history.push("/schedule");}}>schedule</a></span> your free online consultation.</p>
+                    <p>Skip and <span><a onClick ={() => {history.push("/Employerschedule");}}>schedule</a></span> your free online consultation.</p>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-2 col-sm-1 d-sm-block d-none" />
@@ -91,7 +91,7 @@ function Employers() {
                 <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
                 <div className="col-lg-4 col-md-6 col-8">
                   <div className="linear-btn-container">
-                    <a onClick ={() => {history.push("/aboutapp");}} className="linear-btn">Continue</a>
+                    <a onClick ={() => {history.push("/employerprogram");}} className="linear-btn">Continue</a>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-3 col-2" />

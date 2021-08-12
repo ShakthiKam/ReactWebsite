@@ -5,7 +5,7 @@
    background-position: center;
    width: 100%;
    min-height: 100vh;
-
+  
   /* padding: 250px; */
   /* margin-top: -20px; */
   /* margin-left:-200px */
@@ -54,7 +54,7 @@
     .btns-container{
       padding-top: 3em;
       padding-bottom: 1em;
-      margin-top:-25px;
+      /* margin-top:-25px; */
      
     
     }
@@ -153,7 +153,27 @@
                     .list .links-list{
                       width: 100%;
                     }
+                      .btns-container {
+                        padding-top: 15em;
+                        padding-bottom: 1em;
+                        margin-left: 40px;
+                     
+                       
+                    }
+          
+                    
+                    }
+                  
+                  @media (max-width: 767.98px){
+                  .list .links-list{
+                    width: 80%;
+   
+                    
                   }
-            
-                
+                  .btns-container .list .links-list .links{
+                    font-size: 1rem;
+                    padding: 3px 15px;
+                  }
+                }
+        
        

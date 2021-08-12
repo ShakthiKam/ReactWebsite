@@ -91,7 +91,7 @@ function Couple() {
                       {/* End of links*/}
                     </ul>
                     <div className="skip" style={{marginLeft:"18px"}} >
-                    <p style={{color:"#fff",fontweight:400,fontSize:20}}>Skip and <a onClick ={() => {history.push("/schedule");}}> schedule</a> your free online consultation.</p></div>
+                    <p style={{color:"#fff",fontweight:400,fontSize:20}}>Skip and <a onClick ={() => {history.push("/schedule");}} style={{display:"inline-block",textDecoration: "underline", fontSize: "1.25rem",marginLeft:"-14px"}}> schedule</a> your free online consultation.</p></div>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-2 col-sm-1 d-sm-block d-none" />

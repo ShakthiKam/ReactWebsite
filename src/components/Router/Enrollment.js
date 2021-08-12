@@ -46,7 +46,7 @@ function Enrollment() {
             <div className="container main-content">
               <div className="row">
                 <div className="col-12 enrollment-desc">
-                  <h2 style={{fontSize:45,marginTop:"40px"}}>Memeber Enrollment</h2>
+                  <h2 style={{fontSize:45,marginTop:"40px"}}>Member Enrollment</h2>
                   <p style={{color:"black",fontWeight:500,fontFamily: 'Roboto'}}>Enroll and schedule your first online counseling session.</p>
                   <p style={{color:"black",fontWeight:500,fontFamily: 'Roboto'}}>Pay monthly to receive regular ongoing counseling.</p>
                   <p style={{color:"black",fontWeight:500,fontFamily: 'Roboto'}}>Continue monthly for as long as you need.</p>
@@ -70,7 +70,7 @@ function Enrollment() {
               <div className="row testimonial-container">
                 <div className="col-12">
                   <div className="testimonials">
-                    <h4 className="black-text" style={{fontSize:30}}>Here are a few testimonials</h4>
+                    <h4 className="black-text" style={{fontSize:30}}>Hear from people helped by our program</h4>
                   </div>
                 </div>
                 {/* Testimonial content 1 */}
