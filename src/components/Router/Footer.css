@@ -162,6 +162,7 @@
     .footer .links-container .condition-links{
       width: 100%;
       padding-left: 0;
+      
       /* margin-left: -1em; */
     }
   }
@@ -170,6 +171,7 @@
   
       .logo-container .logo{
         width: 20%;
+        
       }
   
       .links-container .condition-links{
@@ -187,6 +189,8 @@
           margin-right: .10em;
           padding-left:6px;
           justify-content: center;
+      
+          
     
           /* margin-top:-831px; */
 
@@ -216,7 +220,14 @@
       flex: 0 0 auto !important;
       width: 80% !important;
     }
+    .footer .social-links .social-links-list li {
+      margin-left: -40px;
+      margin-top:-235px;
+      justify-content: flex-end;
+     
+
   }
+}
   .footer .copyrights p {
     font-size: .9rem;
     margin: 0;
@@ -229,7 +240,7 @@
   }
   .footer .social-links .social-links-list li {
     margin-left: -40px;
-  
+ 
 
  
 }
