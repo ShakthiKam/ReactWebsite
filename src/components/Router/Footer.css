@@ -73,7 +73,9 @@
     font-size: 1.6rem;
     color: #fff;
     line-height: 1.2;
-    padding: 0 4px;
+    margin-top:-7px;
+    padding: -1px 4px;
+    padding-left:10px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
         
@@ -222,7 +224,7 @@
     }
     .footer .social-links .social-links-list li {
       margin-left: -40px;
-      margin-top:-235px;
+      margin-top:-230px;
       justify-content: flex-end;
      
 
