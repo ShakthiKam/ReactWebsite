@@ -185,7 +185,10 @@
         .social-links-list li{
   
           margin-right: .10em;
-          margin-top:-831px;
+          padding-left:6px;
+          justify-content: center;
+    
+          /* margin-top:-831px; */
 
          
         }
@@ -249,6 +252,8 @@
 }
 
 }
+
+
 .svg-inline--fa {
   display: inline-block;
   display: var(--fa-display,inline-block);
