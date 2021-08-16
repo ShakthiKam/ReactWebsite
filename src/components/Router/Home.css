@@ -209,3 +209,29 @@
                 -webkit-transition: all 0.3s ease;
                 transition: all 0.3s ease;
             }
+            @media (max-width: 0px) {
+      
+            
+              .hero-texts-container .hero-text{
+                font-size: 1rem;
+              }
+        
+              .btns-container .list .links-list .links{
+                font-size: 1rem;
+                padding: 3px 15px;
+                
+              }
+              
+                .icon{
+                  font-size: 1.2rem;
+                }
+                .btns-container {
+                  /* padding-top: 15em; */
+                  padding-bottom: 1em;
+                  margin-left: 2px;
+                  /* margin-top:200px */
+                  
+               
+                  
+              }
+              }
