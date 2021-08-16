@@ -25,7 +25,7 @@ function Homefile() {
                 <div className="row">
                   <div className="col-12 header-content">
                     <div className="logo">
-                      <h4 style={{color:"#fff"}}>Wellnessss</h4></div>
+                      <h4 style={{color:"#fff"}}>Wellness</h4></div>
                    
                     <div className="login-container">
                       <div className="counseling">
