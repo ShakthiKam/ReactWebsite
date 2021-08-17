@@ -58,7 +58,7 @@
               color: #37383d;
             }
             h2 {
-              font-size: 3rem;
+              font-size: 2rem;
               font-weight: 600;
           }
           .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -80,4 +80,9 @@
 }
 .dark-text {
   color: #394d5c;
+}
+@media (max-width: 575.98px){
+.h4 {
+    font-size: 1.6rem !important;
+}
 }

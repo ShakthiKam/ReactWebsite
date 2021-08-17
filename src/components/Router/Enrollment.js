@@ -5,6 +5,7 @@ import './Global.css'
 import './Header.css'
 import './Mixin.css'
 import './bootstrap.min.css'
+import './Module.css'
 import user from '../images/usericon.png'
 import logo from'../images/logo.png'
 import Matthew from '../images/counselors/Matthew-Hunt-profile-pic-x.png'
@@ -14,6 +15,9 @@ import Tony from  '../images/counselors/Tony-Trimble-Online-Counselor-225x175.jp
 import Tyesh from  '../images/counselors/Tyesh-Harris-Photo1-225x175.png'
 import Rachel from '../images/counselors/Rachel-Cooke-Home-x.jpg'
 import Sondra from '../images/counselors/Sondra-Gentry-Online-Counselor-page.jpg'
+import Jennifer from '../images/counselors/Jennifer-Uchitel-online-Counselor-225x170.jpg'
+import Beverly from '../images/counselors/Dr-Beverly-L-Swanson-lg-225x175.jpg'
+
 // import "./Individual.css"
 
 
@@ -42,7 +46,7 @@ function Enrollment() {
                     <div className="container">
                       <div className="row">
                         <div className="col-12 header-content">
-                          <div className="logo-container">
+                          <div className="logo-container" style={{marginLeft:"-40px",paddingBottom:"15px"}}>
                             <a className="logo" href="./../index.html">
                               <span>Wellness</span>
                             </a>
@@ -56,8 +60,8 @@ function Enrollment() {
                   <div className="container main-content">
                     <div className="row">
                       <div className="col-12 enrollment-desc">
-                        <h2>Memeber Enrollment</h2>
-                        <p>EEnroll and schedule your first online counseling session.</p>
+                        <h2 style={{fontSize: "3rem"}}>Member Enrollment</h2>
+                        <p>Enroll and schedule your first online counseling session.</p>
                         <p>Pay monthly to receive regular ongoing counseling.</p>
                         <p>Continue monthly for as long as you need.</p>
                         <div className="hr-line" />
@@ -82,14 +86,14 @@ function Enrollment() {
                     <div className="row testimonial-container">
                       <div className="col-12">
                         <div className="underline-title">
-                          <h4 className="black-text">Hear from people helped by our program</h4>
+                          <h4 className="black-text" style={{fontSize:"2rem"}}>Hear from people helped by our program</h4>
                         </div>
                       </div>
                       {/* Testimonial content 1 */}
                       <div className="col-md-4 col-sm-12">
                         <div className="testimonial-content">
-                          <p>I’ve been to several other counselors before and you have been the first that I’ve connected with that gave me a sense of hope for change. Thank you!</p>
-                        </div>
+                          <p style={{fontSize:"1rem"}}>I’ve been to several other counselors before and you have been the first that I’ve connected with that gave me a sense of hope for change. Thank you!</p>
+                        </div> 
                         <div className="testimonial-user">
                           <div className="user-image">
                           <img className="img-fluid" src={user} alt="image" />
@@ -102,7 +106,7 @@ function Enrollment() {
                       {/* Testimonial content 2 */}
                       <div className="col-md-4 col-sm-12">
                         <div className="testimonial-content">
-                          <p>When I needed that expert “push” you were there to do it. Thank you!</p>
+                          <p style={{fontSize:"1rem"}}>When I needed that expert “push” you were there to do it. Thank you!</p>
                         </div>
                         <div className="testimonial-user">
                           <div className="user-image">
@@ -116,7 +120,7 @@ function Enrollment() {
                       {/* Testimonial content 3 */}
                       <div className="col-md-4 col-sm-12">
                         <div className="testimonial-content">
-                          <p>When I was feeling ‘down and out’ you helped to lift me out of this darkness. The tools that I have gained through counseling with you will stick with me for the rest of my life. Thank you…</p>
+                          <p style={{fontSize:"1rem"}}>When I was feeling ‘down and out’ you helped to lift me out of this darkness. The tools that I have gained through counseling with you will stick with me for the rest of my life. Thank you…</p>
                         </div>
                         <div className="testimonial-user">
                           <div className="user-image">
@@ -133,7 +137,7 @@ function Enrollment() {
                     <div className="row our-counselors">
                       <div className="col-12">
                         <div className="underline-title">
-                          <h4 className="black-text">Meet Our Counselors</h4>
+                          <h4 className="black-text" style={{fontSize:"2rem"}}>Meet Our Counselors</h4>
                         </div>
                       </div>
                       {/* Counselor 1 */}
@@ -147,7 +151,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Lead Online Counselor</h6>
-                            <p>My aim is to provide you the “tune up” for when you find yourself feeling a bit unstable or unsupported. Together we can get you back on the road to thinking clearer, feeling better, and enjoying fulfilling relationships with those you care for.</p>
+                            <p style={{fontSize:"1rem"}}>My aim is to provide you the “tune up” for when you find yourself feeling a bit unstable or unsupported. Together we can get you back on the road to thinking clearer, feeling better, and enjoying fulfilling relationships with those you care for.</p>
                           </div>
                         </div>
                       </div>
@@ -162,7 +166,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Counselor – MDIV, DMIN</h6>
-                            <p>My approach is one of curiosity and hopefully one of compassion. When you come to my office I want to sit with you, mindfully listening to your story, hearing you intentionally with my mind and my heart.</p>
+                            <p style={{fontSize:"1rem"}}>My approach is one of curiosity and hopefully one of compassion. When you come to my office I want to sit with you, mindfully listening to your story, hearing you intentionally with my mind and my heart.</p>
                           </div>
                         </div>
                       </div>
@@ -177,7 +181,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Pastoral Counselor</h6>
-                            <p>Fueled by a passion for character building, life coaching and spiritual rejuvenation, John Young merges spirituality with the practicality of everyday life. His candid and revealing approach engages clients and assists them to pursue a life of integrity, success and happiness.</p>
+                            <p style={{fontSize:"1rem"}}>Fueled by a passion for character building, life coaching and spiritual rejuvenation, John Young merges spirituality with the practicality of everyday life. His candid and revealing approach engages clients and assists them to pursue a life of integrity, success and happiness.</p>
                           </div>
                         </div>
                       </div>
@@ -192,7 +196,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Online Therapist – Ed.D</h6>
-                            <p>I am a psychologist and mental health counselor in my 40th year of providing services to clients in need of help. My areas of specialization are addictions, depression, anxiety, and grief.</p>
+                            <p style={{fontSize:"1rem"}}>I am a psychologist and mental health counselor in my 40th year of providing services to clients in need of help. My areas of specialization are addictions, depression, anxiety, and grief.</p>
                           </div>
                         </div>
                       </div>
@@ -207,8 +211,8 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Life Coach</h6>
-                            <p>On the face of things, you look like you have it all under control but inside you are overwhelmed and trying to pick up the pieces. You are successful but underneath you are burnt out, struggling to see a meaningful path forward. Internally, you know that you cannot continue living your life the way things are.</p>
-                            <p>I understand. I have worked with clients to realize new powerful perspectives and I provide the necessary insights and tools to create a sustainable self and path forward. Before I started my business, I was a very successful music and finance executive working with some of the most well known musicians, analysts and firms on the planet.</p>
+                            <p style={{fontSize:"1rem"}}>On the face of things, you look like you have it all under control but inside you are overwhelmed and trying to pick up the pieces. You are successful but underneath you are burnt out, struggling to see a meaningful path forward. Internally, you know that you cannot continue living your life the way things are.</p>
+                            <p style={{fontSize:"1rem"}}>I understand. I have worked with clients to realize new powerful perspectives and I provide the necessary insights and tools to create a sustainable self and path forward. Before I started my business, I was a very successful music and finance executive working with some of the most well known musicians, analysts and firms on the planet.</p>
                           </div>
                         </div>
                       </div>
@@ -223,7 +227,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Online Therapist – NCP</h6>
-                            <p>I’m an integrative therapist and I see the relationship between you and I as the most important aspect of what we do. I have 5 years of clinical experience in Ireland and the UK helping a variety of people to make their lives more manageable and fulfilling. Whatever is troubling you we can work together to find the right decisions and solutions for you at whatever pace you’re comfortable with.</p>
+                            <p style={{fontSize:"1rem"}}>I’m an integrative therapist and I see the relationship between you and I as the most important aspect of what we do. I have 5 years of clinical experience in Ireland and the UK helping a variety of people to make their lives more manageable and fulfilling. Whatever is troubling you we can work together to find the right decisions and solutions for you at whatever pace you’re comfortable with.</p>
                           </div>
                         </div>
                       </div>
@@ -238,7 +242,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Online Therapist -D. Min.</h6>
-                            <p>I have 18 years experience working with children, couples, individuals and families. Eight years of experience in group counseling stems from that commitment to helping families. Included among relevant counseling experience is previous employment as a college instructor in the departments of Psychology, Early Childhood Education and Religion.</p>
+                            <p style={{fontSize:"1rem"}}>I have 18 years experience working with children, couples, individuals and families. Eight years of experience in group counseling stems from that commitment to helping families. Included among relevant counseling experience is previous employment as a college instructor in the departments of Psychology, Early Childhood Education and Religion.</p>
                           </div>
                         </div>
                       </div>
@@ -247,13 +251,13 @@ function Enrollment() {
                         <div className="counselors">
                           <a href="#" className="counselors-profile">
                             <div className="counselors-image">
-                              <img src="./../assets/images/counselors/Jennifer-Uchitel-online-Counselor-225x170.jpg" alt="Jennifer Uchitel" />
+                              <img src={Jennifer} alt="Jennifer Uchitel" />
                             </div>
                             <h5 className="counselors-name">Jennifer Uchitel</h5>
                           </a>
                           <div className="counselors-about">
                             <h6>Online Therapist – LMHC</h6>
-                            <p>My experience working with individuals and groups, along with your openness and honesty, would be a great platform to start working on your personal goals.</p>
+                            <p style={{fontSize:"1rem"}}>My experience working with individuals and groups, along with your openness and honesty, would be a great platform to start working on your personal goals.</p>
                           </div>
                         </div>
                       </div>
@@ -262,13 +266,13 @@ function Enrollment() {
                         <div className="counselors">
                           <a href="#" className="counselors-profile">
                             <div className="counselors-image">
-                              <img src="./../assets/images/counselors/Dr-Beverly-L-Swanson-lg-225x175.jpg" alt="Dr. Beverly L. Swanson" />
+                              <img src={Beverly} alt="Dr. Beverly L. Swanson" />
                             </div>
                             <h5 className="counselors-name">Dr. Beverly L. Swanson</h5>
                           </a>
                           <div className="counselors-about">
                             <h6>Online Counselor – D.D.</h6>
-                            <p>I have five years of experience within my field. I am a Vietnam era veteran of the United States Air Force, have worked in the Corporate arena, as a Chief Operations Officer, am well-traveled throughout the US and Europe and am a retired Law Enforcement Agent. I have a Doctorate in Divinity, and I am an ordained minister. I am a mother a grandmother, and I believe I have much I can share with you…all you have to do is have the desire. You are a winner, victorious, prosperous and wonderfully unique, and this year and every year is your year.</p>
+                            <p style={{fontSize:"1rem"}}>I have five years of experience within my field. I am a Vietnam era veteran of the United States Air Force, have worked in the Corporate arena, as a Chief Operations Officer, am well-traveled throughout the US and Europe and am a retired Law Enforcement Agent. I have a Doctorate in Divinity, and I am an ordained minister. I am a mother a grandmother, and I believe I have much I can share with you…all you have to do is have the desire. You are a winner, victorious, prosperous and wonderfully unique, and this year and every year is your year.</p>
                           </div>
                         </div>
                       </div>
