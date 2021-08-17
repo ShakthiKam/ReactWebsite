@@ -46,8 +46,8 @@ function Enrollment() {
                     <div className="container">
                       <div className="row">
                         <div className="col-12 header-content">
-                          <div className="logo-container" style={{marginLeft:"-40px",paddingBottom:"15px"}}>
-                            <a className="logo" href="./../index.html">
+                          <div className="logo-container" style={{marginLeft:"-40px",paddingBottom:"15px",cursor:"pointer"}}>
+                            <a className="logo" onClick ={() => {history.push("/homefile");}}>
                               <span>Wellness</span>
                             </a>
                           </div>
@@ -74,8 +74,8 @@ function Enrollment() {
                       {/* Start of large bottom button */}
                       <div className="col-lg-4 col-md-3 col-sm-2 col-1" />
                       <div className="col-lg-4 col-md-6 col-sm-8 col-10">
-                        <div className="linear-btn-container">
-                          <a href="./payment.html" className="linear-btn yellow-btn">Pay and Enroll</a>
+                        <div className="linear-btn-container" style={{cursor:"pointer"}}>
+                          <a onClick ={() => {history.push("/payment");}} className="linear-btn yellow-btn">Pay and Enroll</a>
                           {/* <button type="button" class="linear-btn yellow-btn" onclick="window.location = './payment.html'">Pay and Enroll</button> */}
                         </div>
                       </div>
