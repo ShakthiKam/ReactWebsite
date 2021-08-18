@@ -1,0 +1,41 @@
+@media (max-width: 575.98px) {
+    .individual-content .hero-text-container .hero-text {
+      font-size: 1rem;
+    }
+    .individual-content .checkbox-container .checkbox-lists .checkbox-links .check-box {
+      font-size: 1rem;
+    }
+    .individual-content .checkbox-container .checkbox-lists .checkbox-links p {
+      font-size: 1rem;
+    }
+    .individual-content .checkbox-container p {
+      font-size: 1.25rem;
+    }
+    /* #employers-page {
+        background-image: url("./../images/employers.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        min-height: 100vh;
+      } */
+  }
+  .return-link-container .return-link {
+  
+    font-size: 1.4rem;
+  }
+        
+  @media (max-width: 767.98px){
+    #employers-page{
+      width: 100%;
+
+      
+    }
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -25,7 +25,7 @@ function Homefile() {
                 <div className="row">
                   <div className="col-12 header-content">
                     <div className="logo">
-                      <h4 style={{color:"#fff"}}>Wellnesss</h4></div>
+                      <h4 style={{color:"#fff"}}>Wellness</h4></div>
                    
                     <div className="login-container">
                       <div className="counseling">
@@ -47,7 +47,7 @@ function Homefile() {
               <div className="row">
                 {/* Texts-container */}
                 <div className="col-12 hero-texts-container">
-                  <h1 className="hero-title" style={{marginLeft:"408px",marginTop:"-110px"}}>Get Well, Stay Well</h1>
+                  <h1 className="hero-title" style={{marginLeft:"408px",marginTop:"-15px"}}>Get Well, Stay Well</h1>
                   <p className="hero-text" style={{marginLeft:"410px"}}>We want to be your companion,<br /> helping you to achieve your mental,<br /> emotional, and life goals.</p>
                 </div>
                 {/* Buttons container */}
