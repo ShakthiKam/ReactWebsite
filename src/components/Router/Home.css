@@ -235,3 +235,24 @@
                   
               }
               }
+              @media (min-width: 375px) {
+      
+              .btns-container {
+                padding-top: 14em;
+                padding-bottom: 1em;
+                margin-left: 22px;
+                /* margin-top:200px */
+                
+              }
+                
+            }
+            @media (min-width: 411px) {
+      
+              .btns-container {
+                padding-top: 2em;
+                padding-bottom: 1em;
+                margin-left: 2px;
+                /* margin-top:200px */
+                
+              }
+            }
