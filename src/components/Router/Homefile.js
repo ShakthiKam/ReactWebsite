@@ -52,7 +52,7 @@ function Homefile() {
                 </div>
                 {/* Buttons container */}
                 <div className="col-12 btns-container">
-                  <ul className="list" style={{marginLeft:"0px",marginTop:"-30px"}}>
+                  <ul className="list" style={{marginLeft:"0px",marginTop:"-20px"}}>
                     {/* Link 1 */}
                     <li className="links-list" ><a onClick ={() => {history.push("/individual");}} className="links" >
                         <span className="icon"  >
