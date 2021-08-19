@@ -94,7 +94,7 @@
   border: none;
   outline: none;
 
-  padding: 4px 20px;
+  padding: 8px 20px;
   border-radius: 25px;
   font-size: 1.25rem;
 
@@ -179,4 +179,8 @@ h2 {
 .counselors .counselors-profile .counselors-image img:hover {
   -webkit-transform: scale(0.96);
   transform: scale(0.96);
+}
+a {
+  color: #0d6efd;
+  text-decoration: none;
 }
