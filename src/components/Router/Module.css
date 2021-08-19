@@ -66,3 +66,16 @@
   }
 
 
+  .progress-bar .progress {
+    height: 8px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    -webkit-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    transition-property: width, background-color;
+    width: 20%;
+    background-color: #43b14b;
+    -webkit-animation: progressAnimation 4s;
+    animation: progressAnimation 4s;
+} 

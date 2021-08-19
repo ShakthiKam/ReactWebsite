@@ -39,3 +39,28 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+
+.container {
+    max-width: 1140px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+.main-content {
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+@media (max-width: 411.98px) {
+  .employers-page{
+    
+    width: 100%;
+    min-height: 100vh;
+   
+
+  }
+}
