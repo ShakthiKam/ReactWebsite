@@ -48,7 +48,7 @@ function Aboutapp(){
               <p style={{fontSize: "1rem",fontWeight: 400,color:"#FFFFFF"}}>Online counseling usually takes place via a private and secure online video call. You can also choose to meet by phone, or through text messaging.
               </p>
             </div>
-            <div className="col-md-4 counseling"style={{marginLeft:"-10px"}} >
+            <div className="col-md-4 counseling" style={{marginLeft:"-10px"}} >
               <h5 style={{fontSize: "1.2rem",fontWeight: 400,color:"#FFFFFF"}}>Get Well, Stay Well</h5>
               <p style={{fontSize: "1rem",fontWeight: 400,color:"#FFFFFF"}}>Work with your counselors, take advantage of different specialists, and use our self care tools in our mobile wellness app, included in all of our subscription plans.
               </p>
