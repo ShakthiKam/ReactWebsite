@@ -94,7 +94,7 @@ function Employerprogram() {
                 <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
                 <div className="col-lg-4 col-md-6 col-8">
                   <div className="linear-btn-container">
-                    <a className="linear-btn" onClick ={() => {history.push("/schedule");}}>Schedule consultation</a>
+                    <a className="linear-btn" onClick ={() => {history.push("/schedule");}} style={{cursor:"pointer"}}>Schedule consultation</a>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-3 col-2" />
