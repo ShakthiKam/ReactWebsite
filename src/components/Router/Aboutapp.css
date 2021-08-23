@@ -91,3 +91,9 @@
   width: 100%;
   min-height: 100vh;
 }
+.linear-btn-container .linear-btn {
+  
+
+  padding:  20px !important;
+  font-size: 1.25rem !important;
+}

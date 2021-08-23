@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './bootstrap.min.css'
 import './Aboutapp.css'
-import './Module.css'
+// import './Module.css'
 import './Global.css'
 import './Schedule.css'
 import client1 from '../images/client1.png'
@@ -94,7 +94,7 @@ function Aboutapp(){
             <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
             <div className="col-lg-4 col-md-6 col-8">
               <div className="linear-btn-container">
-                <a className="linear-btn" onClick ={() => {history.push("/schedule");}} style={{cursor:"pointer"}}>Continue</a>
+                <a className="linear-btn" onClick ={() => {history.push("/schedule");}} style={{cursor:"pointer",  padding: "4px 20px"}}>Continue</a>
               </div>
             </div>
             <div className="col-lg-4 col-md-3 col-2" />
