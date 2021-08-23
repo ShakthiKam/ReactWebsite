@@ -128,3 +128,25 @@
 
   font-size: 1.4rem;
 }
+/* .linear-btn-container {
+  padding-top: 2em;
+  padding-bottom: 1em;
+  text-align: center;
+  width:850px;
+  padding: 4px ;
+  /* height:10px */
+/* }  */
+.linear-btn-container .linear-btn {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 4px 20px;
+  border-radius: 25px;
+  font-size: 1.25rem;
+}
+.linear-btn-container .linear-btn {
+  font-size: 1.25rem !important;
+  padding: 4px 20px !important;
+ 
+}

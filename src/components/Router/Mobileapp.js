@@ -1,116 +1,145 @@
 import React from 'react'; 
 import {useHistory} from "react-router-dom";
-import './Selfcare.css'
-import "./Header.css"
-import "./Global.css"
-import "./Enrollment.css"
 import logo from "../images/logo.png"
 
-function Selfcare() {
-    let history = useHistory(); 
-      return (
-        <div>
-          <meta charSet="UTF-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          {/* browser icon */}
-          <link rel="shortcut icon" type="image/jpg" href="./../assets/images/wellness-icon.ico" />
-          {/* Bootstrap Link */}
-          <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css" />
-          {/* Custom CSS Link */}
-          <link rel="stylesheet" href="./../assets/css/app.css" />
-          <title>Self Care</title>
-          {/* Start of page content */}
-          <div id="selfcare-page">
-            {/* Star of Header */}
-            <header className="header blue-header">
-              <div className="container">
-                <div className="row">
-                  <div className="col-12 header-content">
-                    <div className="logo-container">
-                      <a className="logo" onClick ={() => {history.push("/homefile");}}>
-                        <span>Wellness</span>
-                      </a>
-                    </div>
-                    <div className="login-container">
-                      <div className="counseling">
-                        <a className="direct-counseling" onClick ={() => {history.push("/enrollment");}}>Member Enrollment</a>
-                      </div>
-                    </div>
-                  </div>
+
+function Mobileapp() {
+
+    
+      let history = useHistory(); 
+      console.log(history, "ddddd")
+return (
+    <div>
+      <meta charSet="UTF-8" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      {/* browser icon */}
+      <link rel="shortcut icon" type="image/jpg" href="./../assets/images/wellness-icon.ico" />
+      {/* Bootstrap Link */}
+      <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css" />
+      {/* Custom CSS Link */}
+      <link rel="stylesheet" href="./../assets/css/app.css" />
+      <title>Mobile App</title>
+      {/* Start of page content */}
+      <div id="mobile-app-page" className="page-wrapper dark-white-page">
+        {/* Star of Header */}
+        <header className="header blue-header">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 header-content">
+                <div className="logo-container">
+                  <a href="./../index.html" className="logo">
+                    <span>Wellness</span>
+                  </a>
                 </div>
-              </div>
-            </header>
-            {/* End of Header */}
-            {/* Start of main content */}
-            <div className="container main-content">
-              <div className="row">
-                {/* Texts-container */}
-                <div className="col-12 text-center">
-                  <h2 className="hero-title black-text" style={{fontSize: "3rem", fontWeight: 600,marginLeft:"5px"}} >Self-Care Resources</h2>
-                </div>
-                <div className="col-lg-3 col-sm-2 d-sm-block d-none" />
-                <div className="col-lg-6 col-sm-8 col-xs-12 text-center">
-                  <p className="title-desc black-text">From our dedicated team of professional
-                    therapists, life coaches, diet and fitness
-                    experts, and spiritual advisors.</p>
-                </div>
-                <div className="col-lg-3 col-sm-2 d-sm-block d-none" />
-              </div>  
-              <div className="row">
-                {/* Buttons Wraper */}
-                <div className="col-12 selfcare-links-wrapper">
-                  {/* Links container 1 */}
-                  <ul className="links-container">
-                    <li className="links-list">
-                      <a className="links"  onClick ={() => {history.push("/selfcareactivities");}}>Feeling Down</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Anxiety</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Motivation</a>
-                    </li>
-                  </ul>
-                  {/* Links container 2 */}
-                  <ul className="links-container">
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Sleep</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Fitness</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Diet</a>
-                    </li>
-                  </ul>
-                  {/* Links container 3 */}
-                  <ul className="links-container">
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Relationships</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Career</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Mindfullness</a>
-                    </li>
-                  </ul>
-                  <div className="links-container p-0" />
-                  <div className="link-wrapper text-center">
-                    <h5>
-                      <span><a href="#">Learn more about Enthrive,</a></span>
-                      or <span><a onClick ={() => {history.push("/enrollment");}}>enroll!</a></span>
-                    </h5>
+                <div className="login-container">
+                  <div className="counseling">
+                    <a className="direct-counseling" href="./../members/enrollment.html">Member Enrollment</a>
                   </div>
                 </div>
               </div>
             </div>
-            {/* End of main content */}
           </div>
-          {/* Start of page content */}
-          {/* Start of Footer */}
-          <footer className="footer">
+        </header>
+        {/* End of Header */}
+        {/* Start of main content */}
+        <div className="container main-content">
+          <div className="row">
+            <div className="col-1 d-lg-block d-none" />
+            <div className="col-lg-10 col-12 hero-container">
+              <h3>Enthrive App</h3>
+              <p className="sub-title">Your mental, emotional, and spiritual wellness have a huge impact on your overall sense of well-being. Only by integrating all three will you discover inner peace and joy!</p>
+            </div>
+            <div className="col-1 d-lg-block d-none" />
+          </div>
+          <div className="row">
+            {/* Step 1 */}
+            <div className="col-12 step-wrapper">
+              <div className="step">
+                {/* Texts wrapper */}
+                <div className="step-text-wrapper">
+                  <h5 className="step-level">1</h5>
+                  <h4 className="step-heading">UNDERSTAND YOUR MOOD AND FEELINGS</h4>
+                  <p className="title-desc">We encourage you to check-in with simple question to understand how you're doing. We connect the dots with your sleep quality and dreams to make specific recommendations on how you can feel better.</p>
+                </div>
+                {/* Image wrapper */}
+                <div className="step-image-wrapper">
+                  <div className="box-container">
+                    <div className="place-holder" />
+                  </div>
+                  <div className="image-container">
+                    <img src="./../assets/images/photo-of-woman-holding-her-head-2536579-768x474.jpg" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Step 2 */}
+            <div className="col-12 step-wrapper">
+              <div className="step">
+                {/* Image wrapper */}
+                <div className="step-image-wrapper second-step-image-wrapper">
+                  <div className="image-container second-image-wrapper">
+                    <img src="./../assets/images/woman-wearing-blue-top-beside-table-1181712-768x512.jpg" alt="image" />
+                  </div>
+                  <div className="box-container second-box-container">
+                    <div className="place-holder" />
+                  </div>
+                </div>
+                {/* Texts wrapper */}
+                <div className="step-text-wrapper">
+                  <h5 className="step-level">2</h5>
+                  <h4 className="step-heading">INSIGHT INTO THE QUALITY OF YOUR SLEEP</h4>
+                  <p className="title-desc">Do you feel rested? Is your mind operating at its full potential? We can monitor the quality of your sleep and correlate it to your sense of well-being.</p>
+                </div>
+              </div>
+            </div>
+            {/* Step 3 */}
+            <div className="col-12 step-wrapper">
+              <div className="step">
+                {/* Texts wrapper */}
+                <div className="step-text-wrapper">
+                  <h5 className="step-level">3</h5>
+                  <h4 className="step-heading">BETTER LIFE CLARITY BY UNDERSTANDING YOUR DREAMS</h4>
+                  <p className="title-desc">We provide tools to capture and analyze your dreams to discover the root cause of stress and anxiety. Learn to resolve these issues instead of just learning to cope.</p>
+                </div>
+                {/* Image wrapper */}
+                <div className="step-image-wrapper">
+                  <div className="image-container">
+                    <img src="./../assets/images/close-up-photo-of-a-woman-listening-to-music-813940-768x512.jpg" alt="image" />
+                  </div>
+                  <div className="box-container">
+                    <div className="place-holder" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Step 4 */}
+            <div className="col-12 step-wrapper">
+              <div className="step">
+                {/* Image wrapper */}
+                <div className="step-image-wrapper second-step-image-wrapper">
+                  <div className="image-container second-image-wrapper">
+                    <img src="./../assets/images/edit-photo-of-woman-using-mobile-phone-3367850-768x592.jpg" alt="image" />
+                  </div>
+                  <div className="box-container second-box-container">
+                    <div className="place-holder" />
+                  </div>
+                </div>
+                {/* Texts wrapper */}
+                <div className="step-text-wrapper">
+                  <h5 className="step-level">4</h5>
+                  <h4 className="step-heading">SUPPORT WHEN YOU NEED IT</h4>
+                  <p className="title-desc">Access a team of people such as counselors, therapists, and life coaches. If you choose, we also have a team who can pray for you, even provide insight into your dreams, or just talk. All of your conversations are completely private and secure.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End of main content */}
+      </div>
+      {/* Start of page content */}
+      {/* Start of Footer */}
+      <footer className="footer">
             <div className="container">
               <div className="row">
                 <div className="col-lg-3 col-md-3 col-sm-12 logo-container">
@@ -124,7 +153,7 @@ function Selfcare() {
                     <li><a onClick ={() => {history.push("/couple");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Couples</a></li>
                     <li><a onClick ={() => {history.push("/employers");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Employers</a></li>
                     <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Mobile App</a></li>
-                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Selfcare</a></li>
+                    <li><a onClick ={() => {history.push("/selfcare");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Selfcare</a></li>
                     <li><a onClick ={() => {history.push("/enrollment");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Member Enrollment</a></li>
                   </ul>
                 </div>
@@ -138,15 +167,13 @@ function Selfcare() {
                       <li><a onClick ={() => {history.push("/anxiety");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}} >Anxiety</a></li>
                       <li><a onClick ={() => {history.push("/panicdisorder");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Panic Attacks</a></li>
                       <li><a onClick ={() => {history.push("/posttraumatic");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>PTSD</a></li>
-                      <li><a onClick ={() => {history.push("/obsessive");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>OCD</a></li>                      
+                      <li><a onClick ={() => {history.push("/obsessive");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>OCD</a></li>
                       <li><a onClick ={() => {history.push("/bipolar");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Bipolar</a></li>
-                      <li><a a onClick ={() => {history.push("/substanceabuse");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Substance Abuse</a></li>
+                      <li><a onClick ={() => {history.push("/substanceabuse");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Substance Abuse</a></li>
                       <li><a onClick ={() => {history.push("/other");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Other</a></li>
                     </ul>
                   </div>
                 </div>
-                {/* Our Company links */}
-             
                 <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
                   <h5 style= {{lineHeight:2,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-5px",color:"#fff",marginLeft:"-3px"}}>Our Company</h5>
                   <ul className="footer-links-list" style={{marginLeft:"-35px",cursor: "pointer"}}>
@@ -155,10 +182,11 @@ function Selfcare() {
                     <li><a onClick ={() => {history.push("/counselors");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Counselors</a></li>
                     {/* <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Careers</a></li> */}
                     {/* <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>FAQ</a></li> */}
-                    <li><a onClick ={() => {history.push("/privacy");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Privacy/HIPAA</a></li>
-                    <li><a onClick ={() => {history.push("/terms");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Terms</a></li>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Privacy/HIPAA</a></li>
+                    <li><a a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Terms</a></li>
                   </ul>
                 </div>
+  
  
                 {/* Copyrights descriptions */}
 
@@ -188,5 +216,5 @@ function Selfcare() {
         </div>
       );
     }
+    export default Mobileapp
  
-  export default Selfcare

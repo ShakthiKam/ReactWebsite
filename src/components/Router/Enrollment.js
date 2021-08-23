@@ -61,7 +61,7 @@ function Enrollment() {
                     <div className="row">
                       <div className="col-12 enrollment-desc">
                         <h2 style={{fontSize: "3rem"}}>Member Enrollment</h2>
-                        <p>Enroll and schedule your first online counseling session.</p>
+                        <p >Enroll and schedule your first online counseling session.</p>
                         <p>Pay monthly to receive regular ongoing counseling.</p>
                         <p>Continue monthly for as long as you need.</p>
                         <div className="hr-line" />
@@ -92,7 +92,7 @@ function Enrollment() {
                       {/* Testimonial content 1 */}
                       <div className="col-md-4 col-sm-12">
                         <div className="testimonial-content">
-                          <p style={{fontSize:"1rem"}}>I’ve been to several other counselors before and you have been the first that I’ve connected with that gave me a sense of hope for change. Thank you!</p>
+                          <p style={{fontSize:"1rem",color:"#394D5C"}}>I’ve been to several other counselors before and you have been the first that I’ve connected with that gave me a sense of hope for change. Thank you!</p>
                         </div> 
                         <div className="testimonial-user">
                           <div className="user-image">
@@ -106,7 +106,7 @@ function Enrollment() {
                       {/* Testimonial content 2 */}
                       <div className="col-md-4 col-sm-12">
                         <div className="testimonial-content">
-                          <p style={{fontSize:"1rem"}}>When I needed that expert “push” you were there to do it. Thank you!</p>
+                          <p style={{fontSize:"1rem",color:"#394D5C"}}>When I needed that expert “push” you were there to do it. Thank you!</p>
                         </div>
                         <div className="testimonial-user">
                           <div className="user-image">
@@ -120,7 +120,7 @@ function Enrollment() {
                       {/* Testimonial content 3 */}
                       <div className="col-md-4 col-sm-12">
                         <div className="testimonial-content">
-                          <p style={{fontSize:"1rem"}}>When I was feeling ‘down and out’ you helped to lift me out of this darkness. The tools that I have gained through counseling with you will stick with me for the rest of my life. Thank you…</p>
+                          <p style={{fontSize:"1rem",color:"#394D5C"}}>When I was feeling ‘down and out’ you helped to lift me out of this darkness. The tools that I have gained through counseling with you will stick with me for the rest of my life. Thank you…</p>
                         </div>
                         <div className="testimonial-user">
                           <div className="user-image">
@@ -151,7 +151,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Lead Online Counselor</h6>
-                            <p style={{fontSize:"1rem"}}>My aim is to provide you the “tune up” for when you find yourself feeling a bit unstable or unsupported. Together we can get you back on the road to thinking clearer, feeling better, and enjoying fulfilling relationships with those you care for.</p>
+                            <p style={{fontSize:"1rem",color:"#394D5C"}}>My aim is to provide you the “tune up” for when you find yourself feeling a bit unstable or unsupported. Together we can get you back on the road to thinking clearer, feeling better, and enjoying fulfilling relationships with those you care for.</p>
                           </div>
                         </div>
                       </div>
@@ -166,7 +166,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Counselor – MDIV, DMIN</h6>
-                            <p style={{fontSize:"1rem"}}>My approach is one of curiosity and hopefully one of compassion. When you come to my office I want to sit with you, mindfully listening to your story, hearing you intentionally with my mind and my heart.</p>
+                            <p style={{fontSize:"1rem",color:"#394D5C"}}>My approach is one of curiosity and hopefully one of compassion. When you come to my office I want to sit with you, mindfully listening to your story, hearing you intentionally with my mind and my heart.</p>
                           </div>
                         </div>
                       </div>
@@ -181,7 +181,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Pastoral Counselor</h6>
-                            <p style={{fontSize:"1rem"}}>Fueled by a passion for character building, life coaching and spiritual rejuvenation, John Young merges spirituality with the practicality of everyday life. His candid and revealing approach engages clients and assists them to pursue a life of integrity, success and happiness.</p>
+                            <p style={{fontSize:"1rem",color:"#394D5C"}}>Fueled by a passion for character building, life coaching and spiritual rejuvenation, John Young merges spirituality with the practicality of everyday life. His candid and revealing approach engages clients and assists them to pursue a life of integrity, success and happiness.</p>
                           </div>
                         </div>
                       </div>
@@ -196,7 +196,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Online Therapist – Ed.D</h6>
-                            <p style={{fontSize:"1rem"}}>I am a psychologist and mental health counselor in my 40th year of providing services to clients in need of help. My areas of specialization are addictions, depression, anxiety, and grief.</p>
+                            <p style={{fontSize:"1rem",color:"#394D5C"}}>I am a psychologist and mental health counselor in my 40th year of providing services to clients in need of help. My areas of specialization are addictions, depression, anxiety, and grief.</p>
                           </div>
                         </div>
                       </div>
@@ -211,8 +211,8 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Life Coach</h6>
-                            <p style={{fontSize:"1rem"}}>On the face of things, you look like you have it all under control but inside you are overwhelmed and trying to pick up the pieces. You are successful but underneath you are burnt out, struggling to see a meaningful path forward. Internally, you know that you cannot continue living your life the way things are.</p>
-                            <p style={{fontSize:"1rem"}}>I understand. I have worked with clients to realize new powerful perspectives and I provide the necessary insights and tools to create a sustainable self and path forward. Before I started my business, I was a very successful music and finance executive working with some of the most well known musicians, analysts and firms on the planet.</p>
+                            <p style={{fontSize:"1rem",color:"#394D5C"}}>On the face of things, you look like you have it all under control but inside you are overwhelmed and trying to pick up the pieces. You are successful but underneath you are burnt out, struggling to see a meaningful path forward. Internally, you know that you cannot continue living your life the way things are.</p>
+                            <p style={{fontSize:"1rem",color:"#394D5C"}}>I understand. I have worked with clients to realize new powerful perspectives and I provide the necessary insights and tools to create a sustainable self and path forward. Before I started my business, I was a very successful music and finance executive working with some of the most well known musicians, analysts and firms on the planet.</p>
                           </div>
                         </div>
                       </div>
@@ -227,7 +227,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Online Therapist – NCP</h6>
-                            <p style={{fontSize:"1rem"}}>I’m an integrative therapist and I see the relationship between you and I as the most important aspect of what we do. I have 5 years of clinical experience in Ireland and the UK helping a variety of people to make their lives more manageable and fulfilling. Whatever is troubling you we can work together to find the right decisions and solutions for you at whatever pace you’re comfortable with.</p>
+                            <p style={{fontSize:"1rem",color:"#394D5C"}}>I’m an integrative therapist and I see the relationship between you and I as the most important aspect of what we do. I have 5 years of clinical experience in Ireland and the UK helping a variety of people to make their lives more manageable and fulfilling. Whatever is troubling you we can work together to find the right decisions and solutions for you at whatever pace you’re comfortable with.</p>
                           </div>
                         </div>
                       </div>
@@ -242,7 +242,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Online Therapist -D. Min.</h6>
-                            <p style={{fontSize:"1rem"}}>I have 18 years experience working with children, couples, individuals and families. Eight years of experience in group counseling stems from that commitment to helping families. Included among relevant counseling experience is previous employment as a college instructor in the departments of Psychology, Early Childhood Education and Religion.</p>
+                            <p style={{fontSize:"1rem",color:"#394D5C"}}>I have 18 years experience working with children, couples, individuals and families. Eight years of experience in group counseling stems from that commitment to helping families. Included among relevant counseling experience is previous employment as a college instructor in the departments of Psychology, Early Childhood Education and Religion.</p>
                           </div>
                         </div>
                       </div>
@@ -257,7 +257,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Online Therapist – LMHC</h6>
-                            <p style={{fontSize:"1rem"}}>My experience working with individuals and groups, along with your openness and honesty, would be a great platform to start working on your personal goals.</p>
+                            <p style={{fontSize:"1rem",color:"#394D5C"}}>My experience working with individuals and groups, along with your openness and honesty, would be a great platform to start working on your personal goals.</p>
                           </div>
                         </div>
                       </div>
@@ -272,7 +272,7 @@ function Enrollment() {
                           </a>
                           <div className="counselors-about">
                             <h6>Online Counselor – D.D.</h6>
-                            <p style={{fontSize:"1rem"}}>I have five years of experience within my field. I am a Vietnam era veteran of the United States Air Force, have worked in the Corporate arena, as a Chief Operations Officer, am well-traveled throughout the US and Europe and am a retired Law Enforcement Agent. I have a Doctorate in Divinity, and I am an ordained minister. I am a mother a grandmother, and I believe I have much I can share with you…all you have to do is have the desire. You are a winner, victorious, prosperous and wonderfully unique, and this year and every year is your year.</p>
+                            <p style={{fontSize:"1rem",color:"#394D5C"}}>I have five years of experience within my field. I am a Vietnam era veteran of the United States Air Force, have worked in the Corporate arena, as a Chief Operations Officer, am well-traveled throughout the US and Europe and am a retired Law Enforcement Agent. I have a Doctorate in Divinity, and I am an ordained minister. I am a mother a grandmother, and I believe I have much I can share with you…all you have to do is have the desire. You are a winner, victorious, prosperous and wonderfully unique, and this year and every year is your year.</p>
                           </div>
                         </div>
                       </div>
@@ -295,9 +295,9 @@ function Enrollment() {
                   <li><a onClick ={() => {history.push("/individual");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Individuals</a></li>
                     <li><a onClick ={() => {history.push("/couple");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Couples</a></li>
                     <li><a onClick ={() => {history.push("/employers");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Employers</a></li>
-                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Mobile App</a></li>
+                    <li><a onClick ={() => {history.push("/mobileapp");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Mobile App</a></li>
                     <li><a onClick ={() => {history.push("/selfcare");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Selfcare</a></li>
-                    <li><a onClick ={() => {history.push("/enrollment");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Member Enrollment</a></li>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Member Enrollment</a></li>
                   </ul>
                 </div>
                 
@@ -310,24 +310,25 @@ function Enrollment() {
                       <li><a onClick ={() => {history.push("/anxiety");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}} >Anxiety</a></li>
                       <li><a onClick ={() => {history.push("/panicdisorder");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Panic Attacks</a></li>
                       <li><a onClick ={() => {history.push("/posttraumatic");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>PTSD</a></li>
-                      <li><a onClick ={() => {history.push("/obsessive");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>OCD</a></li>
+                      <li><a onClick ={() => {history.push("/obsessive");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>OCD</a></li>                      
                       <li><a onClick ={() => {history.push("/bipolar");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Bipolar</a></li>
-                      <li><a style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Substance Abuse</a></li>
+                      <li><a a onClick ={() => {history.push("/substanceabuse");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Substance Abuse</a></li>
                       <li><a onClick ={() => {history.push("/other");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Other</a></li>
                     </ul>
                   </div>
                 </div>
                 {/* Our Company links */}
+             
                 <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
                   <h5 style= {{lineHeight:2,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-5px",color:"#fff",marginLeft:"-3px"}}>Our Company</h5>
                   <ul className="footer-links-list" style={{marginLeft:"-35px",cursor: "pointer"}}>
-                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>About Us</a></li>
-                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>How it Works</a></li>
-                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Counselors</a></li>
+                    <li><a onClick ={() => {history.push("/aboutus");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>About Us</a></li>
+                    <li><a onClick ={() => {history.push("/howitworks");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>How it Works</a></li>
+                    <li><a onClick ={() => {history.push("/counselors");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Counselors</a></li>
                     {/* <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Careers</a></li> */}
                     {/* <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>FAQ</a></li> */}
                     <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Privacy/HIPAA</a></li>
-                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Terms</a></li>
+                    <li><a a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Terms</a></li>
                   </ul>
                 </div>
                       {/* Copyrights descriptions */}

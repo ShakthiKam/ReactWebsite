@@ -60,7 +60,7 @@
 
 .months-wrapper .month {
   display: inline-block;
-  float: left;
+  /* float: left; */
   width: 25%;
   text-align: center;
   cursor: pointer;

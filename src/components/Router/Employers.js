@@ -95,7 +95,7 @@ function Employers() {
               <div className="row">
                 <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
                 <div className="col-lg-4 col-md-6 col-8">
-                  <div className="linear-btn-container" style={{height:"10px"}}>
+                  <div className="linear-btn-container" style={{height:"5px"}}>
                     <a onClick ={() => {history.push("/employerprogram");}} className="linear-btn" style={{textDecoration:"none",cursor:"pointer",lineHeight: 1.5}}>Continue</a>
                   </div>
                 </div>

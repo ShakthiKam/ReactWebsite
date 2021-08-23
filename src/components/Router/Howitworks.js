@@ -1,116 +1,106 @@
+
 import React from 'react'; 
 import {useHistory} from "react-router-dom";
-import './Selfcare.css'
-import "./Header.css"
-import "./Global.css"
-import "./Enrollment.css"
 import logo from "../images/logo.png"
 
-function Selfcare() {
-    let history = useHistory(); 
-      return (
-        <div>
-          <meta charSet="UTF-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          {/* browser icon */}
-          <link rel="shortcut icon" type="image/jpg" href="./../assets/images/wellness-icon.ico" />
-          {/* Bootstrap Link */}
-          <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css" />
-          {/* Custom CSS Link */}
-          <link rel="stylesheet" href="./../assets/css/app.css" />
-          <title>Self Care</title>
-          {/* Start of page content */}
-          <div id="selfcare-page">
-            {/* Star of Header */}
-            <header className="header blue-header">
-              <div className="container">
-                <div className="row">
-                  <div className="col-12 header-content">
-                    <div className="logo-container">
-                      <a className="logo" onClick ={() => {history.push("/homefile");}}>
-                        <span>Wellness</span>
-                      </a>
-                    </div>
-                    <div className="login-container">
-                      <div className="counseling">
-                        <a className="direct-counseling" onClick ={() => {history.push("/enrollment");}}>Member Enrollment</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+function Howitworks() {
+
+    
+      let history = useHistory(); 
+
+return (
+    <div>
+      <meta charSet="UTF-8" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      {/* browser icon */}
+      <link rel="shortcut icon" type="image/jpg" href="./../assets/images/wellness-icon.ico" />
+      {/* Bootstrap Link */}
+      <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css" />
+      {/* Custom CSS Link */}
+      <link rel="stylesheet" href="./../assets/css/app.css" />
+      <title>How it Works</title>
+      {/* Start of page content */}
+      <div id="aboutapp-page" className="page-wrapper blue-page">
+        {/* Star of Return-link */}
+        <div className="container">
+          <div className="row">
+            <div className="col-12 return-link-container">
+              <a className="return-link white-text" href="#" onclick="history.go(-1)">
+                <i className="fas fa-chevron-left" />
+              </a>
+              <h4 className="sub-title">How it works</h4>
+            </div>
+          </div>
+        </div>
+        {/* End of Return-link */}
+        {/* Start of main content */}
+        <div className="container main-content">
+          <div className="row">
+            <div className="col-md-4 counseling">
+              <h5>Online Counseling</h5>
+              <p>Online counseling usually takes place via a private and secure online video call. You can also choose to meet by phone, or through text messaging.
+              </p>
+            </div>
+            <div className="col-md-4 counseling">
+              <h5>Get Well, Stay Well</h5>
+              <p>Work with your counselors, take advantage of different specialists, and use our self care tools in our mobile wellness app, included in all of our subscription plans.
+              </p>
+            </div>
+            <div className="col-md-4 counseling">
+              <h5>Start for Free</h5>
+              <p>Begin with a free session to find the best counselors for you. Then, pay for individual sessions, or sign up for one of our monthly subscription plans.
+              </p>
+            </div>
+          </div>
+          <div className="row clinets-container">
+            <div className="col-md-6 clients">
+              <div className="about-client">
+                <p>- Actual testimonial</p>
+                <p>- How the counselor helped</p>
+                <p>- Specific to user selection</p>
               </div>
-            </header>
-            {/* End of Header */}
-            {/* Start of main content */}
-            <div className="container main-content">
-              <div className="row">
-                {/* Texts-container */}
-                <div className="col-12 text-center">
-                  <h2 className="hero-title black-text" style={{fontSize: "3rem", fontWeight: 600,marginLeft:"5px"}} >Self-Care Resources</h2>
+              <div className="client-profile">
+                <div className="img-container">
+                  <img src="./../assets/images/client-1-img.png" alt="client photo" />
                 </div>
-                <div className="col-lg-3 col-sm-2 d-sm-block d-none" />
-                <div className="col-lg-6 col-sm-8 col-xs-12 text-center">
-                  <p className="title-desc black-text">From our dedicated team of professional
-                    therapists, life coaches, diet and fitness
-                    experts, and spiritual advisors.</p>
-                </div>
-                <div className="col-lg-3 col-sm-2 d-sm-block d-none" />
-              </div>  
-              <div className="row">
-                {/* Buttons Wraper */}
-                <div className="col-12 selfcare-links-wrapper">
-                  {/* Links container 1 */}
-                  <ul className="links-container">
-                    <li className="links-list">
-                      <a className="links"  onClick ={() => {history.push("/selfcareactivities");}}>Feeling Down</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Anxiety</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Motivation</a>
-                    </li>
-                  </ul>
-                  {/* Links container 2 */}
-                  <ul className="links-container">
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Sleep</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Fitness</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Diet</a>
-                    </li>
-                  </ul>
-                  {/* Links container 3 */}
-                  <ul className="links-container">
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Relationships</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Career</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Mindfullness</a>
-                    </li>
-                  </ul>
-                  <div className="links-container p-0" />
-                  <div className="link-wrapper text-center">
-                    <h5>
-                      <span><a href="#">Learn more about Enthrive,</a></span>
-                      or <span><a onClick ={() => {history.push("/enrollment");}}>enroll!</a></span>
-                    </h5>
-                  </div>
-                </div>
+                <p>Client</p>
+                <p>Testimonial</p>
               </div>
             </div>
-            {/* End of main content */}
+            <div className="col-md-6 clients">
+              <div className="about-client">
+                <p>- Actual testimonial</p>
+                <p>- How the counselor helped</p>
+                <p>- Specific to user selection</p>
+              </div>
+              <div className="client-profile">
+                <div className="img-container">
+                  <img src="./../assets/images/client-img.png" alt="client photo" />
+                </div>
+                <p>Client</p>
+                <p>Testimonial</p>
+              </div>
+            </div>
           </div>
-          {/* Start of page content */}
-          {/* Start of Footer */}
-          <footer className="footer">
+          {/* Start of large bottom button */}
+          <div className="row">
+            <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
+            <div className="col-lg-4 col-md-6 col-8">
+              <div className="linear-btn-container">
+                <a href="./../individuals/schedule.html" className="linear-btn">Continue</a>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-3 col-2" />
+          </div>
+          {/* End of large bottom button */}
+        </div>
+        {/* End of main content */}
+      </div>
+      {/* Start of page content */}
+      {/* Start of Footer */}
+      <footer className="footer">
             <div className="container">
               <div className="row">
                 <div className="col-lg-3 col-md-3 col-sm-12 logo-container">
@@ -124,7 +114,7 @@ function Selfcare() {
                     <li><a onClick ={() => {history.push("/couple");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Couples</a></li>
                     <li><a onClick ={() => {history.push("/employers");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Employers</a></li>
                     <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Mobile App</a></li>
-                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Selfcare</a></li>
+                    <li><a onClick ={() => {history.push("/selfcare");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Selfcare</a></li>
                     <li><a onClick ={() => {history.push("/enrollment");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Member Enrollment</a></li>
                   </ul>
                 </div>
@@ -151,14 +141,15 @@ function Selfcare() {
                   <h5 style= {{lineHeight:2,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-5px",color:"#fff",marginLeft:"-3px"}}>Our Company</h5>
                   <ul className="footer-links-list" style={{marginLeft:"-35px",cursor: "pointer"}}>
                     <li><a  onClick ={() => {history.push("/aboutus");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>About Us</a></li>
-                    <li><a onClick ={() => {history.push("/howitworks");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>How it Works</a></li>
+                    <li><a href="#"  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>How it Works</a></li>
                     <li><a onClick ={() => {history.push("/counselors");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Counselors</a></li>
                     {/* <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Careers</a></li> */}
                     {/* <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>FAQ</a></li> */}
-                    <li><a onClick ={() => {history.push("/privacy");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Privacy/HIPAA</a></li>
-                    <li><a onClick ={() => {history.push("/terms");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Terms</a></li>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Privacy/HIPAA</a></li>
+                    <li><a a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Terms</a></li>
                   </ul>
                 </div>
+  
  
                 {/* Copyrights descriptions */}
 
@@ -188,5 +179,4 @@ function Selfcare() {
         </div>
       );
     }
- 
-  export default Selfcare
+ export default Howitworks

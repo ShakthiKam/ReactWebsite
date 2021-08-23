@@ -1,215 +1,352 @@
-#schedule-page{
-    background: #f3f3f3;
-    width: 100%;
-    min-height: 100vh;
+
+#schedule-page .progress-bar .progress {
+  width: 60%;
+  -webkit-animation: progressSeventy 4s;
+          animation: progressSeventy 4s;
 }
-    
-      .progress{
-        width: 60%;
-        animation: progressSeventy 4s; 
-      }
-      .member-progress{
-        width: 66%;
-        animation: sixthySix 4s;
-      }
-  #scheduling-wrapper{
-    display: flex;
-    justify-content: space-between;
-  
-    align-items: flex-start;
-  }
-   
-      @media (max-width:767.98px) {
-        .calendar-container{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        background-color: rgba(0, 0, 0, .7);
-        z-index: 99;
-        display: none;
-      }
-    }
-    @media (max-width: 767.98px) {
-      .calendar-flex{
-        background-color: white;
-        border-radius: 6px;
-        padding: 1em;
-        box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.75);
 
-    
-          background-color: rgb(197, 197, 197);
-          border-radius: 6px;
-          padding: 1em;
-          margin-top: 3em;
-          box-shadow: none;
-        }
-      }
-  
-        .btn-wrapper{
-          display: none;
-          background-color: rgb(197, 197, 197);
-          padding-top: 1em;
-          border-radius: 0 0 6px 6px;
+#schedule-page .progress-bar .member-progress {
+  width: 66%;
+  -webkit-animation: sixthySix 4s;
+          animation: sixthySix 4s;
+}
 
-            display: block;
-          }
-  
-          #close-calendar{
-            border: 1.5px solid blue;
-            border-radius: 6px;
-            background-color: blue;
-            font-size: 1.125rem;
-            color: white;
-            padding: .2em 1em;
-            transition:  all .3s ease;
-          }
-          .hover{
-              color: blue;
-              background-color: transparent;
-            }
-            @media (max-width: 767.98px) {
-         .calendar-wrapper{
-          color: #394d5c;
-        
-
-            background-color: white;
-            border-radius: 6px;
-            padding: 1em;
-            box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.75);
-          }
-        }
-        
-   @media (max-width: 767.98px) {
-    .pick-date-wrapper{
-      display: none;
-      display: block;
-      padding-bottom: 2em;
-      }
-    }
-  
-      #show-calendar{
-        border: 1.5px solid #4ca9e0;
-        border-radius: 6px;
-        background-color:#fff;
-        color:#4ca9e0;
-        padding: .3em 1em;
-      }
-    
-  
-    .availabelity{
-      width: 100%;
-      background-color: #fff;
-      border-radius: 6px;
-      padding: 1em;
-      box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.75);
-    }
-  
-      .day-time-wrapper{
-        padding: 1em 0;
-        border-bottom: 1px solid gray;
-      }
-        .last-child{
-          border-bottom: none;
-        }
-  
-        .day-time{
-          display: flex;
+#scheduling-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
           align-items: flex-start;
-        }
-          .icons-container{
-            margin-right: 0.75em;
-          }
-            .icon{
-              font-size: 1.6rem;
-              color: orange;
-            }
-            .time-container.h5{
-          
-              margin-bottom: .4px;
-            }
-            p{
-              color: #696969;
-              margin: 0;
-            }
-        
-  
-        .availablity-times{
-          padding: 2em 0 .5em 0;
-        }
-  
-          .availablity-btn{
-            border: 1.5px solid #4ca9e0;
-            border-radius: 6px;
-            background-color: #4ca9e0;
-            color: white;
-            width: 124px;
-            padding: .4em 1em;
-            margin-right: .3em;
-            margin-bottom: .5em;
-            transition: all .3s ease;
-          }
-          .active{
-            background-color: transparent;
-            color: #4ca9e0;
-          }
-       
- 
-  
-      .shedule-bnt-wrapper{
-        padding-top: 2em;
-        padding-bottom: 1em;
-      }
-        button{
-          border: 1.5px solid #4ca9e0;
-          border-radius: 30px;
-          background-color: #4ca9e0;
-          color: white;
-          font-size: 1.25rem;
-          padding: .3em 1.4em;
-          transition: all .3s ease;
-        }
-          .hover{
-            background-color: transparent;
-            color: #4ca9e0  ;
-          }
-    
-  
-    .displa-calendar{
-      visibility: visible;
-      opacity: 1;
-    }
+}
 
-  
-  @keyframes progressSeventy {
-    0%   { width: 40%; background-color: #9acf86;}
-    100% { width: 60%; background-color: green; }
-  }
-  
-  @keyframes sixthySix{
-    0%   { width: 33%; background-color: #9acf86;}
-    100% { width: 66%; background-color: green; }
-  }
-  .black-text {
-    color: #37383d;
+#scheduling-wrapper .calendar-container .calendar-flex {
+  background-color: #fff;;
+  border-radius: 6px;
+  padding: 1em;
+  -webkit-box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.75);;
+          box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.75);;
 }
-.main-content {
-  padding-top: 2em;
-  padding-bottom: 4em;
+
+#scheduling-wrapper .calendar-container .calendar-flex .btn-wrapper {
+  display: none;
+  background-color: transparent;
+  margin-top: .5em;
+  padding-top: 1em;
+  border-radius: 0 0 6px 6px;
 }
+
+#scheduling-wrapper .calendar-container .calendar-flex .btn-wrapper #close-calendar {
+  border: 1.5px solid #4ca9e0;
+  border-radius: 6px;
+  background-color: #4ca9e0;
+  font-size: 1.125rem;
+  color: #fff;;
+  padding: .2em 1em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#scheduling-wrapper .calendar-container .calendar-flex .btn-wrapper #close-calendar:hover {
+  color:  #4ca9e0;
+  background-color: transparent;
+}
+
+#scheduling-wrapper .calendar-container .calendar-flex .calendar-wrapper {
+  position: relative;
+  color:  #394d5c;
+}
+
+#scheduling-wrapper .pick-date-wrapper {
+  display: none;
+  padding-bottom: 2em;
+}
+
+#scheduling-wrapper .pick-date-wrapper #show-calendar {
+  border: 1.5px solid #4ca9e0;
+  border-radius: 6px;
+  background-color: #fff;;
+  color: #4ca9e0;
+  padding: .3em 1em;
+}
+
+#scheduling-wrapper .availabelity {
+  width: 100%;
+  background-color: #fff;;
+  border-radius: 6px;
+  padding: 1em;
+  -webkit-box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.75);
+          box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.75);
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper {
+  padding: 1em 0;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper:last-child {
+  border-bottom: none;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .day-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .day-time .icons-container {
+  margin-right: 0.75em;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .day-time .icons-container .icon {
+  font-size: 1.6rem;
+  color:orange !important;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .day-time .time-container h5 {
+  margin-bottom: .4px;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .day-time .time-container p {
+  color: #696969;
+  margin: 0;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .availablity-times {
+  padding: 2em 0 .5em 0;
+}
+
 #scheduling-wrapper .availabelity .day-time-wrapper .availablity-times .availablity-btn {
   border: 1.5px solid #4ca9e0;
   border-radius: 6px;
   background-color: #4ca9e0;
-  color: #fff;
+  color: #fff;;
   width: 124px;
   padding: .4em 1em;
   margin-right: .3em;
   margin-bottom: .5em;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .availablity-times .availablity-btn:hover {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+#scheduling-wrapper .availabelity .day-time-wrapper .availablity-times .active {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+#scheduling-wrapper .availabelity .shedule-bnt-wrapper {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+#scheduling-wrapper .availabelity .shedule-bnt-wrapper button {
+  border: 1.5px solid #4ca9e0;
+  border-radius: 30px;
+  background-color: #4ca9e0;
+  color: #fff;;
+  font-size: 1.25rem;
+  padding: .3em 1.4em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#scheduling-wrapper .availabelity .shedule-bnt-wrapper button:hover {
+  background-color: transparent;
+  color: #4ca9e0;
+}
+
+@media (max-width: 767.98px) {
+  #scheduling-wrapper .calendar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  #scheduling-wrapper .calendar-container .calendar-flex {
+    background-color: transparent;
+    border-radius: 6px;
+    margin-top: 3em;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #scheduling-wrapper .calendar-container .calendar-flex .btn-wrapper {
+    display: block;
+  }
+  #scheduling-wrapper .calendar-container .calendar-flex .calendar-wrapper {
+    border: none;
+    background-color: #fff;;
+    border-radius: 6px;
+    padding: 1em;
+    -webkit-box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 8px -4px rgba(0,0,0,0.75);
+  }
+  #scheduling-wrapper .calendar-container .calendar-flex .calendar-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+  }
+  #scheduling-wrapper .pick-date-wrapper {
+    display: block;
+  }
+}
+
+/* Class for JS */
+#scheduling-wrapper .display-calendar {
+  visibility: visible;
+  opacity: 1;
+}
+
+@-webkit-keyframes progressSeventy {
+  0% {
+    width: 40%;
+    background-color: #9acf86;
+  }
+  100% {
+    width: 60%;
+    background-color: #43b14b;
+  }
+}
+
+@keyframes progressSeventy {
+  0% {  
+    width: 40%;
+    background-color: #9acf86;
+  }
+  100% {
+    width: 60%;
+    background-color: #43b14b;
+  }
+}
+
+@-webkit-keyframes sixthySix {
+  0% {
+    width: 33%;
+    background-color: #9acf86;
+  }
+  100% {
+    width: 66%;
+    background-color: #43b14b;
+  }
+}
+
+@keyframes sixthySix {
+  0% {
+    width: 33%;
+    background-color: #9acf86;
+  }
+  100% {
+    width: 66%;
+    background-color: #43b14b;
+  }
+}
+.black-text {
+  color: #37383d;
+}
+/* button {
+  border: none;
+  display: block;
+  border: 1.5px solid transparent;
+  background-color: green;
+  width: 42% !important;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 400;
+  padding: .4em 1em;
+  margin: 0 .75em;
+} */
+#scheduling-wrapper .availabelity .day-time-wrapper .availablity-times .availablity-btn {
+  border: 1.5px solid #4ca9e0;
+  border-radius: 6px;
+  background-color: #4ca9e0;
+  color: #fff;
+  width: 120px;
+  height:40px;
+  padding: .4em 1em;
+  margin-right: -.1em;
+  margin-bottom: .5em;
+  transition: all 0.3s ease;
+
+  
+} 
+#scheduling-wrapper .availabelity .shedule-bnt-wrapper button {
+  border: 1.5px solid #4ca9e0;
+  border-radius: 30px;
+  background-color: #4ca9e0;
+  color: #fff;
+  font-size: 1.25rem !important;
+  width: 270px;
+ 
+  padding: 0.3em 1.4em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.prev-button, .next-button {
+  background: transparent;
+  border: none;
+  padding: 10px;
+}
+.svg-inline--fa {
+  display: inline-block;
+  display: var(--fa-display,inline-block);
+  height: 1em;
+  padding-right: 4px !important;
+  overflow: visible;
+  vertical-align: -.125em;
+  color: inherit;
+  color: var(--fa-color,inherit);
+}
+.prev-button, .next-button {
+  background: transparent;
+  border: none;
+  padding: 10px;
+}
+
+.buttons-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
 }

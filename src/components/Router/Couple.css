@@ -11,3 +11,8 @@
 .p{
     margin-left: 100px;
 }
+.linear-btn-container .linear-btn {
+    font-size: 1.25rem !important;
+    padding: 4px 20px !important;
+   
+  }

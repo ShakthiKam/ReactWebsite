@@ -1,116 +1,125 @@
 import React from 'react'; 
 import {useHistory} from "react-router-dom";
-import './Selfcare.css'
-import "./Header.css"
-import "./Global.css"
-import "./Enrollment.css"
 import logo from "../images/logo.png"
 
-function Selfcare() {
-    let history = useHistory(); 
-      return (
-        <div>
-          <meta charSet="UTF-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          {/* browser icon */}
-          <link rel="shortcut icon" type="image/jpg" href="./../assets/images/wellness-icon.ico" />
-          {/* Bootstrap Link */}
-          <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css" />
-          {/* Custom CSS Link */}
-          <link rel="stylesheet" href="./../assets/css/app.css" />
-          <title>Self Care</title>
-          {/* Start of page content */}
-          <div id="selfcare-page">
-            {/* Star of Header */}
-            <header className="header blue-header">
-              <div className="container">
-                <div className="row">
-                  <div className="col-12 header-content">
-                    <div className="logo-container">
-                      <a className="logo" onClick ={() => {history.push("/homefile");}}>
-                        <span>Wellness</span>
-                      </a>
-                    </div>
-                    <div className="login-container">
-                      <div className="counseling">
-                        <a className="direct-counseling" onClick ={() => {history.push("/enrollment");}}>Member Enrollment</a>
-                      </div>
-                    </div>
-                  </div>
+
+function Substanceabuse() {
+
+    
+      let history = useHistory(); 
+      console.log(history, "ddddd")
+return (
+    <div>
+      <meta charSet="UTF-8" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      {/* browser icon */}
+      <link rel="shortcut icon" type="image/jpg" href="./../assets/images/wellness-icon.ico" />
+      {/* Bootstrap Link */}
+      <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css" />
+      {/* Custom CSS Link */}
+      <link rel="stylesheet" href="./../assets/css/app.css" />
+      <title>Substance Abuse</title>
+      {/* Start of page content */}
+      <div className="page-wrapper blue-page">
+        {/* Star of Header */}
+        <header className="header blue-header">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 header-content">
+                <div className="logo-container">
+                  <a className="logo" href="./../index.html">
+                    <span>Wellness</span>
+                  </a>
                 </div>
-              </div>
-            </header>
-            {/* End of Header */}
-            {/* Start of main content */}
-            <div className="container main-content">
-              <div className="row">
-                {/* Texts-container */}
-                <div className="col-12 text-center">
-                  <h2 className="hero-title black-text" style={{fontSize: "3rem", fontWeight: 600,marginLeft:"5px"}} >Self-Care Resources</h2>
-                </div>
-                <div className="col-lg-3 col-sm-2 d-sm-block d-none" />
-                <div className="col-lg-6 col-sm-8 col-xs-12 text-center">
-                  <p className="title-desc black-text">From our dedicated team of professional
-                    therapists, life coaches, diet and fitness
-                    experts, and spiritual advisors.</p>
-                </div>
-                <div className="col-lg-3 col-sm-2 d-sm-block d-none" />
-              </div>  
-              <div className="row">
-                {/* Buttons Wraper */}
-                <div className="col-12 selfcare-links-wrapper">
-                  {/* Links container 1 */}
-                  <ul className="links-container">
-                    <li className="links-list">
-                      <a className="links"  onClick ={() => {history.push("/selfcareactivities");}}>Feeling Down</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Anxiety</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Motivation</a>
-                    </li>
-                  </ul>
-                  {/* Links container 2 */}
-                  <ul className="links-container">
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Sleep</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Fitness</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Diet</a>
-                    </li>
-                  </ul>
-                  {/* Links container 3 */}
-                  <ul className="links-container">
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Relationships</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Career</a>
-                    </li>
-                    <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Mindfullness</a>
-                    </li>
-                  </ul>
-                  <div className="links-container p-0" />
-                  <div className="link-wrapper text-center">
-                    <h5>
-                      <span><a href="#">Learn more about Enthrive,</a></span>
-                      or <span><a onClick ={() => {history.push("/enrollment");}}>enroll!</a></span>
-                    </h5>
+                <div className="login-container">
+                  <div className="counseling">
+                    <a className="direct-counseling" href="./../members/enrollment.html">Member Enrollment</a>
                   </div>
                 </div>
               </div>
             </div>
-            {/* End of main content */}
           </div>
-          {/* Start of page content */}
-          {/* Start of Footer */}
-          <footer className="footer">
+        </header>
+        {/* End of Header */}
+        {/* Start of main content */}
+        <div className="container main-content">
+          <div className="row">
+            {/* Texts-container */}
+            <div className="col-12">
+              <h4 className="text-center hero-title">Substance Abuse Disorder</h4>
+              <p className="title-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing commodo elit at imperdiet dui. Ultricies mi eget mauris pharetra et ultrices neque. Pulvinar etiam non quam lacus suspendisse faucibus interdum. Vivamus at augue eget arcu dictum varius duis at. Tristique senectus et netus et malesuada fames ac turpis egestas. Duis ultricies lacus sed turpis tincidunt id. Aliquam vestibulum morbi blandit cursus. Nam libero justo laoreet sit amet cursus sit amet dictum. Tempus quam pellentesque nec nam aliquam sem et. Molestie nunc non blandit massa enim nec dui nunc. Neque laoreet suspendisse interdum consectetur libero id.</p>
+              <p className="title-desc">Amet volutpat consequat mauris nunc congue nisi vitae. Enim diam vulputate ut pharetra sit. Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Nulla facilisi cras fermentum odio eu. Tellus pellentesque eu tincidunt tortor aliquam nulla. Sollicitudin aliquam ultrices sagittis orci a scelerisque. Vitae justo eget magna fermentum iaculis eu non diam phasellus. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis. Tincidunt ornare massa eget egestas purus viverra. Ultrices vitae auctor eu augue ut lectus. Duis at tellus at urna. Sapien eget mi proin sed. At consectetur lorem donec massa sapien faucibus. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Magna etiam tempor orci eu lobortis elementum nibh tellus. Tellus in metus vulputate eu scelerisque. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit. Morbi tincidunt augue interdum velit.</p>
+            </div>
+          </div>  
+          <div className="row">
+            <div className="col-12">
+              <h5 className="text-center">Self-Care Activities</h5>
+              <div className="hr-line" />
+              <div className="condition-cards">
+                {/* Card 1 */}
+                <div className="activity-cards">
+                  <div className="card-image">
+                    <img src="./../assets/images/anxiety.png" alt="image" />
+                  </div>
+                  <div className="card-texts">
+                    <h6>Matt: coping techniques foranxiety.</h6>
+                  </div>
+                  <div className="cards-audio">
+                    <audio src="./../assets/images/wellness.mp3" controls controlslist="nodownload">
+                      Your browser does not support the
+                      <code>audio</code> element.
+                    </audio>
+                  </div>
+                </div>
+                {/* Card 2 */}
+                <div className="activity-cards">
+                  <div className="card-image">
+                    <video className="img-fluid" src="./../assets/images/wellness.mp4" controls controlslist="nodownload" />
+                  </div>
+                  <div className="card-texts">
+                    <h6>Carlo: the five major types of anxiety disorders.</h6>
+                  </div>
+                </div>
+                {/* Card 3 */}
+                <div className="activity-cards">
+                  <div className="card-image">
+                    <img src="./../assets/images/quite-anxiety.png" alt="image" />
+                  </div>
+                  <div className="card-texts">
+                    <h6>Exercise: practice the counting technique to quite an anxiety attack</h6>
+                  </div>
+                  <div className="card-links text-center">
+                    <a className="links" href="#">
+                      Try it 
+                      <span className="arrow-icon"><i className="far fa-arrow-right" /></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center mb-2">
+                <a className="title-desc self-care-link" href="./../self-care/self-care.html">Explore more self-care activities here</a>
+              </div>
+              <div className="hr-line" />
+            </div>
+          </div>
+          {/* Start of large bottom button */}
+          <div className="row">
+            <div className="col-lg-3 col-md-2 col-sm-1 d-none d-sm-block" />
+            <div className="col-lg-6 col-md-8 col-sm-10 col-12">
+              <div className="linear-btn-container condition-btn-lg">
+                <a className="linear-btn condition-link" href="./../individuals/schedule.html">Get help with a free consultation</a>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-2 col-sm-1 d-none d-sm-block" />
+          </div>
+          {/* End of large bottom button */}
+        </div>
+        {/* End of main content */}
+      </div>
+      {/* Start of page content */}
+      {/* Start of Footer */}
+      <footer className="footer">
             <div className="container">
               <div className="row">
                 <div className="col-lg-3 col-md-3 col-sm-12 logo-container">
@@ -124,7 +133,7 @@ function Selfcare() {
                     <li><a onClick ={() => {history.push("/couple");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Couples</a></li>
                     <li><a onClick ={() => {history.push("/employers");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Employers</a></li>
                     <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Mobile App</a></li>
-                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Selfcare</a></li>
+                    <li><a onClick ={() => {history.push("/selfcare");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Selfcare</a></li>
                     <li><a onClick ={() => {history.push("/enrollment");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>Member Enrollment</a></li>
                   </ul>
                 </div>
@@ -140,7 +149,7 @@ function Selfcare() {
                       <li><a onClick ={() => {history.push("/posttraumatic");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>PTSD</a></li>
                       <li><a onClick ={() => {history.push("/obsessive");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>OCD</a></li>                      
                       <li><a onClick ={() => {history.push("/bipolar");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Bipolar</a></li>
-                      <li><a a onClick ={() => {history.push("/substanceabuse");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Substance Abuse</a></li>
+                      <li><a href="#"  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Substance Abuse</a></li>
                       <li><a onClick ={() => {history.push("/other");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Other</a></li>
                     </ul>
                   </div>
@@ -155,8 +164,8 @@ function Selfcare() {
                     <li><a onClick ={() => {history.push("/counselors");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Counselors</a></li>
                     {/* <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Careers</a></li> */}
                     {/* <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>FAQ</a></li> */}
-                    <li><a onClick ={() => {history.push("/privacy");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Privacy/HIPAA</a></li>
-                    <li><a onClick ={() => {history.push("/terms");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Terms</a></li>
+                    <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Privacy/HIPAA</a></li>
+                    <li><a a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Terms</a></li>
                   </ul>
                 </div>
  
@@ -189,4 +198,4 @@ function Selfcare() {
       );
     }
  
-  export default Selfcare
+export default Substanceabuse

@@ -25,6 +25,12 @@ import Bipolar from "./components/Router/bipolar";
 import Other from "./components/Router/Other";
 import Employerschedule from "./components/Router/Employerschedule"
 import Employerprogram from "./components/Router/Employerprogram"
+import Obsessive from "./components/Router/Obsessive";
+import Mobileapp from "./components/Router/Mobileapp";
+import Substanceabuse from "./components/Router/Sustanceabuse"
+import Aboutus from "./components/Router/Aboutus"
+import Howitworks from "./components/Router/Howitworks";
+import Counselors from "./components/Router/Counselors";
 
 
 
@@ -57,7 +63,12 @@ function App() {
      <Route exact path={"/employerschedule"} component={Employerschedule}/>
      <Route exact path={"/emailconfirmation"} component={Emailconfirmation}/>
      <Route exact path={"/employerprogram"} component={Employerprogram}/>
- 
+     <Route exact path={"/obsessive"} component={Obsessive}/>
+     <Route exact path={"/mobileapp"} component={Mobileapp}/> 
+     <Route exact path={"/substanceabuse"} component={Substanceabuse}/>
+     <Route exact path={"/aboutus"} component={Aboutus}/>
+     <Route exact path={"/howitworks"} component={Howitworks}/>
+     <Route exact path={"/counselors"} component={Counselors}/>
 
    </Switch>
 
