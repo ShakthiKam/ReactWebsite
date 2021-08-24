@@ -1,8 +1,5 @@
 import React from 'react'; 
 import {useHistory} from "react-router-dom";
-// import "./Home.css"
-// import "./Header.css"
-// import "./Footer.css"
 import "./bootstrap.min.css"
 import "./Global.css"
 import "./Emailconfirmation.css"
@@ -27,7 +24,7 @@ function Emailconfirmation() {
       <link rel="stylesheet" href="./../assets/css/app.css" />
       <title>Confirmation</title>
       {/* Start of page content */}
-      <div id="email-confirm-page">
+      <div id="email-confirm-page" className="page-wrapper dark-white-page">
         <div className="progress-bar">
           <div className="progress" />
         </div>
@@ -36,9 +33,10 @@ function Emailconfirmation() {
           <div className="row">
             <div className="col-12 return-link-container">
               <a className="return-link black-text" href="#" onclick="history.go(-1)">
-                <i className="fas fa-chevron-left" />
+              <svg class="svg-inline--fa fa-chevron-left fa-w-10" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M243.658 43.114C227.69 27.834 202.362 28.365 187.096 44.364L11.098 228.356C-3.699 243.824 -3.699 268.198 11.098 283.666L187.096 467.657C194.955 475.875 205.471 480 216.002 480C225.94 480 235.908 476.313 243.658 468.907C259.611 453.626 260.174 428.315 244.908 412.347L95.363 256.011L244.908 99.674C260.174 83.706 259.611 58.395 243.658 43.114Z"></path></svg>
               </a>
-              <h4 className="sub-title black-text">Email confirmation</h4>
+              <h4 className="sub-title black-text" style={{fontSize: "2rem",fontWeight: 500}}
+>Email confirmation</h4>
             </div>
           </div>
         </div>
@@ -55,8 +53,9 @@ function Emailconfirmation() {
                   <div className="form-group">
                     <div className="user-name-wrapper">
                       <div className="input-group">
-                        <span className="input-group-text"><i className="fal fa-user-circle" /></span>
+                        <span className="input-group-text">  </span>
                         <input type="text" name="first-name" id="first-name" placeholder="First name" required />
+                      
                       </div>
                       <div className="input-group">
                         <input type="text" name="last-name" placeholder="Last name" required />
@@ -77,7 +76,7 @@ function Emailconfirmation() {
                       <span className="input-group-text"><i className="fal fa-phone-alt phone-icon" /></span>
                       <input type="tel" name="phone-number" placeholder="Telephone" />
                     </div>
-                    <div className="textarea-container">
+                    <div className="textarea-container" style={{fontSize: "1.125rem"}}>
                       <textarea name="message" cols={100} rows={6} placeholder="Your story. 
 What would you like your counselor to know
 for your scheduled consultation?" defaultValue={""} />
@@ -89,8 +88,9 @@ for your scheduled consultation?" defaultValue={""} />
                   <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
                   <div className="col-lg-4 col-md-6 col-8">
                     <div className="linear-btn-container">
-                      <p className="mb-4 form-text">If you don't see an email within a few minutes, be sure to check your spam folder</p>
-                      <button  style={{marginLeft:"5px",backgroundColor:"#d7e0e9a6"}} type="button" className="linear-btn" onClick ={() => {history.push("/confirm");}}>Continue</button></div>
+                      <p className="mb-4 form-text">If you don't see an email within a few minutes, be sure to check your spam folder.</p>
+                      <button type="button" className="linear-btn blue-btn" onclick="window.location= 'confirm.html'">Confirm</button>
+                    </div>
                   </div>
                   <div className="col-lg-4 col-md-3 col-2" />
                 </div>
@@ -106,7 +106,5 @@ for your scheduled consultation?" defaultValue={""} />
       {/* FontAwsome JS link */}
     </div>
   );
-}
-
-          
+}        
   export default Emailconfirmation

@@ -54,21 +54,21 @@ function Homefile() {
                 <div className="col-12 btns-container">
                   <ul className="list" style={{marginLeft:"0px",marginTop:"-20px"}}>
                     {/* Link 1 */}
-                    <li className="links-list" ><a onClick ={() => {history.push("/individual");}} className="links" >
+                    <li className="links-list" ><a href="#" onClick ={() => {history.push("/individual");}} className="links" >
                         <span className="icon"  >
                         <svg className="iconalignment" aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevrons-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M233.344 239.406L57.344 55.401C48.188 45.838 33 45.494 23.406 54.651C18.469 59.37 16 65.682 16 71.995C16 77.964 18.219 83.933 22.656 88.589L182.781 256L22.656 423.411C13.531 433.005 13.813 448.193 23.406 457.349C33 466.506 48.188 466.162 57.344 456.599L233.344 272.594C242.219 263.281 242.219 248.719 233.344 239.406ZM425.344 239.406L249.344 55.401C240.188 45.838 225 45.494 215.406 54.651C210.469 59.37 208 65.682 208 71.995C208 77.964 210.219 83.933 214.656 88.589L374.781 256L214.656 423.411C205.531 433.005 205.813 448.193 215.406 457.349C225 466.506 240.188 466.162 249.344 456.599L425.344 272.594C434.219 263.281 434.219 248.719 425.344 239.406Z"></path></svg>
                           <i className="far fa-chevron-double-right"  /></span> 
                         Individuals
                       </a></li><br></br>
                     {/* Link 2 */}
-                    <li className="links-list"><a onClick ={() => {history.push("/Couple");}} className="links">
+                    <li className="links-list"><a href="#" onClick ={() => {history.push("/Couple");}} className="links">
                         <span className="icon">
                         <svg className="iconalignment" aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevrons-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M233.344 239.406L57.344 55.401C48.188 45.838 33 45.494 23.406 54.651C18.469 59.37 16 65.682 16 71.995C16 77.964 18.219 83.933 22.656 88.589L182.781 256L22.656 423.411C13.531 433.005 13.813 448.193 23.406 457.349C33 466.506 48.188 466.162 57.344 456.599L233.344 272.594C242.219 263.281 242.219 248.719 233.344 239.406ZM425.344 239.406L249.344 55.401C240.188 45.838 225 45.494 215.406 54.651C210.469 59.37 208 65.682 208 71.995C208 77.964 210.219 83.933 214.656 88.589L374.781 256L214.656 423.411C205.531 433.005 205.813 448.193 215.406 457.349C225 466.506 240.188 466.162 249.344 456.599L425.344 272.594C434.219 263.281 434.219 248.719 425.344 239.406Z"></path></svg>
                           <i className="far fa-chevron-double-right" /></span> 
                         Couples
                       </a></li><br></br>
                     {/* Link 3 */}
-                    <li className="links-list"><a onClick ={() => {history.push("/employers");}} className="links">
+                    <li className="links-list"><a href="#" onClick ={() => {history.push("/employers");}} className="links">
                         <span className="icon">
                         <svg className="iconalignment"aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevrons-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M233.344 239.406L57.344 55.401C48.188 45.838 33 45.494 23.406 54.651C18.469 59.37 16 65.682 16 71.995C16 77.964 18.219 83.933 22.656 88.589L182.781 256L22.656 423.411C13.531 433.005 13.813 448.193 23.406 457.349C33 466.506 48.188 466.162 57.344 456.599L233.344 272.594C242.219 263.281 242.219 248.719 233.344 239.406ZM425.344 239.406L249.344 55.401C240.188 45.838 225 45.494 215.406 54.651C210.469 59.37 208 65.682 208 71.995C208 77.964 210.219 83.933 214.656 88.589L374.781 256L214.656 423.411C205.531 433.005 205.813 448.193 215.406 457.349C225 466.506 240.188 466.162 249.344 456.599L425.344 272.594C434.219 263.281 434.219 248.719 425.344 239.406Z"></path></svg>
 

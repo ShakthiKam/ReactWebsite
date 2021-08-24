@@ -69,7 +69,7 @@ return (
                     <div className="place-holder" />
                   </div>
                   <div className="image-container">
-                    <img src="./../assets/images/photo-of-woman-holding-her-head-2536579-768x474.jpg" alt="image" />
+                    <img src={woman} alt="image" />
                   </div>
                 </div>
               </div>
