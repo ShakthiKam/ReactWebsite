@@ -35,7 +35,7 @@ function Aboutapp(){
               <a className="return-link white-text" href="#" onclick="history.go(-1)">
               <svg class="svg-inline--fa fa-chevron-left fa-w-10" style={{marginLeft:"-26px",marginTop:"10px"}} onClick ={() => {history.push("/individual");}} aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M243.658 43.114C227.69 27.834 202.362 28.365 187.096 44.364L11.098 228.356C-3.699 243.824 -3.699 268.198 11.098 283.666L187.096 467.657C194.955 475.875 205.471 480 216.002 480C225.94 480 235.908 476.313 243.658 468.907C259.611 453.626 260.174 428.315 244.908 412.347L95.363 256.011L244.908 99.674C260.174 83.706 259.611 58.395 243.658 43.114Z"></path></svg>
               </a>
-              <h4 className="sub-title"style={{marginLeft:"-30px",marginTop:"-40px"}}>How it works</h4>
+              <h4 className="sub-title"style={{marginLeft:"-30px",marginTop:"10px",color:"#fff",fontSize: "1.8rem"}}>How it works</h4>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react'; 
 import {useHistory} from "react-router-dom";
 import logo from "../images/logo.png"
+import woman from "../images/photo-of-woman-holding-her-head-2536579-768x474.jpg"
 
 
 function Mobileapp() {
