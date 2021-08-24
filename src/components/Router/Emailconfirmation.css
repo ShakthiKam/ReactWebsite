@@ -1,25 +1,36 @@
-#email-confirm-page{
-    background: #f3f3f3;
+#email-confirm-page .progress-bar .progress {
+  width: 80%;
+  -webkit-animation: progressNinty 4s;
+          animation: progressNinty 4s;
 }
-  
-    .progress-bar .progress{
-      width: 80%;
-      animation: progressNinty 4s;
-    }
-  
 
-    
-    
-      @media (max-width: 767.98px) {
-        .main-content{
-        padding-bottom: 2em;
-      }
-  
-    }
-  
-  
-  
-  @keyframes progressNinty {
-    0%   { width: 60%; background-color: #9acf86;}
-    100% { width: 80%; background-color: #43b14b; }
+@media (max-width: 767.98px) {
+  #email-confirm-page .main-content {
+    padding-bottom: 2em;
   }
+}
+
+@-webkit-keyframes progressNinty {
+  0% {
+    width: 60%;
+    background-color: #9acf86;
+  }
+  100% {
+    width: 80%;
+    background-color: #43b14b;
+  }
+}
+
+@keyframes progressNinty {
+  0% {
+    width: 60%;
+    background-color: #9acf86;
+  }
+  100% {
+    width: 80%;
+    background-color: #43b14b;
+  }
+}
+.dark-white-page {
+  background: #F3F3F3 !important;
+}

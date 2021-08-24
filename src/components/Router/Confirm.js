@@ -16,46 +16,46 @@ import logo from "../images/logo.png"
 function Confirm() {
   let history = useHistory(); 
 
-        return (
-        <div>
-          <meta charSet="UTF-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          {/* browser icon */}
-          <link rel="shortcut icon" type="image/jpg" href="./../assets/images/wellness-icon.ico" />
-          {/* Bootstrap Link */}
-          <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css" />
-          {/* Custom CSS Link */}
-          <link rel="stylesheet" href="./../assets/css/app.css" />
-          <title>Confirm</title>
-          {/* Start of page content */}
-          <div id="confirm-page" style={{background: "#f3f3f3"}}>
-            <div className="progress-bar">
-              <div className="progress" />
+  return (
+    <div>
+      <meta charSet="UTF-8" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      {/* browser icon */}
+      <link rel="shortcut icon" type="image/jpg" href="./../assets/images/wellness-icon.ico" />
+      {/* Bootstrap Link */}
+      <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css" />
+      {/* Custom CSS Link */}
+      <link rel="stylesheet" href="./../assets/css/app.css" />
+      <title>Confirm</title>
+      {/* Start of page content */}
+      <div id="confirm-page" className="page-wrapper dark-white-page">
+        <div className="progress-bar">
+          <div className="progress" />
+        </div>
+        {/* Star of Return-link */}
+        <div className="container">
+          <div className="row">
+            <div className="col-12 return-link-container">
+              <a className="return-link black-text" href="#" onclick="history.go(-1)">
+              <svg class="svg-inline--fa fa-chevron-left fa-w-10" style={{marginLeft:"-20px",marginTop:"20px"}} aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M243.658 43.114C227.69 27.834 202.362 28.365 187.096 44.364L11.098 228.356C-3.699 243.824 -3.699 268.198 11.098 283.666L187.096 467.657C194.955 475.875 205.471 480 216.002 480C225.94 480 235.908 476.313 243.658 468.907C259.611 453.626 260.174 428.315 244.908 412.347L95.363 256.011L244.908 99.674C260.174 83.706 259.611 58.395 243.658 43.114Z"></path></svg>
+              </a>
+              <h4 className="sub-title black-text" style={{color:"#37383d",marginTop:"-33px"}}>Thank You! Appointment scheduled.</h4>
             </div>
-            {/* Star of Return-link */}
-            <div className="container">
-              <div className="row">
-                <div className="col-12 return-link-container">
-                  <a className="return-link black-text" href="#" onclick="history.go(-1)">
-                    <i className="fas fa-chevron-left" />
-                  </a>
-                  <h4 className="sub-title black-text" style={{color:"#37383d"}}>Thank You! Appointment scheduled.</h4>
-                </div>
-              </div>
-            </div>
-            {/* End of Return-link */}
-            {/* Start of main content */}
-            <div className="container main-content">
+          </div>
+        </div>
+        {/* End of Return-link */}
+        {/* Start of main content */}
+        <div className="container main-content">
               <div className="row">
                 <div className="col-12">
                   <div className="content-container">
                     <div className="texts-wrapper">
-                      <p style={{fontSize:"1rem"}}>We have sent you an email with your appointment details.</p>
-                      <p style={{fontSize:"1rem"}}>The day before your appointment, we will send you a confirmation message to make sure your schedule has not changed.</p>
-                      <p style={{fontSize:"1rem"}}>There will be instructions for how to join your counselor using an online video call.</p>
+                      <p style={{fontSize:"1rem",color: "#394d5c"}}>We have sent you an email with your appointment details.</p>
+                      <p style={{fontSize:"1rem",color: "#394d5c"}}>The day before your appointment, we will send you a confirmation message to make sure your schedule has not changed.</p>
+                      <p style={{fontSize:"1rem",color: "#394d5c"}}>There will be instructions for how to join your counselor using an online video call.</p>
                     </div>
-                    <p style={{fontSize:"1rem"}} className="link-text">Your free online consultation: Monday May 17th 10:30AM <span>&nbsp; &nbsp;<a onClick ={() => {history.push("/Schedule");}} className="underline-link dark-text">Change</a></span></p>
+                    <p style={{fontSize:"1rem"}} className="link-text">Your complimentary consultation: Monday May 17th 10:30AM <span>&nbsp; &nbsp;<a onClick ={() => {history.push("/Schedule");}} className="underline-link dark-text" style={{display:"inline",marginLeft:"-20px",fontWeight: 400,fontSize: "1rem"}}>Change</a></span></p>
                   </div>
                 </div>
                 {/* Start of large bottom button */}
@@ -75,9 +75,9 @@ function Confirm() {
             </div>
             {/* End of main content */}
           </div>
-          {/* Start of page content */}
-          {/* Start of Footer */}
-          <footer className="footer">
+      {/* Start of page content */}
+      {/* Start of Footer */}
+      <footer className="footer">
             <div className="container">
               <div className="row">
                 <div className="col-lg-3 col-md-3 col-sm-12 logo-container">
@@ -156,5 +156,4 @@ function Confirm() {
         </div>
       );
     }
- 
-  export default Confirm
+export default Confirm

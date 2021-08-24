@@ -1,11 +1,12 @@
 import React from 'react'; 
 import {useHistory} from "react-router-dom";
-import "./Home.css"
-import "./Header.css"
-import "./Footer.css"
+// import "./Home.css"
+// import "./Header.css"
+// import "./Footer.css"
 import "./bootstrap.min.css"
 import "./Global.css"
 import "./Emailconfirmation.css"
+import "./Module.css"
 
 
 

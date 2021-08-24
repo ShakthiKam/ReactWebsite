@@ -42,7 +42,7 @@ function Enrollment() {
                 {/* Start of page content */}
                 <div id="enrollment-page" className="page-wrapper dark-white-page">
                   {/* Star of Header */}
-                  <header className="header blue-header">
+                  <header className="header blue-header" style={{backgroundColor:"#4ca9e0"}}>
                     <div className="container">
                       <div className="row">
                         <div className="col-12 header-content">

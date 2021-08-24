@@ -84,3 +84,13 @@ h5 {
   font-weight: 400;
   margin-bottom: .4px;
 }
+/* .content-container .texts-wrapper {
+  width: 40%;
+  margin: auto;
+  color: #394d5c !important;
+}  */
+
+.page-wrapper {
+  width: 100% !important;
+  min-height: 100vh !important;
+}

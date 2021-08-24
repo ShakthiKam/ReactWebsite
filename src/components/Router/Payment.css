@@ -1,15 +1,27 @@
-#payment-page{
-    background: #fff;
+#payment-page .progress-bar .progress {
+  width: 33%;
+  -webkit-animation: thirty 4s;
+          animation: thirty 4s;
 }
-  
-    .progress-bar .progress{
-      width: 33%;
-      animation: thirty 4s;
-    }
-  
-  
-  
-  @keyframes thirty {
-    0%   { width: 0%; background-color: #9acf86;}
-    100% { width: 33%; background-color:  #43b14b; }
+
+@-webkit-keyframes thirty {
+  0% {
+    width: 0%;
+    background-color: #9acf86;
   }
+  100% {
+    width: 33%;
+    background-color:  #43b14b;
+  }
+}
+
+@keyframes thirty {
+  0% {
+    width: 0%;
+    background-color: #9acf86;
+  }
+  100% {
+    width: 33%;
+    background-color: #43b14b;
+  }
+}
