@@ -89,7 +89,7 @@ for your scheduled consultation?" defaultValue={""} />
                   <div className="col-lg-4 col-md-6 col-8">
                     <div className="linear-btn-container">
                       <p className="mb-4 form-text">If you don't see an email within a few minutes, be sure to check your spam folder.</p>
-                      <button type="button" className="linear-btn blue-btn" onclick="window.location= 'confirm.html'">Confirm</button>
+                      <button type="button" className="linear-btn blue-btn" onClick={() => {history.push("confirm")}} >Confirm</button>
                     </div>
                   </div>
                   <div className="col-lg-4 col-md-3 col-2" />
