@@ -6,7 +6,7 @@ import "./Footer.css"
 import logo from "../images/logo.png"
 
 import "./Global.css"
-import "./Mixin.css"
+// import "./Mixin.css"
 // import "./bootstrap.min.css"
 
 
