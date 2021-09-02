@@ -2,6 +2,10 @@ import React from 'react';
 import {useHistory} from "react-router-dom";
 import logo from "../images/logo.png"
 import woman from "../images/photo-of-woman-holding-her-head-2536579-768x474.jpg"
+import wearning from "../images/woman-wearing-blue-top-beside-table-1181712-768x512.jpg"
+import listening from "../images/close-up-photo-of-a-woman-listening-to-music-813940-768x512.jpg"
+import using from "../images/edit-photo-of-woman-using-mobile-phone-3367850-768x592.jpg"
+import "./Mobileapp.css"
 
 
 function Mobileapp() {
@@ -28,7 +32,7 @@ return (
           <div className="container">
             <div className="row">
               <div className="col-12 header-content">
-                <div className="logo-container">
+                <div className="logo-container" style={{marginTop:"-20px",marginLeft:"-35px"}}>
                   <a href="./../index.html" className="logo">
                     <span>Wellness</span>
                   </a>
@@ -48,8 +52,8 @@ return (
           <div className="row">
             <div className="col-1 d-lg-block d-none" />
             <div className="col-lg-10 col-12 hero-container">
-              <h3>Enthrive App</h3>
-              <p className="sub-title">Your mental, emotional, and spiritual wellness have a huge impact on your overall sense of well-being. Only by integrating all three will you discover inner peace and joy!</p>
+              <h3 style={{fontSize: "2.4rem",fontWeight: 600}}>Enthrive App</h3>
+              <p className="sub-title" style={{fontSize: "1.438rem",fontWeight: 600,color:"#394d5c"}}>Your mental, emotional, and spiritual wellness have a huge impact on your overall sense<br></br> of well-being. Only by integrating all three will you discover inner peace and joy!</p>
             </div>
             <div className="col-1 d-lg-block d-none" />
           </div>
@@ -60,8 +64,8 @@ return (
                 {/* Texts wrapper */}
                 <div className="step-text-wrapper">
                   <h5 className="step-level">1</h5>
-                  <h4 className="step-heading">UNDERSTAND YOUR MOOD AND FEELINGS</h4>
-                  <p className="title-desc">We encourage you to check-in with simple question to understand how you're doing. We connect the dots with your sleep quality and dreams to make specific recommendations on how you can feel better.</p>
+                  <h4 className="step-heading" style={{color:"#394d5c"}}>UNDERSTAND YOUR MOOD AND FEELINGS</h4>
+                  <p className="title-desc" style={{color:"#394d5c"}}>We encourage you to check-in with simple question to understand how you're doing. We connect the dots with your sleep quality and dreams to make specific recommendations on how you can feel better.</p>
                 </div>
                 {/* Image wrapper */}
                 <div className="step-image-wrapper">
@@ -80,7 +84,7 @@ return (
                 {/* Image wrapper */}
                 <div className="step-image-wrapper second-step-image-wrapper">
                   <div className="image-container second-image-wrapper">
-                    <img src="./../assets/images/woman-wearing-blue-top-beside-table-1181712-768x512.jpg" alt="image" />
+                    <img src={wearning} alt="image" />
                   </div>
                   <div className="box-container second-box-container">
                     <div className="place-holder" />
@@ -89,8 +93,8 @@ return (
                 {/* Texts wrapper */}
                 <div className="step-text-wrapper">
                   <h5 className="step-level">2</h5>
-                  <h4 className="step-heading">INSIGHT INTO THE QUALITY OF YOUR SLEEP</h4>
-                  <p className="title-desc">Do you feel rested? Is your mind operating at its full potential? We can monitor the quality of your sleep and correlate it to your sense of well-being.</p>
+                  <h4 className="step-heading" style={{color:"#394d5c"}}>INSIGHT INTO THE QUALITY OF YOUR SLEEP</h4>
+                  <p className="title-desc" style={{color:"#394d5c"}}>Do you feel rested? Is your mind operating at its full potential? We can monitor the quality of your sleep and correlate it to your sense of well-being.</p>
                 </div>
               </div>
             </div>
@@ -100,13 +104,13 @@ return (
                 {/* Texts wrapper */}
                 <div className="step-text-wrapper">
                   <h5 className="step-level">3</h5>
-                  <h4 className="step-heading">BETTER LIFE CLARITY BY UNDERSTANDING YOUR DREAMS</h4>
-                  <p className="title-desc">We provide tools to capture and analyze your dreams to discover the root cause of stress and anxiety. Learn to resolve these issues instead of just learning to cope.</p>
+                  <h4 className="step-heading "style={{color:"#394d5c"}}>BETTER LIFE CLARITY BY UNDERSTANDING YOUR DREAMS</h4>
+                  <p className="title-desc" style={{color:"#394d5c"}}>We provide tools to capture and analyze your dreams to discover the root cause of stress and anxiety. Learn to resolve these issues instead of just learning to cope.</p>
                 </div>
                 {/* Image wrapper */}
                 <div className="step-image-wrapper">
                   <div className="image-container">
-                    <img src="./../assets/images/close-up-photo-of-a-woman-listening-to-music-813940-768x512.jpg" alt="image" />
+                    <img src={listening} alt="image" />
                   </div>
                   <div className="box-container">
                     <div className="place-holder" />
@@ -120,7 +124,7 @@ return (
                 {/* Image wrapper */}
                 <div className="step-image-wrapper second-step-image-wrapper">
                   <div className="image-container second-image-wrapper">
-                    <img src="./../assets/images/edit-photo-of-woman-using-mobile-phone-3367850-768x592.jpg" alt="image" />
+                    <img src={using} alt="image" />
                   </div>
                   <div className="box-container second-box-container">
                     <div className="place-holder" />
@@ -129,8 +133,8 @@ return (
                 {/* Texts wrapper */}
                 <div className="step-text-wrapper">
                   <h5 className="step-level">4</h5>
-                  <h4 className="step-heading">SUPPORT WHEN YOU NEED IT</h4>
-                  <p className="title-desc">Access a team of people such as counselors, therapists, and life coaches. If you choose, we also have a team who can pray for you, even provide insight into your dreams, or just talk. All of your conversations are completely private and secure.</p>
+                  <h4 className="step-heading" style={{color:"#394d5c"}}>SUPPORT WHEN YOU NEED IT</h4>
+                  <p className="title-desc" style={{color:"#394d5c"}}>Access a team of people such as counselors, therapists, and life coaches. If you choose, we also have a team who can pray for you, even provide insight into your dreams, or just talk. All of your conversations are completely private and secure.</p>
                 </div>
               </div>
             </div>
