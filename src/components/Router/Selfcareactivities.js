@@ -2,145 +2,164 @@ import React from 'react';
 import {useHistory} from "react-router-dom";
 import './Selfcare'
 import logo from "../images/logo.png"
+import anxiety from "../images/anxiety.png"
+import wellness from "../images/wellness.mp3"
+import wellness1 from "../images/wellness.mp4"
+import quiteanxiety from "../images/quite-anxiety.png"
+import moodlifter from "../images/mood-lifter.png"
+import quicktips from "../images/quick-tips.png"
+
 
 function Selfcareactivities() {
 
     let history = useHistory(); 
-      return (
-        <div>
-          <meta charSet="UTF-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          {/* browser icon */}
-          <link rel="shortcut icon" type="image/jpg" href="./../assets/images/wellness-icon.ico" />
-          {/* Bootstrap Link */}
-          <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css" />
-          {/* Custom CSS Link */}
-          <link rel="stylesheet" href="./../assets/css/app.css" />
-          <title>Self Care Activities</title>
-          {/* Start of page content */}
-          <div id="selfcare-activities-page">
-            {/* Star of Header */}
-            <header className="header blue-header">
-              <div className="container">
-                <div className="row">
-                  <div className="col-12 header-content">
-                    <div className="logo" onClick ={() => {history.push("/homefile");}}>
-                      <h4>Wellness</h4>
-                    </div>
-                    <div className="login-container">
-                      <div className="counseling">
-                        <a className="direct-counseling" onClick ={() => {history.push("/enrollment");}}>Member Enrollment</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </header>
-            {/* End of Header */}
-            {/* Start of main content */}
-            <div className="container main-content">
+    return (
+      <div>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* browser icon */}
+        <link rel="shortcut icon" type="image/jpg" href="./../assets/images/wellness-icon.ico" />
+        {/* Bootstrap Link */}
+        <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css" />
+        {/* Custom CSS Link */}
+        <link rel="stylesheet" href="./../assets/css/app.css" />
+        <title>Self Care Activities</title>
+        {/* Start of page content */}
+        <div className="page-wrapper dark-white-page">
+          {/* Star of Header */}
+          <header className="header blue-header">
+            <div className="container">
               <div className="row">
-                {/* Texts-container */}
-                <div className="col-12 text-center">
-                  <h2 className="hero-title black-text">Anxiety Self-Care Activities</h2>
-                </div>
-                <div className="col-lg-3 col-sm-2 d-sm-block d-none" />
-                <div className="col-lg-6 col-sm-8 col-xs-12 text-center">
-                  <p className="title-desc black-text">Anxiety is a normal part of life, but sometime it can be difficult to manage. Our therapist have put their expertise to work for you in the form of podcasts, articles, and video clips.</p>
-                </div>
-                <div className="col-lg-3 col-sm-2 d-sm-block d-none" />
-              </div>  
-              <div className="row">
-                {/* Cards Wraper */}
-                <div className="col-12 cards-wrapper">
-                  <div className="cards-container">
-                    {/* Card 1 */}
-                    <div className="activity-cards">
-                      <div className="card-image">
-                        <img src="./../assets/images/anxiety.png" alt="image" />
-                      </div>
-                      <div className="card-texts">
-                        <h6>Matt: coping techniques foranxiety.</h6>
-                      </div>
-                      <div className="cards-audio">
-                        <audio src="./../assets/images/wellness.mp3" controls controlslist="nodownload">
-                          Your browser does not support the
-                          <code>audio</code> element.
-                        </audio>
-                      </div>
-                    </div>
-                    {/* Card 2 */}
-                    <div className="activity-cards">
-                      <div className="card-image">
-                        <video className="img-fluid" src="./../assets/images/wellness.mp4" controls controlslist="nodownload" />
-                      </div>
-                      <div className="card-texts">
-                        <h6>Carlo: the five major types of anxiety disorders.</h6>
-                      </div>
-                    </div>
-                    {/* Card 3 */}
-                    <div className="activity-cards">
-                      <div className="card-image">
-                        <img src="./../assets/images/quite-anxiety.png" alt="image" />
-                      </div>
-                      <div className="card-texts">
-                        <h6>Exercise: practice the counting technique to quite an anxiety attack</h6>
-                      </div>
-                      <div className="card-links text-center">
-                        <a href="#">Try it</a>
-                      </div>
-                    </div>
-                    {/* Card 4 */}
-                    <div className="activity-cards">
-                      <div className="card-image">
-                        <img src="./../assets/images/mood-lifter.png" alt="image" />
-                      </div>
-                      <div className="card-texts">
-                        <h6>Bud: 8 Self-Mood Lifters and 4 Therapies that Work!</h6>
-                      </div>
-                      <div className="card-links text-center">
-                        <a href="#">Read</a>
-                      </div>
-                    </div>
-                    {/* Card 5 */}
-                    <div className="activity-cards">
-                      <div className="card-image">
-                        <img src="./../assets/images/quick-tips.png" alt="image" />
-                      </div>
-                      <div className="card-texts">
-                        <h6>Quick Tips</h6>
-                      </div>
-                      <div className="card-links text-center">
-                        <a href="#">View</a>
-                      </div>
-                    </div>
-                    {/* Card 6 */}
-                    <div className="activity-cards">
-                      <div className="card-image">
-                        <img src="./../assets/images/anxiety.png" alt="image" />
-                      </div>
-                      <div className="card-texts">
-                        <h6>Dharma: how I overcame my social anxiety.</h6>
-                      </div>
-                      <div className="cards-audio">
-                        <audio src="./../assets/images/wellness.mp3" controls controlslist="nodownload">
-                          Your browser does not support the
-                          <code>audio</code> element.
-                        </audio>
-                      </div>
-                    </div>
+                <div className="col-12 header-content">
+                  <div className="logo-container">
+                    <a className="logo" href="./../index.html">
+                      <span>Wellness</span>
+                    </a>
                   </div>
-                  <div className="link-wrapper text-center">
-                    <h5>
-                      <span><a href="#">Learn more about Enthrive,</a></span>
-                      or <span><a onClick ={() => {history.push("/enrollment");}}>enroll!</a></span>
-                    </h5>
+                  <div className="login-container">
+                    <div className="counseling">
+                      <a className="direct-counseling" href="./../members/enrollment.html">Member Enrollment</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </header>
+          {/* End of Header */}
+          {/* Start of main content */}
+          <div className="container main-content">
+            <div className="row">
+              {/* Texts-container */}
+              <div className="col-12 text-center">
+                <h2 className="hero-title black-text" style={{marginLeft:"10px",fontSize: "3rem",fontWeight: 600,marginTop:"-5px"}}>Anxiety Self-Care Activities</h2>
+              </div>
+              <div className="col-lg-3 col-sm-2 d-sm-block d-none" />
+              <div className="col-lg-6 col-sm-8 col-xs-12 text-center">
+                <p className="title-desc black-text">Anxiety is a normal part of life, but sometimes it can be difficult to manage. Our therapists have put their expertise to work for you in the form of podcasts, articles, and video clips.</p>
+              </div>
+              <div className="col-lg-3 col-sm-2 d-sm-block d-none" />
+            </div>  
+            <div className="row">
+              {/* Cards Wraper */}
+              <div className="col-12 cards-wrapper">
+                <div className="cards-container">
+                  {/* Card 1 */}
+                  <div className="activity-cards">
+                    <div className="card-image">
+                      <img src={anxiety} alt="image" />
+                    </div>
+                    <div className="card-texts">
+                      <h6>Matt: coping techniques foranxiety.</h6>
+                    </div>
+                    <div className="cards-audio">
+                      <audio src={wellness} controls controlslist="nodownload">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                      </audio>
+                    </div>
+                  </div>
+                  {/* Card 2 */}
+                  <div className="activity-cards">
+                    <div className="card-image">
+                      <video className="img-fluid" src={wellness1} controls controlslist="nodownload" />
+                    </div>
+                    <div className="card-texts">
+                      <h6>Carlo: the five major types of anxiety disorders.</h6>
+                    </div>
+                  </div>
+                  {/* Card 3 */}
+                  <div className="activity-cards">
+                    <div className="card-image">
+                      <img src={quiteanxiety} alt="image" />
+                    </div>
+                    <div className="card-texts">
+                      <h6>Exercise: practice the counting technique to quite an anxiety attack</h6>
+                    </div>
+                    <div className="card-links text-center">
+                      <a className="links" href="#">
+                        Try it 
+                        <span className="arrow-icon"><i className="far fa-arrow-right" /></span>
+                      </a>
+                    </div>
+                  </div>
+                  {/* Card 4 */}
+                  <div className="activity-cards">
+                    <div className="card-image">
+                      <img src={moodlifter} alt="image" />
+                    </div>
+                    <div className="card-texts">
+                      <h6>Bud: 8 Self-Mood Lifters and 4 Therapies that Work!</h6>
+                    </div>
+                    <div className="card-links text-center">
+                      <a className="links" href="#">
+                        Read
+                        <span className="arrow-icon"><i className="far fa-arrow-right" /></span>
+                      </a>
+                    </div>
+                  </div>
+                  {/* Card 5 */}
+                  <div className="activity-cards">
+                    <div className="card-image">
+                      <img src={quicktips} alt="image" />
+                    </div>
+                    <div className="card-texts">
+                      <h6>Quick Tips</h6>
+                    </div>
+                    <div className="card-links text-center">
+                      <a className="links" href="#">
+                        View
+                        <span className="arrow-icon"><i className="far fa-arrow-right" /></span>
+                      </a>
+                    </div>
+                  </div>
+                  {/* Card 6 */}
+                  <div className="activity-cards">
+                    <div className="card-image">
+                      <img src={anxiety} alt="image" />
+                    </div>
+                    <div className="card-texts">
+                      <h6>Dharma: how I overcame my social anxiety.</h6>
+                    </div>
+                    <div className="cards-audio">
+                      <audio src={wellness} controls controlslist="nodownload">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+                <div className="link-wrapper text-center">
+                  <h5>
+                    <span><a href="#" style={{display:"inline"}}>Learn more about Enthrive,</a></span>
+                    or <span><a href="#" onClick ={() => {history.push("/enrollment");}} style={{display:"inline",marginLeft:"-15px"}}>enroll!</a></span>
+                  </h5>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+          
           {/* End of page content */}
           {/* Start of Footer */}
           <footer className="footer">

@@ -70,10 +70,10 @@
 }
 
 .return-link-container .return-link:hover {
-  color: var(--blue);
+  color: #4ca9e0;
 }
 
-.return-link-container .sub-title {
+.return-link-container .sub-title {         
   text-align: center;
   margin: 0;
 }
@@ -107,7 +107,7 @@
   background: #4ca9e0;
 }
 
-.linear-btn-container .yellow-btn {
+.linear-btn-container .yellow-btn {     
   background: #fcea93;
   color: #37383d;
 }

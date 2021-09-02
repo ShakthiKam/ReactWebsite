@@ -28,7 +28,7 @@ function Selfcare() {
                 <div className="row">
                   <div className="col-12 header-content">
                     <div className="logo-container">
-                      <a className="logo" onClick ={() => {history.push("/homefile");}}>
+                      <a className="logo" onClick ={() => {history.push("/homefile");}} style={{marginTop:"-20px",marginLeft:"-30px"}}>
                         <span>Wellness</span>
                       </a>
                     </div>
@@ -43,7 +43,7 @@ function Selfcare() {
             </header>
             {/* End of Header */}
             {/* Start of main content */}
-            <div className="container main-content">
+            <div className="container main-content" >
               <div className="row">
                 {/* Texts-container */}
                 <div className="col-12 text-center">
@@ -63,44 +63,43 @@ function Selfcare() {
                   {/* Links container 1 */}
                   <ul className="links-container">
                     <li className="links-list">
-                      <a className="links"  onClick ={() => {history.push("/selfcareactivities");}}>Feeling Down</a>
+                      <a className="links"  onClick ={() => {history.push("/selfcareactivities");}} style={{lineHeight:"35px"}}>Feeling Down</a>
                     </li>
                     <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Anxiety</a>
+                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}} style={{lineHeight:"35px"}}>Anxiety</a>
                     </li>
                     <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Motivation</a>
+                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}} style={{lineHeight:"35px"}}>Motivation</a>
                     </li>
                   </ul>
                   {/* Links container 2 */}
                   <ul className="links-container">
                     <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Sleep</a>
+                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}} style={{lineHeight:"35px"}}>Sleep</a>
                     </li>
                     <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Fitness</a>
+                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}} style={{lineHeight:"35px"}}>Fitness</a>
                     </li>
                     <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Diet</a>
+                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}} style={{lineHeight:"35px"}}>Diet</a>
                     </li>
                   </ul>
                   {/* Links container 3 */}
                   <ul className="links-container">
                     <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Relationships</a>
+                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}} style={{lineHeight:"35px"}}>Relationships</a>
                     </li>
                     <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Career</a>
+                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}} style={{lineHeight:"35px"}}>Career</a>
                     </li>
                     <li className="links-list">
-                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}}>Mindfullness</a>
+                      <a className="links" onClick ={() => {history.push("/selfcareactivities");}} style={{lineHeight:"35px"}}>Mindfullness</a>
                     </li>
                   </ul>
                   <div className="links-container p-0" />
                   <div className="link-wrapper text-center">
                     <h5>
-                      <span><a href="#">Learn more about Enthrive,</a></span>
-                      or <span><a onClick ={() => {history.push("/enrollment");}}>enroll!</a></span>
+                      <span><a href="#" style={{display:"inline",fontWeight: 400}}>Learn more about Enthrive,</a></span> or <span><a onClick ={() => {history.push("/enrollment");}} style={{display:"inline",marginLeft:"-16px",fontWeight: 400}}>enroll!</a></span>
                     </h5>
                   </div>
                 </div>

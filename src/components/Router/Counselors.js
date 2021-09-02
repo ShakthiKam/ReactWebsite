@@ -1,6 +1,36 @@
 import React from "react"
 import {useHistory} from "react-router-dom";
 import logo from "../images/logo.png"
+import Matthew from '../images/counselors/Matthew-Hunt-profile-pic-x.png'
+import Sandra from '../images/counselors/Sandra-Donaldson-Home-Page-x.jpg'
+import John from '../images/counselors/john-young-crop-x.jpg'
+import Tony from  '../images/counselors/Tony-Trimble-Online-Counselor-225x175.jpg'
+import Tyesh from  '../images/counselors/Tyesh-Harris-Photo1-225x175.png'
+import Rachel from '../images/counselors/Rachel-Cooke-Home-x.jpg'
+import Sondra from '../images/counselors/Sondra-Gentry-Online-Counselor-page.jpg'
+import Jennifer from '../images/counselors/Jennifer-Uchitel-online-Counselor-225x170.jpg'
+import Beverly from '../images/counselors/Dr-Beverly-L-Swanson-lg-225x175.jpg'
+import Adam from '../images/counselors/adam-parsons-design.png'
+import Amanda from '../images/counselors/Amanda-Bryant-Christian-Life-Coach-small.png'
+import Amber from '../images/counselors/Amber_Hannon.jpg'
+import Andrea from '../images/counselors/ANDREA-COD-HEADSHOT2021-225x175.png'
+import Cindy from '../images/counselors/CindyJackson-179x175.jpg'
+import Dedric from '../images/counselors/Dedric_Wright.png'
+import Grant from '../images/counselors/Grant-Long-meet-counselor-225x175.png'
+import Jasminka from '../images/counselors/Jasminka-Jasarevic-225x175.png'
+// import John2 from '../images/counselors/John-Bubello-225x175.jpg'
+import Julianna from '../images/counselors/Julianna-Lopez-225x175.jpg'
+import Kamal from '../images/counselors/KamalSoloChennai2020png-225x175.png'
+import Karen from '../images/counselors/Karen-E.-Sharpe-Coach-Head-Shot-225x175.jpg'
+import Kelly from '../images/counselors/Kelly_Perry3-225x175.jpg'
+import Madison from '../images/counselors/Madison-Carter-225x175.jpg'
+import Meet from '../images/counselors/meet-counselor-lisa-falls-225x175.jpg'
+import Missy from '../images/counselors/Missy_O Dell.jpg'
+import Eric from '../images/counselors/S.Eric-Ward-Wealth-Strategist-225x175.jpg'
+import "./Global.css"
+
+
+
 
 
 function Counselors() {
@@ -24,7 +54,7 @@ return (
           <div className="container">
             <div className="row">
               <div className="col-12 header-content">
-                <div className="logo-container">
+                <div className="logo-container" style={{marginLeft:"-30px",marginTop:"-17px"}}>
                   <a href="./../index.html" className="logo">
                     <span>Wellness</span>
                   </a>
@@ -44,11 +74,12 @@ return (
           <div className="row">
             <div className="col-1 d-lg-block d-none" />
             <div className="col-lg-10 col-12 text-center">
-              <h3 className="dark-text mb-3">Our Counselors</h3>
-              <p className="dark-text title-desc">Counseling On Demand is focused on providing the absolute best care through experienced counseling professionals.</p>
-              <p className="dark-text title-desc">Our therapists are compassionate, understanding and empathetic to your situation.</p>
-              <p className="dark-text title-desc">It’s normal to experience anxiety or nervousness when beginning a relationship with a counselor; our introductory session is designed to build rapport and together explore if a continued engagement is the right fit.</p>
-              <p className="dark-text title-desc">Our therapists will work with you to develop a positive plan to set goals and make positive changes in your life.</p>
+              <h3 className="dark-text mb-3" style={{fontWeight: 600,fontSize: "2.4rem"}}>Our Counselors</h3>
+              <p className="dark-text title-desc" style={{fontSize: "1.25rem"}}>Counseling On Demand is focused on providing the absolute best care through experienced counseling <br></br>professionals.</p>
+              <p className="dark-text title-desc" style={{fontSize: "1.25rem"}}>Our therapists are compassionate, understanding and empathetic to your situation.</p>
+              <p className="dark-text title-desc" style={{fontSize: "1.25rem"}}>It’s normal to experience anxiety or nervousness when beginning a relationship with a counselor; our<br></br>
+              introductory session is designed to build rapport and together explore if a continued engagement is the <br></br>right fit.</p>
+              <p className="dark-text title-desc" style={{fontSize: "1.25rem"}}>Our therapists will work with you to develop a positive plan to set goals and make positive changes in <br></br>your life.</p>
             </div>
             <div className="col-1 d-lg-block d-none" />
           </div>
@@ -56,7 +87,7 @@ return (
           <div className="row our-counselors">
             <div className="col-12">
               <div className="underline-title">
-                <h4 className="black-text">Meet Our Counselors</h4>
+                <h4 className="black-text" style={{fontSize: "2rem"}}>Meet Our Counselors</h4>
               </div>
             </div>
             {/* Counselor 1 */}
@@ -64,13 +95,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Matthew-Hunt-profile-pic-x.jpg" alt="Matthew Hunt" />
+                    <img src={Matthew} alt="Matthew Hunt" />
                   </div>
                   <h5 className="counselors-name">Matthew Hunt</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Lead Online Counselor and Life Coach</h6>
-                  <p>My aim is to provide you the “tune up” for when you find yourself feeling a bit unstable or unsupported. Together we can get you back on the road to thinking clearer, feeling better, and enjoying fulfilling relationships with those you care for.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}> My aim is to provide you the “tune up” for when you find yourself feeling a bit unstable or unsupported. Together we can get you back on the road to thinking clearer, feeling better, and enjoying fulfilling relationships with those you care for.</p>
                 </div>
               </div>
             </div>
@@ -79,13 +110,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/ANDREA-COD-HEADSHOT2021-225x175.png" alt="Andrea New" />
+                    <img src={Andrea} alt="Andrea New" />
                   </div>
                   <h5 className="counselors-name">Andrea New</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Relationship Development- NLP</h6>
-                  <p>My approach is realistic to my client’s needs. My focus is individualized and simple. I teach my clients how to develop the confidence within themselves and their current intimate and professional relationships. My goal is to enhance my client’s strengths and help them succeed. I use a variety of skills to aid in helping my clients gain confidence to tackle past, present and future difficult situations.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>My approach is realistic to my client’s needs. My focus is individualized and simple. I teach my clients how to develop the confidence within themselves and their current intimate and professional relationships. My goal is to enhance my client’s strengths and help them succeed. I use a variety of skills to aid in helping my clients gain confidence to tackle past, present and future difficult situations.</p>
                 </div>
               </div>
             </div>
@@ -94,13 +125,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/KamalSoloChennai2020png-225x175.png" alt="Kamal Mahalingam" />
+                    <img src={Kamal} alt="Kamal Mahalingam" />
                   </div>
                   <h5 className="counselors-name">Kamal Mahalingam</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Life Coach</h6>
-                  <p>I am a person with empathy. I will always try to listen and understand where you are coming from. I am a strong believer that you can do anything that you can set your mind to.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>I am a person with empathy. I will always try to listen and understand where you are coming from. I am a strong believer that you can do anything that you can set your mind to.</p>
                 </div>
               </div>
             </div>
@@ -109,14 +140,14 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Sandra-Donaldson-Home-Page-x.jpg" alt="Sandra Donaldson" />
+                    <img src={Sandra} alt="Sandra Donaldson" />
                   </div>
                   <h5 className="counselors-name">Sandra Donaldson</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Counselor – MDIV, DMIN</h6>
-                  <p>Life presents many challenges and seeking counseling can offer a new perspective about the possibilities of growth and change.</p>
-                  <p>I provide quality counseling to individuals, couples, families, teens and clergy.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>Life presents many challenges and seeking counseling can offer a new perspective about the possibilities of growth and change.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>I provide quality counseling to individuals, couples, families, teens and clergy.</p>
                 </div>
               </div>
             </div>
@@ -125,13 +156,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/john-young-crop-x.jpg" alt="John Young" />
+                    <img src={John} alt="John Young" />
                   </div>
                   <h5 className="counselors-name">John Young</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Pastoral Counselor</h6>
-                  <p>Fueled by a passion for character building, life coaching and spiritual rejuvenation, John Young merges spirituality with the practicality of everyday life. His candid and revealing approach engages clients and assists them to pursue a life of integrity, success and happiness.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>Fueled by a passion for character building, life coaching and spiritual rejuvenation, John Young merges spirituality with the practicality of everyday life. His candid and revealing approach engages clients and assists them to pursue a life of integrity, success and happiness.</p>
                 </div>
               </div>
             </div>
@@ -140,13 +171,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Tony-Trimble-Online-Counselor-225x175.jpg" alt="Tony Trimble" />
+                    <img src={Tony} alt="Tony Trimble" />
                   </div>
                   <h5 className="counselors-name">Tony Trimble</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Online Therapist – Ed.D</h6>
-                  <p>I am a psychologist and mental health counselor in my 40th year of providing services to clients in need of help. My areas of specialization are addictions, depression, anxiety, and grief.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>I am a psychologist and mental health counselor in my 40th year of providing services to clients in need of help. My areas of specialization are addictions, depression, anxiety, and grief.</p>
                 </div>
               </div>
             </div>
@@ -155,14 +186,14 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Tyesh-Harris-Photo1-225x175.png" alt="Tyesh Harris" />
+                    <img src={Tyesh} alt="Tyesh Harris" />
                   </div>
                   <h5 className="counselors-name">Tyesh Harris</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Life Coach</h6>
-                  <p>On the face of things, you look like you have it all under control but inside you are overwhelmed and trying to pick up the pieces. You are successful but underneath you are burnt out, struggling to see a meaningful path forward. Internally, you know that you cannot continue living your life the way things are.</p>
-                  <p>I understand. I have worked with clients to realize new powerful perspectives and I provide the necessary insights and tools to create a sustainable self and path forward. Before I started my business, I was a very successful music and finance executive working with some of the most well known musicians, analysts and firms on the planet.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>On the face of things, you look like you have it all under control but inside you are overwhelmed and trying to pick up the pieces. You are successful but underneath you are burnt out, struggling to see a meaningful path forward. Internally, you know that you cannot continue living your life the way things are.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>I understand. I have worked with clients to realize new powerful perspectives and I provide the necessary insights and tools to create a sustainable self and path forward. Before I started my business, I was a very successful music and finance executive working with some of the most well known musicians, analysts and firms on the planet.</p>
                 </div>
               </div>
             </div>
@@ -171,13 +202,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Rachel-Cooke-Home-x.jpg" alt="Rachel Cooke" />
+                    <img src={Rachel} alt="Rachel Cooke" />
                   </div>
                   <h5 className="counselors-name">Rachel Cooke</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Online Therapist – NCP</h6>
-                  <p>I’m an integrative therapist and I see the relationship between you and I as the most important aspect of what we do. I have 5 years of clinical experience in Ireland and the UK helping a variety of people to make their lives more manageable and fulfilling. Whatever is troubling you we can work together to find the right decisions and solutions for you at whatever pace you’re comfortable with.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>I’m an integrative therapist and I see the relationship between you and I as the most important aspect of what we do. I have 5 years of clinical experience in Ireland and the UK helping a variety of people to make their lives more manageable and fulfilling. Whatever is troubling you we can work together to find the right decisions and solutions for you at whatever pace you’re comfortable with.</p>
                 </div>
               </div>
             </div>
@@ -186,13 +217,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Sondra-Gentry-Online-Counselor-page.jpg" alt="Sondra Gentry" />
+                    <img src={Sondra} alt="Sondra Gentry" />
                   </div>
                   <h5 className="counselors-name">Sondra Gentry</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Online Therapist -D. Min.</h6>
-                  <p>I have 18 years experience working with children, couples, individuals and families. Eight years of experience in group counseling stems from that commitment to helping families. Included among relevant counseling experience is previous employment as a college instructor in the departments of Psychology, Early Childhood Education and Religion.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>I have 18 years experience working with children, couples, individuals and families. Eight years of experience in group counseling stems from that commitment to helping families. Included among relevant counseling experience is previous employment as a college instructor in the departments of Psychology, Early Childhood Education and Religion.</p>
                 </div>
               </div>
             </div>
@@ -201,13 +232,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Jennifer-Uchitel-online-Counselor-225x170.jpg" alt="Jennifer Uchitel" />
+                    <img src={Jennifer} alt="Jennifer Uchitel" />
                   </div>
                   <h5 className="counselors-name">Jennifer Uchitel</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Online Therapist – LMHC</h6>
-                  <p>My experience working with individuals and groups, along with your openness and honesty, would be a great platform to start working on your personal goals.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>My experience working with individuals and groups, along with your openness and honesty, would be a great platform to start working on your personal goals.</p>
                 </div>
               </div>
             </div>
@@ -216,13 +247,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/beverly-x.jpg" alt="Dr. Beverly L. Swanson" />
+                    <img src={Beverly} alt="Dr. Beverly L. Swanson" />
                   </div>
                   <h5 className="counselors-name">Dr. Beverly L. Swanson</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Christian Consultant Visionary Consultant &amp; Life Coach</h6>
-                  <p>Have the past few years thrown you in a tailspin? Are you in a transition in your life? Now is the time to Take hold of your life Claim your Destiny and Conquer your Fear! Moving forward from stagnation in ones Spirit~Mind &amp; Body requires a “Lifestyle &amp; Mindset Change.” Change is never easy. This type of change requires Direction, Tools Guidance, and Encouragement.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>Have the past few years thrown you in a tailspin? Are you in a transition in your life? Now is the time to Take hold of your life Claim your Destiny and Conquer your Fear! Moving forward from stagnation in ones Spirit~Mind &amp; Body requires a “Lifestyle &amp; Mindset Change.” Change is never easy. This type of change requires Direction, Tools Guidance, and Encouragement.</p>
                 </div>
               </div>
             </div>
@@ -231,13 +262,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/adam-parsons-design.png" alt="Adam Parsons" />
+                    <img src={Adam} alt="Adam Parsons" />
                   </div>
                   <h5 className="counselors-name">Adam Parsons</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Online Therapist</h6>
-                  <p>I work from a client-centered approach with specialization in health condition management, anxiety/depression, ADD/ADHD, pain management, and autism spectrum disorders.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>I work from a client-centered approach with specialization in health condition management, anxiety/depression, ADD/ADHD, pain management, and autism spectrum disorders.</p>
                 </div>
               </div>
             </div>
@@ -246,13 +277,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Grant-Long-meet-counselor-225x175.png" alt="Grant Long" />
+                    <img src={Grant} alt="Grant Long" />
                   </div>
                   <h5 className="counselors-name">Grant Long</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Online Mentor and Basketball coach</h6>
-                  <p>My mission is to show you that mental advantage. Talk to me when you are preparing yourself for the game; even the night before.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>My mission is to show you that mental advantage. Talk to me when you are preparing yourself for the game; even the night before.</p>
                 </div>
               </div>
             </div>
@@ -261,13 +292,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/meet-counselor-lisa-falls-225x175.jpg" alt="Lisa Falls" />
+                    <img src={Meet} alt="Lisa Falls" />
                   </div>
                   <h5 className="counselors-name">Lisa Falls</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>MPS, LPCC, ATR-BC</h6>
-                  <p>I will help guide you through your difficult time in a private setting with sensitivity and caring.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>I will help guide you through your difficult time in a private setting with sensitivity and caring.</p>
                 </div>
               </div>
             </div>
@@ -276,13 +307,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Amanda-Bryant-Christian-Life-Coach-small.png" alt="Amanda Bryan" />
+                    <img src={Amanda} alt="Amanda Bryan" />
                   </div>
                   <h5 className="counselors-name">Amanda Bryan</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Christian Life Coach</h6>
-                  <p>Have you ever put everything you have into something to find out that it is just not going to work? I have, and it is quite disheartening.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>Have you ever put everything you have into something to find out that it is just not going to work? I have, and it is quite disheartening.</p>
                 </div>
               </div>
             </div>
@@ -291,13 +322,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/S.Eric-Ward-Wealth-Strategist-225x175.jpg" alt="S.Eric Ward" />
+                    <img src={Eric} alt="S.Eric Ward" />
                   </div>
                   <h5 className="counselors-name">S.Eric Ward</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Wealth Strategist</h6>
-                  <p>I believe that drawing a road map to financial freedom should not be complicated. I partner with my clients to help navigate the often confusing financial world.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>I believe that drawing a road map to financial freedom should not be complicated. I partner with my clients to help navigate the often confusing financial world.</p>
                 </div>
               </div>
             </div>
@@ -306,13 +337,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/CindyJackson-179x175.jpg" alt="Cindy Jackson" />
+                    <img src={Cindy} alt="Cindy Jackson" />
                   </div>
                   <h5 className="counselors-name">Cindy Jackson</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Career Coach</h6>
-                  <p>My Approach – Finding the right job is more than salary and location it is using a strategic matching process to ensure this is the right culture, the right position and the right career trajectory for you now and in the long term.  Let’s talk about your career, your aspirations and your cultural preferences then let’s craft a plan to get things moving in the right direction.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>My Approach – Finding the right job is more than salary and location it is using a strategic matching process to ensure this is the right culture, the right position and the right career trajectory for you now and in the long term.  Let’s talk about your career, your aspirations and your cultural preferences then let’s craft a plan to get things moving in the right direction.</p>
                 </div>
               </div>
             </div>
@@ -321,14 +352,14 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Karen-E.-Sharpe-Coach-Head-Shot-225x175.jpg" alt="Karen E. Sharpe" />
+                    <img src={Karen} alt="Karen E. Sharpe" />
                   </div>
                   <h5 className="counselors-name">Karen E. Sharpe</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Certified Life Coach, MS Communications
                     Life Cycle Celebrant</h6>
-                  <p>Feeling stuck? Unsure of what’s next? Are you ready for change? Whether personally or professionally, in relationship or single, you have the wisdom inside you to envision how to be better, do better, and feel more fulfilled.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>Feeling stuck? Unsure of what’s next? Are you ready for change? Whether personally or professionally, in relationship or single, you have the wisdom inside you to envision how to be better, do better, and feel more fulfilled.</p>
                 </div>
               </div>
             </div>
@@ -337,13 +368,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Kelly_Perry3-225x175.jpg" alt="Kelly A. Perry" />
+                    <img src={Kelly} alt="Kelly A. Perry" />
                   </div>
                   <h5 className="counselors-name">Kelly A. Perry</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Resiliency Coach</h6>
-                  <p>Let’s train your brain. It’s already going negative. How can we add more positive emotions to your life? Bad things are going to happen. How can we change your thinking and take productive action? We will discuss developing a sense of wonder, values, strengths, reframing, balancing your thinking, mindfulness, and more.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>Let’s train your brain. It’s already going negative. How can we add more positive emotions to your life? Bad things are going to happen. How can we change your thinking and take productive action? We will discuss developing a sense of wonder, values, strengths, reframing, balancing your thinking, mindfulness, and more.</p>
                 </div>
               </div>
             </div>
@@ -352,13 +383,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Amber_Hannon.jpg" alt="Amber Hannon" />
+                    <img src={Amber} alt="Amber Hannon" />
                   </div>
                   <h5 className="counselors-name">Amber Hannon, MS, RD</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Wellness Coach</h6>
-                  <p>The ups and downs of life can make maintaining a healthy lifestyle difficult.  In addition, navigating the best approach alone can be confusing and frustrating.  My goal is to empower you to meet your wellness goals, feeling better than ever inside and out.  Whatever your goals may be, I am excited to help you along the way.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>The ups and downs of life can make maintaining a healthy lifestyle difficult.  In addition, navigating the best approach alone can be confusing and frustrating.  My goal is to empower you to meet your wellness goals, feeling better than ever inside and out.  Whatever your goals may be, I am excited to help you along the way.</p>
                 </div>
               </div>
             </div>
@@ -367,14 +398,14 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/John-Bubello-225x175.jpg" alt="John Bubello" />
+                    <img src={John} alt="John Bubello" />
                   </div>
                   <h5 className="counselors-name">John Bubello</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Certified Life Coach, B.S. Operations Technology
                     Triathlete, Musician</h6>
-                  <p>If change were easy, we wouldn’t need resolutions every New Year. The reality is that change is challenging and developing motivation to change alone can be difficult.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>If change were easy, we wouldn’t need resolutions every New Year. The reality is that change is challenging and developing motivation to change alone can be difficult.</p>
                 </div>
               </div>
             </div>
@@ -383,13 +414,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Jasminka-Jasarevic-225x175.png" alt="Jasminka Jasarevic" />
+                    <img src={Jasminka} alt="Jasminka Jasarevic" />
                   </div>
                   <h5 className="counselors-name">Jasminka Jasarevic, MS, RD</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Life Coach</h6>
-                  <p>The first step to any
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>The first step to any
                     conversation is getting to know you. What seems to bother you? What areas in your
                     life prevail the most? Do you have daily anxieties that seep out on a regular basis?
                     We will take small steps that will be monitored and broken down into chunks.</p>
@@ -401,13 +432,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Julianna-Lopez-225x175.jpg" alt="Julianna Lopez" />
+                    <img src={Julianna} alt="Julianna Lopez" />
                   </div>
                   <h5 className="counselors-name">Julianna Lopez</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Life Coach</h6>
-                  <p>My experience has taught me to be an empath and a long with honesty, it’s what I bring to every session.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>My experience has taught me to be an empath and a long with honesty, it’s what I bring to every session.</p>
                 </div>
               </div>
             </div>
@@ -416,13 +447,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Madison-Carter-225x175.jpg" alt="Madison Carter" />
+                    <img src={Madison} alt="Madison Carter" />
                   </div>
                   <h5 className="counselors-name">Madison Carter</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Life Coach</h6>
-                  <p>Through my experiences, it has taught me to be a helping hand and a listening ear to those seeking help.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>Through my experiences, it has taught me to be a helping hand and a listening ear to those seeking help.</p>
                 </div>
               </div>
             </div>
@@ -431,13 +462,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Dedric_Wright.png" alt="Dedric Wright" />
+                    <img src={Dedric} alt="Dedric Wright" />
                   </div>
                   <h5 className="counselors-name">Dedric Wright</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Life Coach</h6>
-                  <p>Is your life on autopilot? Has life thrown you a curveball? Are you confused about the next step in your personal or professional life?</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>Is your life on autopilot? Has life thrown you a curveball? Are you confused about the next step in your personal or professional life?</p>
                 </div>
               </div>
             </div>
@@ -446,13 +477,13 @@ return (
               <div className="counselors">
                 <a href="#" className="counselors-profile">
                   <div className="counselors-image">
-                    <img src="./../assets/images/counselors/Missy_O'Dell.jpg" alt="Missy O'Dell" />
+                    <img src={Missy} alt="Missy O'Dell" />
                   </div>
                   <h5 className="counselors-name">Missy O'Dell</h5>
                 </a>
                 <div className="counselors-about">
                   <h6>Faith Based Life Coach</h6>
-                  <p>I love to help those who need support. To provide a gentle yet encouraging boost to enable my clients to discover and live a better life.</p>
+                  <p style={{fontWeight: 400,fontFamily: 'Roboto',fontSize: "1rem",color:"#394d5c" }}>I love to help those who need support. To provide a gentle yet encouraging boost to enable my clients to discover and live a better life.</p>
                 </div>
               </div>
             </div>

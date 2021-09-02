@@ -2,7 +2,16 @@ import React from "react"
 import {useHistory} from "react-router-dom";
 import "./Global.css"
 import "./Module.css"
+import "./bootstrap.min.css"
+import "./Depression.css"
 import logo from "../images/logo.png"
+import anxiety from "../images/anxiety.png"
+import wellness from "../images/wellness.mp3"
+import wellness1 from "../images/wellness.mp4"
+import quiteanxiety from "../images/quite-anxiety.png"
+
+
+
 
 
 function Depression() {
@@ -26,7 +35,7 @@ function Depression() {
             <div className="container">
               <div className="row">
                 <div className="col-12 header-content">
-                  <div className="logo-container" style={{marginLeft:"-35px"}}>
+                  <div className="logo-container" style={{marginLeft:"-35px", marginTop:"-17px"}}>
                     <a className="logo" href="./../index.html">
                       <span>Wellness</span>
                     </a>
@@ -58,19 +67,19 @@ function Depression() {
             </div>  
             <div className="row">
               <div className="col-12 pt-4">
-                <h5 className="text-center">Self-Care Activities</h5>
+                <h5 className="text-center" style={{color:"#FFFFFF"}}>Self-Care Activities</h5>
                 <div className="hr-line" />
                 <div className="condition-cards">
                   {/* Card 1 */}
                   <div className="activity-cards">
                     <div className="card-image">
-                      <img src="./../assets/images/anxiety.png" alt="image" />
+                      <img src={anxiety} alt="image" />
                     </div>
                     <div className="card-texts">
                       <h6>Matt: coping techniques foranxiety.</h6>
                     </div>
                     <div className="cards-audio">
-                      <audio src="./../assets/images/wellness.mp3" controls controlslist="nodownload">
+                      <audio src={wellness} controls controlslist="nodownload">
                         Your browser does not support the
                         <code>audio</code> element.
                       </audio>
@@ -79,7 +88,7 @@ function Depression() {
                   {/* Card 2 */}
                   <div className="activity-cards">
                     <div className="card-image">
-                      <video className="img-fluid" src="./../assets/images/wellness.mp4" controls controlslist="nodownload" />
+                      <video className={wellness1} controls controlslist="nodownload" />
                     </div>
                     <div className="card-texts">
                       <h6>Carlo: the five major types of anxiety disorders.</h6>
@@ -88,7 +97,7 @@ function Depression() {
                   {/* Card 3 */}
                   <div className="activity-cards">
                     <div className="card-image">
-                      <img src="./../assets/images/quite-anxiety.png" alt="image" />
+                      <img src={quiteanxiety} alt="image" />
                     </div>
                     <div className="card-texts">
                       <h6>Exercise: practice the counting technique to quite an anxiety attack</h6>
