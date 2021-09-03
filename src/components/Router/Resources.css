@@ -1,88 +1,66 @@
-#resources-page{
-    background: #f3f3f3;
-    width: 100%;
-    min-height: 100vh;
-    
-    color: #394d5c;;
-  
-  }
-  
- 
-  
-    h2{
-      font-weight: 500;
-      color: black;
-    }
-    .blue-text{
-      color: black;
-      font-size: 1.25rem;
-    }
-  
-    .resource-content{
-      margin-top: 2em;
-      margin-bottom: 3em;
-    }
-      h4{
-        color: black;
-        font-size: 1.8rem;
-      }
-      p{
-        font-size: 1.125rem;
-      }
- 
-        .underline-link{
-          transition: all .3s ease;
-        }
-          .hover{
-            color: blue;
-          }
-    
-      .resource-links-list{
-        padding: 0 1em;
-        margin: 1em;
-      }
-        /* li{
-          list-style-type: disc;
-        } */
-          a{
-            font-size: 1.25rem;
-      
-            /* word-break: break-all; */
-            transition: all .3s ease;
-          }
-            .hover{
-              color: blue;
-            }
-            .resource-container h2 {
-              font-weight: 500;
-              color: #37383d;
-            }
-            h2 {
-              font-size: 2rem;
-              font-weight: 600;
-          }
-          .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-            margin-top: 0;
-            margin-bottom: .5rem;
-            font-weight: 500;
-            line-height: 1.2;
-        }
-        
-.resource-container .resource-content {
-    margin-top: 2em;
-    margin-bottom: 3em;
+#resources-page {
+  color: #394d5c;
 }
+
+.resource-container h2 {
+  font-weight: 500;
+  color: #37383d;;
+}
+
+.resource-container .blue-text {
+  color: #37383d;;
+  font-size: 1.25rem;
+}
+
+.resource-container .resource-content {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.resource-container .resource-content h4 {
+  color: #37383d;;
+  font-size: 1.8rem;
+}
+
+.resource-container .resource-content p {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.resource-container .resource-content p .underline-link {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.resource-container .resource-content p .underline-link:hover {
+  color:#4ca9e0;
+}
+
+.resource-container .resource-content .resource-links-list {
+  padding: 0 1em;
+  margin: 1em;
+}
+
+.resource-container .resource-content .resource-links-list li {
+  list-style-type: disc;
+}
+
 .resource-container .resource-content .resource-links-list li a {
   font-size: 1.25rem;
   word-break: break-all;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.dark-text {
-  color: #394d5c;
+
+.resource-container .resource-content .resource-links-list li a:hover {
+  color: #4ca9e0;
 }
-@media (max-width: 575.98px){
-.h4 {
-    font-size: 1.6rem !important;
-}
+
+@media (max-width: 575.98px) {
+  .resource-container .resource-content p {
+    font-size: 1rem;
+  }
+  .resource-container .resource-content .resource-links-list li a {
+    font-size: 1rem;
+  }
 }
