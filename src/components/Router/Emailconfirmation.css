@@ -31,3 +31,6 @@
     background-color: #43b14b;
   }
 }
+.linear-btn-container .linear-btn {
+  padding: 2px 20px !important;
+}

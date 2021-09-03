@@ -1,6 +1,10 @@
 import React from 'react'; 
 import {useHistory} from "react-router-dom";
 import logo from "../images/logo.png"
+import anxiety from "../images/anxiety.png"
+import wellness from "../images/wellness.mp3"
+import wellness1 from "../images/wellness.mp4"
+import quiteanxiety from "../images/quite-anxiety.png"
 
 
 function Substanceabuse() {
@@ -47,26 +51,26 @@ return (
           <div className="row">
             {/* Texts-container */}
             <div className="col-12">
-              <h4 className="text-center hero-title">Substance Abuse Disorder</h4>
-              <p className="title-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing commodo elit at imperdiet dui. Ultricies mi eget mauris pharetra et ultrices neque. Pulvinar etiam non quam lacus suspendisse faucibus interdum. Vivamus at augue eget arcu dictum varius duis at. Tristique senectus et netus et malesuada fames ac turpis egestas. Duis ultricies lacus sed turpis tincidunt id. Aliquam vestibulum morbi blandit cursus. Nam libero justo laoreet sit amet cursus sit amet dictum. Tempus quam pellentesque nec nam aliquam sem et. Molestie nunc non blandit massa enim nec dui nunc. Neque laoreet suspendisse interdum consectetur libero id.</p>
-              <p className="title-desc">Amet volutpat consequat mauris nunc congue nisi vitae. Enim diam vulputate ut pharetra sit. Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Nulla facilisi cras fermentum odio eu. Tellus pellentesque eu tincidunt tortor aliquam nulla. Sollicitudin aliquam ultrices sagittis orci a scelerisque. Vitae justo eget magna fermentum iaculis eu non diam phasellus. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis. Tincidunt ornare massa eget egestas purus viverra. Ultrices vitae auctor eu augue ut lectus. Duis at tellus at urna. Sapien eget mi proin sed. At consectetur lorem donec massa sapien faucibus. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Magna etiam tempor orci eu lobortis elementum nibh tellus. Tellus in metus vulputate eu scelerisque. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit. Morbi tincidunt augue interdum velit.</p>
+              <h4 className="text-center hero-title" style={{fontSize:"2rem",fontWeight: 500,marginLeft:"10px"}}>Substance Abuse Disorder</h4>
+              <p className="title-desc" style={{color:"#FFFFFF"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing commodo elit at imperdiet dui. Ultricies mi eget mauris pharetra et ultrices neque. Pulvinar etiam non quam lacus suspendisse faucibus interdum. Vivamus at augue eget arcu dictum varius duis at. Tristique senectus et netus et malesuada fames ac turpis egestas. Duis ultricies lacus sed turpis tincidunt id. Aliquam vestibulum morbi blandit cursus. Nam libero justo laoreet sit amet cursus sit amet dictum. Tempus quam pellentesque nec nam aliquam sem et. Molestie nunc non blandit massa enim nec dui nunc. Neque laoreet suspendisse interdum consectetur libero id.</p>
+              <p className="title-desc"style={{color:"#FFFFFF"}}>Amet volutpat consequat mauris nunc congue nisi vitae. Enim diam vulputate ut pharetra sit. Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Nulla facilisi cras fermentum odio eu. Tellus pellentesque eu tincidunt tortor aliquam nulla. Sollicitudin aliquam ultrices sagittis orci a scelerisque. Vitae justo eget magna fermentum iaculis eu non diam phasellus. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis. Tincidunt ornare massa eget egestas purus viverra. Ultrices vitae auctor eu augue ut lectus. Duis at tellus at urna. Sapien eget mi proin sed. At consectetur lorem donec massa sapien faucibus. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Magna etiam tempor orci eu lobortis elementum nibh tellus. Tellus in metus vulputate eu scelerisque. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit. Morbi tincidunt augue interdum velit.</p>
             </div>
           </div>  
           <div className="row">
             <div className="col-12">
-              <h5 className="text-center">Self-Care Activities</h5>
+              <h5 className="text-center" >Self-Care Activities</h5>
               <div className="hr-line" />
               <div className="condition-cards">
                 {/* Card 1 */}
                 <div className="activity-cards">
                   <div className="card-image">
-                    <img src="./../assets/images/anxiety.png" alt="image" />
+                    <img src={anxiety} alt="image" />
                   </div>
                   <div className="card-texts">
                     <h6>Matt: coping techniques foranxiety.</h6>
                   </div>
                   <div className="cards-audio">
-                    <audio src="./../assets/images/wellness.mp3" controls controlslist="nodownload">
+                    <audio src={wellness} controls controlslist="nodownload">
                       Your browser does not support the
                       <code>audio</code> element.
                     </audio>
@@ -75,7 +79,7 @@ return (
                 {/* Card 2 */}
                 <div className="activity-cards">
                   <div className="card-image">
-                    <video className="img-fluid" src="./../assets/images/wellness.mp4" controls controlslist="nodownload" />
+                    <video className="img-fluid" src={wellness1} controls controlslist="nodownload" />
                   </div>
                   <div className="card-texts">
                     <h6>Carlo: the five major types of anxiety disorders.</h6>
@@ -84,7 +88,7 @@ return (
                 {/* Card 3 */}
                 <div className="activity-cards">
                   <div className="card-image">
-                    <img src="./../assets/images/quite-anxiety.png" alt="image" />
+                    <img src={quiteanxiety} alt="image" />
                   </div>
                   <div className="card-texts">
                     <h6>Exercise: practice the counting technique to quite an anxiety attack</h6>

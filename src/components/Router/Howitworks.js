@@ -4,6 +4,8 @@ import {useHistory} from "react-router-dom";
 import logo from "../images/logo.png"
 import client1 from '../images/client1.png'
 import client from '../images/client.png'
+import "./Howitworks.css"
+
 
 
 function Howitworks() {
@@ -22,7 +24,7 @@ return (
   <link rel="stylesheet" href="./../vendors/bootstrap/css/bootstrap.min.css" />
   {/* Custom CSS Link */}
   <link rel="stylesheet" href="./../assets/css/app.css" />
-  <title>How it Works</title>
+  <title style={{fontSize: "2rem",fontWeight: 500}}>How it Works</title>
   {/* Start of page content */}
   <div id="aboutapp-page" className="page-wrapper blue-page">
     
@@ -92,7 +94,7 @@ return (
         <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
         <div className="col-lg-4 col-md-6 col-8">
           <div className="linear-btn-container">
-            <a className="linear-btn" onClick ={() => {history.push("/schedule");}} style={{cursor:"pointer",  padding: "4px 20px", height:"35px"}}>Continue</a>
+            <a className="linear-btn" onClick ={() => {history.push("/schedule");}} style={{cursor:"pointer",  padding: "4px 20px", height:"40px"}}>Continue</a>
           </div>
         </div>
         <div className="col-lg-4 col-md-3 col-2" />

@@ -1,6 +1,11 @@
 import React from "react";
 import {useHistory} from "react-router-dom";
 import logo from "../images/logo.png"
+import anxiety from "../images/anxiety.png"
+import wellness from "../images/wellness.mp3"
+import wellness1 from "../images/wellness.mp4"
+import quiteanxiety from "../images/quite-anxiety.png"
+
 
 
 function Obsessive() {
@@ -20,12 +25,14 @@ function Obsessive() {
           <title>Obsessive-Compulsive Disorder</title>
           {/* Start of page content */}
           <div id="conditions-page">
+          <div className="page-wrapper blue-page">
             {/* Star of Header */}
-            <header className="header">
+            {/* <header className="header"> */}
+            <header className="header blue-header">
               <div className="container">
                 <div className="row">
                   <div className="col-12 header-content">
-                    <div className="logo-container">
+                    <div className="logo-container" style={{marginLeft:"-35px", marginTop:"-17px"}}>
                       <a className="logo" onClick ={() => {history.push("/homefile");}}>
                         <span>Wellness</span>
                       </a>
@@ -45,28 +52,28 @@ function Obsessive() {
               <div className="row">
                 {/* Texts-container */}
                 <div className="col-12">
-                  <h4 className="text-center hero-title">Obsessive-Compulsive Disorder – OCD</h4>
-                  <p className="title-desc">People with obsessive-compulsive disorder (OCD) suffer from unwanted and intrusive thoughts that they can’t seem to get out of their heads (obsessions), often compelling them to repeatedly perform ritualistic behaviors and routines (compulsions) to try and ease their anxiety.</p>
-                  <p className="title-desc">Most people who have OCD are aware that their obsessions and compulsions are irrational, yet they feel powerless to stop them. Some spend hours at a time performing complicated rituals involving hand-washing, counting, or checking to ward off persistent, unwelcome thoughts, feelings, or images.</p>
-                  <p className="title-desc">These thoughts can interfere with a person’s normal routine, schoolwork, job, family, or social activities.</p>
-                  <p className="title-desc">Several hours every day may be spent focusing on obsessive thoughts and performing seemingly senseless rituals. Therefore, trying to concentrate on daily activities may be difficult.</p>
+                  <h4 className="text-center hero-title" style={{fontSize: "2rem",fontWeight: 500,marginLeft:"10px"}}>Obsessive-Compulsive Disorder – OCD</h4>
+                  <p className="title-desc" style={{color:"#FFFFFF"}}>People with obsessive-compulsive disorder (OCD) suffer from unwanted and intrusive thoughts that they can’t seem to get out of their heads (obsessions), often compelling them to repeatedly perform ritualistic behaviors and routines (compulsions) to try and ease their anxiety.</p>
+                  <p className="title-desc" style={{color:"#FFFFFF"}}>Most people who have OCD are aware that their obsessions and compulsions are irrational, yet they feel powerless to stop them. Some spend hours at a time performing complicated rituals involving hand-washing, counting, or checking to ward off persistent, unwelcome thoughts, feelings, or images.</p>
+                  <p className="title-desc" style={{color:"#FFFFFF"}}>These thoughts can interfere with a person’s normal routine, schoolwork, job, family, or social activities.</p>
+                  <p className="title-desc" style={{color:"#FFFFFF"}}>Several hours every day may be spent focusing on obsessive thoughts and performing seemingly senseless rituals. Therefore, trying to concentrate on daily activities may be difficult.</p>
                 </div>
               </div>  
               <div className="row">
                 <div className="col-12">
-                  <h5 className="text-center">Depression Self-Care Activities</h5>
+                  <h5 className="text-center" style={{color:"#FFFFFF"}}>Self-Care Activities</h5>
                   <div className="hr-line" />
                   <div className="condition-cards">
                     {/* Card 1 */}
                     <div className="activity-cards">
                       <div className="card-image">
-                        <img src="./../assets/images/anxiety.png" alt="image" />
+                        <img src={anxiety} alt="image" />
                       </div>
                       <div className="card-texts">
                         <h6>Matt: coping techniques foranxiety.</h6>
                       </div>
                       <div className="cards-audio">
-                        <audio src="./../assets/images/wellness.mp3" controls controlslist="nodownload">
+                        <audio src={wellness} controls controlslist="nodownload">
                           Your browser does not support the
                           <code>audio</code> element.
                         </audio>
@@ -75,7 +82,7 @@ function Obsessive() {
                     {/* Card 2 */}
                     <div className="activity-cards">
                       <div className="card-image">
-                        <video className="img-fluid" src="./../assets/images/wellness.mp4" controls controlslist="nodownload" />
+                        <video className="img-fluid" src={wellness1} controls controlslist="nodownload" />
                       </div>
                       <div className="card-texts">
                         <h6>Carlo: the five major types of anxiety disorders.</h6>
@@ -84,7 +91,7 @@ function Obsessive() {
                     {/* Card 3 */}
                     <div className="activity-cards">
                       <div className="card-image">
-                        <img src="./../assets/images/quite-anxiety.png" alt="image" />
+                        <img src={quiteanxiety} alt="image" />
                       </div>
                       <div className="card-texts">
                         <h6>Exercise: practice the counting technique to quite an anxiety attack</h6>
@@ -92,7 +99,7 @@ function Obsessive() {
                       <div className="card-links text-center">
                         <a className="links" href="#">
                           Try it 
-                          <span className="arrow-icon"><i className="far fa-arrow-right" /></span>
+                          <span className="arrow-icon"><svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M264.547 70.633L440.547 238.633C445.297 243.164 447.984 249.445 447.984 256.008S445.297 268.852 440.547 273.383L264.547 441.383C254.953 450.508 239.766 450.164 230.609 440.57C221.453 431.07 221.797 415.82 231.422 406.633L364.09 280.008H24C10.75 280.008 0 269.258 0 256.008S10.75 232.008 24 232.008H364.09L231.422 105.383C221.797 96.227 221.453 80.977 230.609 71.445C239.766 61.852 254.953 61.508 264.547 70.633Z"></path></svg></span>
                         </a>
                       </div>
                     </div>
@@ -116,6 +123,7 @@ function Obsessive() {
               {/* End of large bottom button */}
             </div>
             {/* End of main content */}
+          </div>
           </div>
           {/* Start of page content */}
           {/* Start of Footer */}

@@ -64,7 +64,7 @@ function Confirm() {
                   <div className="col-lg-4 col-md-6 col-8">
                     <div className="linear-btn-container" >
                       
-<button  style={{marginLeft:"5px"}} type="button" className="linear-btn blue-btn" onClick ={() => {history.push("/selfcare");}}>Finished</button>
+<button  style={{marginLeft:"5px"}} type="button" className="linear-btn blue-btn" onClick ={() => {history.push("/selfcare");}} style={{height:"38px"}}>Finished</button>
 
                     </div>
                   </div>

@@ -1,6 +1,10 @@
 import React from 'react';
 import {useHistory} from "react-router-dom";
 import logo from "../images/logo.png"
+import anxiety from "../images/anxiety.png"
+import wellness from "../images/wellness.mp3"
+import wellness1 from "../images/wellness.mp4"
+import quiteanxiety from "../images/quite-anxiety.png"
 
 
 function Posttraumatic() {
@@ -21,12 +25,14 @@ function Posttraumatic() {
           <title>Posttraumatic</title>
           {/* Start of page content */}
           <div id="conditions-page">
+          <div className="page-wrapper blue-page">
             {/* Star of Header */}
-            <header className="header">
+            {/* <header className="header"> */}
+            <header className="header blue-header">
               <div className="container">
                 <div className="row">
                   <div className="col-12 header-content">
-                    <div className="logo-container">
+                    <div className="logo-container" style={{marginLeft:"-35px", marginTop:"-17px"}}>
                       <a className="logo" onClick ={() => {history.push("/homefile");}}>
                         <span>Wellness</span>
                       </a>
@@ -46,29 +52,29 @@ function Posttraumatic() {
               <div className="row">
                 {/* Texts-container */}
                 <div className="col-12">
-                  <h4 className="text-center hero-title">Post-traumatic Stress Disorder</h4>
-                  <p className="title-desc">Post-traumatic stress disorder (PTSD) is a severe anxiety disorder.</p>
-                  <p className="title-desc">It is the type of disorder that develops as a result of exposure to an event that causes psychological trauma.</p>
-                  <p className="title-desc">The event alone may involve the threat of death to oneself or to another; or to one’s physical, sexual, or psychological integrity.</p>
-                  <p className="title-desc">Because of this trauma, the individual feels unable to cope. As a disorder, PTSD is less frequent, but more enduring than posttraumatic stresses.</p>
-                  <p className="title-desc">Symptoms of PTSD include experiencing the original trauma through flashbacks and/or nightmares, avoiding any stimuli related to the trauma, and increased arousal. Classification of PTSD falls under the guidelines of the DSM-IV-TR.</p>
+                  <h4 className="text-center hero-title" style={{marginLeft:"-10px",fontSize: "2rem",fontWeight: 500,}}>Post-traumatic Stress Disorder</h4>
+                  <p className="title-desc" style={{fontSize: "1.25rem",color:"#FFFFFF"}}>Post-traumatic stress disorder (PTSD) is a severe anxiety disorder.</p>
+                  <p className="title-desc" style={{fontSize: "1.25rem",color:"#FFFFFF"}}>It is the type of disorder that develops as a result of exposure to an event that causes psychological trauma.</p>
+                  <p className="title-desc" style={{fontSize: "1.25rem",color:"#FFFFFF"}}>The event alone may involve the threat of death to oneself or to another; or to one’s physical, sexual, or psychological integrity.</p>
+                  <p className="title-desc" style={{fontSize: "1.25rem",color:"#FFFFFF"}}>Because of this trauma, the individual feels unable to cope. As a disorder, PTSD is less frequent, but more enduring than posttraumatic stresses.</p>
+                  <p className="title-desc" style={{fontSize: "1.25rem",color:"#FFFFFF"}}>Symptoms of PTSD include experiencing the original trauma through flashbacks and/or nightmares, avoiding any stimuli related to the trauma, and increased arousal. Classification of PTSD falls under the guidelines of the DSM-IV-TR.</p>
                 </div>
               </div>  
               <div className="row">
                 <div className="col-12">
-                  <h5 className="text-center">Depression Self-Care Activities</h5>
+                  <h5 className="text-center" style={{color:"#FFFFFF"}}>Self-Care Activities</h5>
                   <div className="hr-line" />
                   <div className="condition-cards">
                     {/* Card 1 */}
                     <div className="activity-cards">
                       <div className="card-image">
-                        <img src="./../assets/images/anxiety.png" alt="image" />
+                        <img src={anxiety} alt="image" />
                       </div>
                       <div className="card-texts">
                         <h6>Matt: coping techniques foranxiety.</h6>
                       </div>
                       <div className="cards-audio">
-                        <audio src="./../assets/images/wellness.mp3" controls controlslist="nodownload">
+                        <audio src={wellness} controls controlslist="nodownload">
                           Your browser does not support the
                           <code>audio</code> element.
                         </audio>
@@ -77,7 +83,7 @@ function Posttraumatic() {
                     {/* Card 2 */}
                     <div className="activity-cards">
                       <div className="card-image">
-                        <video className="img-fluid" src="./../assets/images/wellness.mp4" controls controlslist="nodownload" />
+                        <video className="img-fluid" src={wellness1} controls controlslist="nodownload" />
                       </div>
                       <div className="card-texts">
                         <h6>Carlo: the five major types of anxiety disorders.</h6>
@@ -86,7 +92,7 @@ function Posttraumatic() {
                     {/* Card 3 */}
                     <div className="activity-cards">
                       <div className="card-image">
-                        <img src="./../assets/images/quite-anxiety.png" alt="image" />
+                        <img src={quiteanxiety} alt="image" />
                       </div>
                       <div className="card-texts">
                         <h6>Exercise: practice the counting technique to quite an anxiety attack</h6>
@@ -94,13 +100,13 @@ function Posttraumatic() {
                       <div className="card-links text-center">
                         <a className="links" href="#">
                           Try it 
-                          <span className="arrow-icon"><i className="far fa-arrow-right" /></span>
+                          <span className="arrow-icon"><svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M264.547 70.633L440.547 238.633C445.297 243.164 447.984 249.445 447.984 256.008S445.297 268.852 440.547 273.383L264.547 441.383C254.953 450.508 239.766 450.164 230.609 440.57C221.453 431.07 221.797 415.82 231.422 406.633L364.09 280.008H24C10.75 280.008 0 269.258 0 256.008S10.75 232.008 24 232.008H364.09L231.422 105.383C221.797 96.227 221.453 80.977 230.609 71.445C239.766 61.852 254.953 61.508 264.547 70.633Z"></path></svg></span>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div className="text-center mb-2">
-                    <a className="title-desc self-care-link" onClick ={() => {history.push("/selfcare");}}>Explore more self-care activities here</a>
+                    <a className="title-desc self-care-link" onClick ={() => {history.push("/selfcare");}} style={{cursor:"pointer"}}>Explore more self-care activities here</a>
                   </div>
                   <div className="hr-line" />
                 </div>
@@ -110,7 +116,7 @@ function Posttraumatic() {
                 <div className="col-lg-3 col-md-2 col-sm-1 d-none d-sm-block" />
                 <div className="col-lg-6 col-md-8 col-sm-10 col-12">
                   <div className="linear-btn-container condition-btn-lg">
-                    <a className="linear-btn condition-link" onClick ={() => {history.push("/schedule");}}>Get help with a free consultation</a>
+                    <a className="linear-btn condition-link" onClick ={() => {history.push("/schedule");}} style={{cursor:"pointer"}}>Get help with a free consultation</a>
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-2 col-sm-1 d-none d-sm-block" />
@@ -118,6 +124,7 @@ function Posttraumatic() {
               {/* End of large bottom button */}
             </div>
             {/* End of main content */}
+          </div>
           </div>
           {/* Start of page content */}
           {/* Start of Footer */}

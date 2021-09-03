@@ -10,7 +10,11 @@
       .enroll-confirmation{
         animation: enrolled 3s;
       }
-    
+      #confirm-page .progress-bar .progress {
+        width: 100%;
+        -webkit-animation: progressCompleted 3s;
+        animation: progressCompleted 3s;
+    }
   
   .content-container{
     border: 1px solid #394d5c;

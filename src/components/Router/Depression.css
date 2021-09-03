@@ -1,4 +1,4 @@
-.activity-cards {
+/* .activity-cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10,14 +10,14 @@
     background-color: #43b14b;
     border-radius: 4px;
     overflow: hidden;
-}
-.activity-cards {
+} */
+/* .activity-cards {
     display: flex;
     flex-direction: column;
     width: 30% !important;
     background-color: #43b14b;
-}
-.img-fluid {
+} */
+/* .img-fluid {
     max-width: 100%;
     height: auto;
-}
+} */

@@ -100,7 +100,7 @@ function Individual() {
                 <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
                 <div className="col-lg-4 col-md-6 col-8">
                   <div className="linear-btn-container">
-                    <button style={{marginLeft:"5px",backgroundColor:"#d7e0e9a6"}} type="button" className="linear-btn" onClick ={() => {history.push("/aboutapp");}}>Continue</button>
+                    <button style={{marginLeft:"5px",backgroundColor:"#d7e0e9a6"}} type="button" className="linear-btn" onClick ={() => {history.push("/aboutapp");}} style={{height:"38px"}}>Continue</button>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-3 col-2" />
