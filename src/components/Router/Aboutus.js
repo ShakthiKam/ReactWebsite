@@ -1,6 +1,14 @@
 import React from "react"
 import {useHistory} from "react-router-dom";
 import logo from "../images/logo.png"
+import './Aboutus.css'
+import Jeff from "../images/team/Jeff-ODell.jpg"
+import Kamal from "../images/team/Kamal-Mahalingam.jpg"
+import Linda from "../images/team/Linda-Marr.jpg"
+import Emily from "../images/team/Emily-Bradley.jpg"
+import Melissa from "../images/team/Melissa-ODell.jpg"
+import Matthew from "../images/team/Matthew-Hunt.jpg"
+import David from "../images/team/David-Hull.jpg"
 
 
 function Aboutus() {
@@ -25,13 +33,13 @@ return (
             <div className="row">
               <div className="col-12 header-content">
                 <div className="logo-container">
-                  <a href="./../index.html" className="logo">
+                  <a  className="logo" style={{marginLeft:"-35px", marginTop:"-17px",cursor:"pointer"}} onClick ={() => {history.push("/homefile");}} >
                     <span>Wellness</span>
                   </a>
                 </div>
                 <div className="login-container">
                   <div className="counseling">
-                    <a className="direct-counseling" href="./../members/enrollment.html">Member Enrollment</a>
+                    <a className="direct-counseling" onClick ={() => {history.push("/enrollment");}}>Member Enrollment</a>
                   </div>
                 </div>
               </div>
@@ -43,14 +51,14 @@ return (
         <div className="container main-content">
           <div className="row">
             <div className="col-lg-6 col-md-8 col-sm-10 col-12 about-us-heading">
-              <h5>ABOUT US</h5>
-              <h1>We’re creating a world where mental health is never an obstacle.</h1>
-              <p className="title-desc">We’re reinventing mental health care by coupling data science and virtual delivery to provide immediate, personal support for anyone.</p>
+              <h5 style={{fontSize: "1.2rem",fontWeight: 400}}>ABOUT US</h5>
+              <h1 style={{fontWeight: 600,fontSize: "3.5rem"}}>We’re creating a<br></br> world where mental<br></br> health is never an <br></br>obstacle.</h1>
+              <p className="title-desc" style={{color:"#37383D"}}>We’re reinventing mental health care by coupling data science<br></br> and virtual delivery to provide immediate, personal support<br></br> for anyone.</p>
             </div>
             <div className="col-lg-7 col-md-10 col-sm-12">
               <div id="about-us">
-                <h4>Enthrive Team</h4>
-                <p className="desc-text">Enthrive is an innovative, nonprofit startup focused on improving health more holistically by measuring and enhancing mental, emotional, and spiritual wellness. Our founders are experienced technology innovators and have led corporate teams with a combined 60 years of experience. They have invented new technology combined with “high touch” services to take a more active approach to improve our sense of well-being.</p>
+                <h4 style={{fontSize: "2rem"}}>Enthrive Team</h4>
+                <p className="desc-text" style={{fontSize: "1.125rem",color:"#37383D"}}>Enthrive is an innovative, nonprofit startup focused on improving health more holistically by measuring and enhancing mental, emotional, and spiritual wellness. Our founders are experienced technology innovators and have led corporate teams with a combined 60 years of experience. They have invented new technology combined with “high touch” services to take a more active approach to improve our sense of well-being.</p>
               </div>
             </div>
           </div>
@@ -58,17 +66,17 @@ return (
             <div className="col-12" id="our-team">
               {/* Our Founders */}
               <div className="teams">
-                <h3 className="text-center">Our Founders</h3>
+                <h3 className="text-center" style={{fontSize: "2.4rem",fontWeight: 600}}>Our Founders</h3>
                 <div className="teams-wrapper">
                   {/* Member 1 */}
                   <div className="teams-member" data-id="Jeff">
                     <div className="member-inmage">
-                      <img src="./../assets/images/team/Jeff-ODell.jpg" alt="Jeff O’Dell" />
+                      <img src={Jeff} alt="Jeff O’Dell" />
                     </div>
                     <div className="about-member">
                       <h5>Jeff O’Dell</h5>
-                      <p className="m-0">Co-founder</p>
-                      <p className="m-0">CEO</p>
+                      <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>Co-founder</p>
+                      <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>CEO</p>
                     </div>
                   </div>
                   {/* Team popups 1 */}
@@ -93,12 +101,12 @@ return (
                   {/* Member 2 */}
                   <div className="teams-member" data-id="Kamal">
                     <div className="member-inmage">
-                      <img src="./../assets/images/team/Kamal-Mahalingam.jpg" alt="Kamal Mahalingam" />
+                      <img src={Kamal} />
                     </div>
                     <div className="about-member">
                       <h5>Kamal Mahalingam</h5>
-                      <p className="m-0">Co-founder</p>
-                      <p className="m-0">President, and CTO</p>
+                      <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>Co-founder</p>
+                      <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>President, and CTO</p>
                     </div>
                   </div>
                   {/* Team popups 2 */}
@@ -129,16 +137,16 @@ return (
               </div>
               {/* Our Leaders */}
               <div className="teams">
-                <h3 className="text-center">Our Leaders</h3>
+                <h3 className="text-center" style={{fontSize: "2.4rem",fontWeight: 600}}>Our Leaders</h3>
                 <div className="teams-wrapper">
                   {/* Member 3 */}
                   <div className="teams-member" data-id="Linda">
                     <div className="member-inmage">
-                      <img src="./../assets/images/team/Linda-Marr.jpg" alt="Linda Marr" />
+                      <img src={Linda} alt="Linda Marr" />
                     </div>
                     <div className="about-member">
                       <h5>Linda Marr</h5>
-                      <p className="m-0">Head of Development</p>
+                      <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}} >Head of Development</p>
                     </div>
                   </div>
                   {/* Team popups 3 */}
@@ -150,7 +158,7 @@ return (
                       <div className="member-about-container">
                         <div className="text-wrapper">
                           <h4 className="name">Linda Marr</h4>
-                          <h5 className="description">Head of Business Development</h5>
+                          <h5 className="description" style={{color:"#37383D"}}>Head of Business Development</h5>
                           <p className="dark-text">inda Marr is head of Business Development. She is a visionary, results-oriented, thought leader with a customer-focused mindset. IT and business professional with a background in Life Insurance. She has broad experience ranging from operational management and business process outsourcing to web-based service platform delivery for customers and producers. Her background in business capability implementation including business process integration, change management, and business data management.
                           </p>
                         </div>
@@ -165,11 +173,11 @@ return (
                   {/* Member 4 */}
                   <div className="teams-member" data-id="Emily">
                     <div className="member-inmage">
-                      <img src="./../assets/images/team/Emily-Bradley.jpg" alt="Emily Bradley" />
+                      <img src={Emily} alt="Emily Bradley" />
                     </div>
                     <div className="about-member">
                       <h5>Emily Bradley</h5>
-                      <p className="m-0">Head of User Experience</p>
+                      <p className="m-0"style={{fontSize: "1rem",fontWeight: 400,color:"#37383D"}}>Head of User Experience</p>
                     </div>
                   </div>
                   {/* Team popups 4 */}
@@ -181,7 +189,7 @@ return (
                       <div className="member-about-container">
                         <div className="text-wrapper">
                           <h4 className="name">Emily Bradley</h4>
-                          <h5 className="description">Head of User Experience</h5>
+                          <h5 className="description" style={{color:"#37383D"}}>Head of User Experience</h5>
                           <p className="dark-text">Emily Bradley is the head of User Experience. As an entrepreneur, she has founded Easy Start Homeschool based on her hands-on experience as a mother of 5. She is also the Director of the Classical Conversations program in Washington DC.</p>
                           <p className="dark-text">Her job is to keep us thinking “young” and “relevant” to Gen X and Y users of the Enthrive App.
                           </p>
@@ -196,11 +204,11 @@ return (
                   {/* Member 5 */}
                   <div className="teams-member" data-id="Melissa">
                     <div className="member-inmage">
-                      <img src="./../assets/images/team/Melissa-ODell.jpg" alt="Melissa O’Dell" />
+                      <img src={Melissa} alt="Melissa O’Dell" />
                     </div>
                     <div className="about-member">
                       <h5>Melissa O’Dell</h5>
-                      <p className="m-0">Operations Leader</p>
+                      <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>Operations Leader</p>
                     </div>
                   </div>
                   {/* Team popups 5 */}
@@ -226,17 +234,17 @@ return (
               </div>
               {/* Our Partners */}
               <div className="teams">
-                <h3 className="text-center">Our Partners</h3>
+                <h3 className="text-center" style={{fontSize: "2.4rem",fontWeight: 600}}>Our Partners</h3>
                 <div className="teams-wrapper">
                   {/* Member 6 */}
                   <div className="teams-member" data-id="Matthew">
                     <div className="member-inmage">
-                      <img src="./../assets/images/team/Matthew-Hunt.jpg" alt="Matthew Hunt" />
+                      <img src={Matthew} alt="Matthew Hunt" />
                     </div>
                     <div className="about-member">
                       <h5>Matthew Hunt</h5>
-                      <p className="m-0">Founder</p>
-                      <p className="m-0">CEO</p>
+                      <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>Founder</p>
+                      <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>CEO</p>
                     </div>
                   </div>
                   {/* Team popups 6 */}
@@ -261,11 +269,11 @@ return (
                   {/* Member 7 */}
                   <div className="teams-member" data-id="David">
                     <div className="member-inmage">
-                      <img src="./../assets/images/team/David-Hull.jpg" alt="David Hull " />
+                      <img src={David} alt="David Hull " />
                     </div>
                     <div className="about-member">
                       <h5>David Hull </h5>
-                      <p className="m-0">IT Professional</p>
+                      <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>IT Professional</p>
                     </div>
                   </div>
                   {/* Team popups 7 */}

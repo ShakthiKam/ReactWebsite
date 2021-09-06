@@ -137,12 +137,12 @@
 
 #scheduling-wrapper .availabelity .day-time-wrapper .availablity-times .availablity-btn:hover {
   background-color: transparent;
-  color: var(--blue);
+  color: #4ca9e0;
 }
 
 #scheduling-wrapper .availabelity .day-time-wrapper .availablity-times .active {
   background-color: transparent;
-  color: var(--blue);
+  color: #4ca9e0;
 }
 
 #scheduling-wrapper .availabelity .shedule-bnt-wrapper {

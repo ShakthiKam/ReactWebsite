@@ -48,7 +48,7 @@
         transition: all .3s ease;
       }
         .hover{
-          color: blue;
+          color: #4ca9e0;
         }
     .texts-wrapper{
       width: 40%;
@@ -189,4 +189,9 @@ border-color: #43B14B;
 .links-container {
   margin-bottom: -0.7em;
   color: #fff;
+}
+.selfcare-links-wrapper .links-container .links-list .links:hover {
+  color: #43b14b !important;
+  border-color: #43b14b;
+  background-color: transparent;
 }

@@ -32,8 +32,8 @@ function Selfcareactivities() {
             <div className="container">
               <div className="row">
                 <div className="col-12 header-content">
-                  <div className="logo-container" style={{marginTop:"-20px",marginLeft:"-30px"}}>
-                    <a className="logo" href="./../index.html">
+                  <div className="logo-container" style={{marginTop:"-20px",marginLeft:"-39px",cursor:"pointer"}}>
+                    <a className="logo" onClick ={() => {history.push("/individual");}}>
                       <span>Wellness</span>
                     </a>
                   </div>
@@ -151,7 +151,7 @@ function Selfcareactivities() {
                 </div>
                 <div className="link-wrapper text-center">
                   <h5>
-                  <span><a href="#" style={{display:"inline",fontWeight: 400}}>Learn more about Enthrive,</a></span><p style={{display:"inline", fontSize:"1.2rem", marginLeft:"-15px",fontWeight: 400,color:"#37383D"}}> or<span><a onClick ={() => {history.push("/enrollment");}} style={{display:"inline",marginLeft:"-16px",fontWeight: 400}}>enroll!</a></span></p> 
+                  <span><a href="#" style={{display:"inline",fontWeight: 400}}>Learn more about Enthrive,</a></span><p style={{display:"inline", fontSize:"1.2rem", marginLeft:"-15px",fontWeight: 400,color:"#37383D"}}> or<span><a onClick ={() => {history.push("/enrollment");}} style={{display:"inline",marginLeft:"-16px",fontWeight: 400,cursor:"pointer"}}>enroll!</a></span></p> 
                   </h5>
                 </div>
               </div>
@@ -224,7 +224,7 @@ function Selfcareactivities() {
               </div>
             
                 <div className="col-12 copyrights">
-                <p style={{color:"#fff"}}>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). <span class="additionl-resource"><a 
+                <p style={{color:"#fff"}}>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). <span class="additionl-resource"><a href="#"
                 onClick ={() => {history.push("/resources");}} class="underline-link" style={{marginLeft:"-13px",fontSize: ".9rem",display:"inline-block",cursor:"pointer"}}>Resources.</a></span></p>
 
                   <p style={{fontSize: ".9rem",color:"#fff",lineHeight:2}}>Copyright © <span id="copyright_date">2021</span> Wellness Inc, All rights reserved.</p>

@@ -121,11 +121,11 @@
   }
   .login-container.counseling.direct-counseling:hover{
 
-    color: white
+    color: white 
   }
 a:hover{
-  color: white!important  
+  color: white !important
 }
 .footer .links-container .footer-links-list li a:hover {
-  color: #fff;
+  color: #fff !important;
 }

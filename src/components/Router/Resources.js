@@ -32,7 +32,7 @@ function Resources() {
             <div className="container">
               <div className="row">
                 <div className="col-12 header-content">
-                  <div className="logo-container" style={{marginLeft:"-33px"}}>
+                  <div className="logo-container" style={{marginLeft:"-42px"}}>
                     <a className="logo" href="./../index.html">
                       <span>Wellness</span>
                     </a>
@@ -55,10 +55,10 @@ function Resources() {
                 </div>
                 <div className="resource-content">
                   <h4 className="mb-3">Suicide Prevention:</h4>
-                  <p style={{color:"#37383d"}}>If you or someone you know is suicidal or in emotional distress, contact the <span><a href="https://suicidepreventionlifeline.org/" className="underline-link dark-text" target="_blank">National Suicide Prevention Lifeline.</a></span> Trained crisis workers are available to talk 24 hours a day, 7 days a week. Your confidential and toll-free call goes to the nearest crisis center in the Lifeline national network. These centers provide crisis counseling and mental health referrals.</p>
+                  <p style={{color:"#37383d"}}>If you or someone you know is suicidal or in emotional distress, contact the <span><a href="https://suicidepreventionlifeline.org/" style={{display:"inline",marginLeft:"-14px"}}className="underline-link dark-text" target="_blank">National Suicide Prevention Lifeline.</a></span><p style={{marginLeft:"0px",display:"inline",marginLeft:"-10px",color:"#37383D"}}>Trained crisis workers are available to talk 24 hours a day, 7 days a week. Your confidential and toll-free call goes to the nearest crisis center in the Lifeline national network. These centers provide crisis counseling and mental health referrals.</p></p>
                   <ul className="resource-links-list">
                     <li><p style={{color:"#37383d"}}>The National Suicide Prevention Lifeline can be reached at 1-800-273-8255</p></li>
-                    <li><a href="https://suicidepreventionlifeline.org/chat/" className="underline-link dark-text" target="_blank">Live Online Chat</a></li>
+                    <li><a href="https://suicidepreventionlifeline.org/chat/" className="underline-link dark-text" target="_blank" style={{marginLeft:"-18px"}}>Live Online Chat</a></li>
                     <li><p style={{color:"#37383d"}}>Nacional de Prevención del Suicidio: 1-888-628-9454</p></li>
                     <li><p style={{color:"#37383d"}}>Deaf or Hard of Hearing: Use your preferred relay service or dial 711 then 1-800-273-8255</p></li>
                   </ul>
@@ -69,37 +69,37 @@ function Resources() {
                 </div>
                 <div className="resource-content">
                   <h4>The Veterans Crisis:</h4>
-                  <p style={{color:"#37383d"}}><span><a href="https://www.veteranscrisisline.net/" className="underline-link dark-text" target="_blank" style={{color:"#37383d"}}>The Veterans Crisis Line</a></span> is a 24-hour, toll-free hotline that provides phone, web-chat, and text options available to military veterans and their families. It provides options for deaf and hard of hearing individuals.</p>
+                  <p style={{color:"#37383d"}}><span><a href="https://www.veteranscrisisline.net/" className="underline-link dark-text" target="_blank" style={{color:"#37383d",display:"inline",marginLeft:"-17px"}}>The Veterans Crisis Line</a></span><p style={{display:"inline",marginLeft:"-15px",color:"#37383D"}}> is a 24-hour, toll-free hotline that provides phone, web-chat, and text options available to military veterans and their families. It provides options for deaf and hard of hearing individuals.</p></p>
                   <ul className="resource-links-list">
                     <li><p style={{color:"#37383d"}}>The Veterans Crisis Line can be reached at 1-800-273-8255, followed by Pressing 1.</p></li>
                     <li><p style={{color:"#37383d"}}>The hotline can also be reached by texting to 838255.</p></li>
-                    <li><a href="https://www.usa.gov/federal-agencies/u-s-department-of-health-and-human-services" className="underline-link dark-text" target="_blank">US Department of Health Information</a></li>
+                    <li><a href="https://www.usa.gov/federal-agencies/u-s-department-of-health-and-human-services" className="underline-link dark-text" target="_blank" style={{marginLeft:"-17px"}}>US Department of Health Information</a></li>
                   </ul>
                 </div>
                 <div className="resource-content">
                   <h4>IMAlive Crisis Chatline:</h4>
-                  <p style={{color:"#37383d"}}><span><a href="https://www.imalive.org/" className="underline-link dark-text" target="_blank">IMAlive Crisis Chatine</a></span> is a non-profit, 24/7, anonymous chatline to help anyone in crisis via instant messaging.</p>
+                  <p style={{color:"#37383d"}}><span><a href="https://www.imalive.org/" className="underline-link dark-text" target="_blank" style={{display:"inline", marginLeft:"-17px"}}>IMAlive Crisis Chatine</a></span><p style={{marginLeft:"-15px",color:"#37383D",display:"inline"}}> is a non-profit, 24/7, anonymous chatline to help anyone in crisis via instant messaging.</p></p>
                 </div>
                 <div className="resource-content">
                   <h4>Crisis Text Line:</h4>
-                  <p style={{color:"#37383d"}}><span><a href="https://www.crisistextline.org/" className="underline-link dark-text" target="_blank">The Crisis Text Line</a></span> is a 24/7, nationwide crisis-intervention text-message hotline, which can be reached by texting HOME to 741-741.</p>
+                  <p style={{color:"#37383d"}}><span><a href="https://www.crisistextline.org/" className="underline-link dark-text" target="_blank" style={{display:"inline",marginLeft:"-15px"}}>The Crisis Text Line</a></span><p style={{display:"inline",marginLeft:"-15px",color:"#37383D"}}> is a 24/7, nationwide crisis-intervention text-message hotline, which can be reached by texting HOME to 741-741.</p></p>
                 </div>
                 <div className="resource-content">
                   <h4>Samaritans USA:</h4>
-                  <p style={{color:"#37383d"}}><span><a href="http://www.samaritansusa.org/" className="underline-link dark-text" target="_blank">Samaritans USA</a></span> is a registered charity aimed at providing emotional support to anyone in distress or at risk of suicide throughout the United States.</p>
+                  <p style={{color:"#37383d",display:"inline", marginLeft:"-15px"}}><span><a href="http://www.samaritansusa.org/" className="underline-link dark-text" target="_blank" style={{display:"inline"}}>Samaritans USA</a></span><p  style={{display:"inline",marginLeft:"-15px",color:"#37383D"}}> is a registered charity aimed at providing emotional support to anyone in distress or at risk of suicide throughout the United States.</p></p>
                 </div>
                 <div className="resource-content">
                   <h4>The Trevor Project:</h4>
-                  <p style={{color:"#37383d"}}><span><a href="https://www.thetrevorproject.org/" className="underline-link dark-text" target="_blank">The Trevor Project</a></span> is a nationwide organization that provides a 24-hour phone hotline, as well as 24-hour web-chat and text options, for lesbian, gay, bisexual, transgender and questioning youth.</p>
+                  <p style={{color:"#37383d",display:"inline"}}><span><a href="https://www.thetrevorproject.org/" className="underline-link dark-text" target="_blank" style={{display:"inline",marginLeft:"-15px"}}>The Trevor Project</a></span><p  style={{display:"inline",marginLeft:"-15px",color:"#37383D"}}> is a nationwide organization that provides a 24-hour phone hotline, as well as 24-hour web-chat and text options, for lesbian, gay, bisexual, transgender and questioning youth.</p></p>
                   <ul className="resource-links-list">
                     <li><p style={{color:"#37383d"}}>The TrevorLifeline can be reached at 1-866-488-7386.</p></li>
-                    <li><p style={{color:"#37383d"}}>TrevorChat can be found at <span><a href="https://www.thetrevorproject.org/get-help-now/" className="dark-text" target="_blank">https://www.thetrevorproject.org/get-help-now/</a></span></p></li>
+                    <li><p style={{color:"#37383d"}}>TrevorChat can be found at <span><a href="https://www.thetrevorproject.org/get-help-now/" className="dark-text" target="_blank" style={{display:"inline",marginLeft:"-17px"}}>https://www.thetrevorproject.org/get-help-now/</a></span></p></li>
                     <li><p style={{color:"#37383d"}}>TrevorText can be reached by texting START to 678-678.</p></li>
                   </ul>
                 </div>
                 <div className="resource-content">
                   <h4>The Trans Lifeline:</h4>
-                  <p style={{color:"#37383d"}}><span><a href="https://translifeline.org/" className="underline-link dark-text" target="_blank">The Trans Lifeline</a></span> is a nonprofit organization that is created by and for the transgender community, providing crisis intervention hotlines, staffed by transgender individuals, available in the United States and Canada.</p>
+                  <p style={{color:"#37383d"}}><span><a href="https://translifeline.org/" className="underline-link dark-text" target="_blank" style={{display:"inline",marginLeft:"-15px"}}>The Trans Lifeline</a></span><p  style={{display:"inline",marginLeft:"-15px",color:"#37383D"}}> is a nonprofit organization that is created by and for the transgender community, providing crisis intervention hotlines, staffed by transgender individuals, available in the United States and Canada.</p></p>
                   <ul className="resource-links-list">
                     <li><p style={{color:"#37383d"}}>The US Trans Lifeline can be reached at 1-877-565-8860.</p></li>
                     <li><p style={{color:"#37383d"}}>In Canada, call 1-877-330-6366.</p></li>
@@ -108,7 +108,7 @@ function Resources() {
                 <div className="resource-content">
                   <h4>US National Alliance:</h4>
                   <p style={{color:"#37383d"}}>US National Alliance on Mental Illness (NAMI): 1-800-950-NAMI - nationwide network and search function
-                    for support and education; <span><a href="https://www.nami.org/Support-Education/NAMI-HelpLine/Top-HelpLine-Resources" className="underline-link dark-text" target="_blank">The Trans Lifeline</a></span></p>
+                    for support and education; <span><a href="https://www.nami.org/Support-Education/NAMI-HelpLine/Top-HelpLine-Resources" className="underline-link dark-text" target="_blank" style={{marginLeft:"-17px"}}>The Trans Lifeline</a></span></p>
                 </div>
                 <div className="resource-content">
                   <h4>Additional resources:</h4>
@@ -153,7 +153,7 @@ function Resources() {
                       <li><a href="#" onClick ={() => {history.push("/posttraumatic");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>PTSD</a></li>
                       <li><a href="#" onClick ={() => {history.push("/obsessive");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>OCD</a></li>                      
                       <li><a href="#" onClick ={() => {history.push("/bipolar");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Bipolar</a></li>
-                      <li><a href="#" nClick ={() => {history.push("/substanceabuse");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Substance Abuse</a></li>
+                      <li><a href="#" onClick ={() => {history.push("/substanceabuse");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Substance Abuse</a></li>
                       <li><a href="#" onClick ={() => {history.push("/other");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Other</a></li>
                     </ul>
                   </div>

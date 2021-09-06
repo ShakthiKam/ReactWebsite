@@ -55,7 +55,7 @@ function Confirm() {
                       <p style={{fontSize:"1rem",color: "#394d5c"}}>The day before your appointment, we will send you a confirmation message to make sure your schedule has not changed.</p>
                       <p style={{fontSize:"1rem",color: "#394d5c"}}>There will be instructions for how to join your counselor using an online video call.</p>
                     </div>
-                    <p style={{fontSize:"1rem"}} className="link-text">Your complimentary consultation: Monday May 17th 10:30AM <span>&nbsp; &nbsp;<a onClick ={() => {history.push("/Schedule");}} className="underline-link dark-text" style={{display:"inline",marginLeft:"-20px",fontWeight: 400,fontSize: "1rem"}}>Change</a></span></p>
+                    <p style={{fontSize:"1rem"}} className="link-text">Your complimentary consultation: Monday May 17th 10:30AM <span>&nbsp; &nbsp;<a onClick ={() => {history.push("/Schedule");}} className="underline-link dark-text" style={{display:"inline",marginLeft:"-20px",fontWeight: 400,fontSize: "1rem",cursor:"pointer"}}>Change</a></span></p>
                   </div>
                 </div>
                 {/* Start of large bottom button */}
@@ -141,7 +141,7 @@ function Confirm() {
               </div>
             
                 <div className="col-12 copyrights">
-                <p style={{color:"#fff"}}>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). <span class="additionl-resource"><a 
+                <p style={{color:"#fff"}}>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). <span class="additionl-resource"><a href="#"
                 onClick ={() => {history.push("/resources");}} class="underline-link" style={{marginLeft:"-13px",fontSize: ".9rem",display:"inline-block",cursor:"pointer"}}>Resources.</a></span></p>
 
                   <p style={{fontSize: ".9rem",color:"#fff",lineHeight:2}}>Copyright © <span id="copyright_date">2021</span> Wellness Inc, All rights reserved.</p>
