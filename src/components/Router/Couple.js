@@ -50,7 +50,7 @@ function Couple() {
                     <p className="hero-text" style={{marginLeft:"4px",marginTop:"-22px"}}>What are some areas that you and<br></br> your partner want to focus on, or<br></br> get help with?</p>
                   </div>
                   <div className="checkbox-container">
-                    <ul className="checkbox-lists" style={{marginLeft:"-2px", fontSize:18, marginTop:"-5px"}}> 
+                    <ul className="checkbox-lists" style={{marginLeft:"-35px", fontSize:18, marginTop:"-5px"}}> 
                       {/* link 1 */}
                       <li className="checkbox-links">
                         <input type="checkbox" className="check-box" />

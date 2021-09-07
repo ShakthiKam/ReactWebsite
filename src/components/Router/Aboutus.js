@@ -51,7 +51,7 @@ return (
         <div className="container main-content">
           <div className="row">
             <div className="col-lg-6 col-md-8 col-sm-10 col-12 about-us-heading">
-              <h5 style={{fontSize: "1.2rem",fontWeight: 400}}>ABOUT US</h5>
+              <h5 style={{fontSize: "1.2rem",fontWeight: 400, color:"#37383D"}}>ABOUT US</h5>
               <h1 style={{fontWeight: 600,fontSize: "3.5rem"}}>We’re creating a<br></br> world where mental<br></br> health is never an <br></br>obstacle.</h1>
               <p className="title-desc" style={{color:"#37383D"}}>We’re reinventing mental health care by coupling data science<br></br> and virtual delivery to provide immediate, personal support<br></br> for anyone.</p>
             </div>
@@ -74,7 +74,7 @@ return (
                       <img src={Jeff} alt="Jeff O’Dell" />
                     </div>
                     <div className="about-member">
-                      <h5>Jeff O’Dell</h5>
+                      <h5  style={{color:"#37383D"}}>Jeff O’Dell</h5>
                       <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>Co-founder</p>
                       <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>CEO</p>
                     </div>
@@ -104,7 +104,7 @@ return (
                       <img src={Kamal} />
                     </div>
                     <div className="about-member">
-                      <h5>Kamal Mahalingam</h5>
+                      <h5 style={{color:"#37383D"}}>Kamal Mahalingam</h5>
                       <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>Co-founder</p>
                       <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>President, and CTO</p>
                     </div>
@@ -145,7 +145,7 @@ return (
                       <img src={Linda} alt="Linda Marr" />
                     </div>
                     <div className="about-member">
-                      <h5>Linda Marr</h5>
+                      <h5 style={{color:"#37383D"}}>Linda Marr</h5>
                       <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}} >Head of Development</p>
                     </div>
                   </div>
@@ -176,7 +176,7 @@ return (
                       <img src={Emily} alt="Emily Bradley" />
                     </div>
                     <div className="about-member">
-                      <h5>Emily Bradley</h5>
+                      <h5 style={{color:"#37383D"}}>Emily Bradley</h5>
                       <p className="m-0"style={{fontSize: "1rem",fontWeight: 400,color:"#37383D"}}>Head of User Experience</p>
                     </div>
                   </div>
@@ -207,7 +207,7 @@ return (
                       <img src={Melissa} alt="Melissa O’Dell" />
                     </div>
                     <div className="about-member">
-                      <h5>Melissa O’Dell</h5>
+                      <h5 style={{color:"#37383D"}}>Melissa O’Dell</h5>
                       <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>Operations Leader</p>
                     </div>
                   </div>
@@ -242,7 +242,7 @@ return (
                       <img src={Matthew} alt="Matthew Hunt" />
                     </div>
                     <div className="about-member">
-                      <h5>Matthew Hunt</h5>
+                      <h5 style={{color:"#37383D"}}>Matthew Hunt</h5>
                       <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>Founder</p>
                       <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>CEO</p>
                     </div>
@@ -272,7 +272,7 @@ return (
                       <img src={David} alt="David Hull " />
                     </div>
                     <div className="about-member">
-                      <h5>David Hull </h5>
+                      <h5 style={{color:"#37383D"}}>David Hull </h5>
                       <p className="m-0" style={{color:"#37383D",fontSize: "1rem",fontWeight: 400}}>IT Professional</p>
                     </div>
                   </div>
@@ -311,7 +311,7 @@ return (
                 <p style={{color:"#c5c5c5",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Mental health counseling and life coaching to change your life!</p></div>
                 {/* What We offer links */}
                 <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
-                  <h5 style={{lineHeight:2,fontFamily: 'Roboto',fontSize: "1.2rem",marginTop:"-8px",color:"#fff",marginLeft:"-2px"}}>What We Offer</h5>
+                  <h5 style={{lineHeight:2.5,fontFamily: 'Roboto',fontSize: "1.2rem",marginTop:"-10px",color:"#fff",marginLeft:"-2px"}}>What We Offer</h5>
                   <ul className="footer-links-list" style={{marginLeft:"-33px",cursor: "pointer"}}>
                   <li><a href="#" onClick ={() => {history.push("/individual");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Individuals</a></li>
                     <li><a href="#" onClick ={() => {history.push("/couple");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Couples</a></li>
@@ -325,7 +325,7 @@ return (
                 {/* Condition links */}
                 <div className="col-lg-3 col-md-2 col-sm-3 col-6 links-container">
                   <div className="condition-links">
-                    <h5 style= {{lineHeight:2,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-8px",color:"#fff",marginLeft:"-4px"}}>Conditions</ h5>
+                    <h5 style= {{lineHeight:2.5,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-10px",color:"#fff",marginLeft:"-4px"}}>Conditions</ h5>
                     <ul className="footer-links-list" style={{marginLeft:"-35px",cursor: "pointer"}}>
                       <li><a href="#" onClick ={() => {history.push("/depression");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Feeling Sad </a></li>
                       <li><a href="#" onClick ={() => {history.push("/anxiety");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}} >Anxiety</a></li>
@@ -341,7 +341,7 @@ return (
                 {/* Our Company links */}
              
                 <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
-                  <h5 style= {{lineHeight:2,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-5px",color:"#fff",marginLeft:"-3px"}}>Our Company</h5>
+                  <h5 style= {{lineHeight:2.5,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-10px",color:"#fff",marginLeft:"-3px"}}>Our Company</h5>
                   <ul className="footer-links-list" style={{marginLeft:"-35px",cursor: "pointer"}}>
                     <li><a href="#" style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>About Us</a></li>
                     <li><a href="#" onClick ={() => {history.push("/howitworks");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>How it Works</a></li>

@@ -19,13 +19,13 @@
 }
 
 .self-care-link {
-  color: #fff;
+  color: #4ca9e0 ;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .self-care-link:hover {
-  color: #fff;
+  color: #4ca9e0 ;
   text-decoration: underline;
 }
 .blue-page {

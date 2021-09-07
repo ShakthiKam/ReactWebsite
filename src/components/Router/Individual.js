@@ -49,7 +49,7 @@ function Individual() {
                   </div>
                  
                   <div className="checkbox-container">
-                    <ul className="checkbox-lists" style={{marginLeft:"-1px", fontSize:18}}>
+                    <ul className="checkbox-lists" style={{marginLeft:"-35px", fontSize:18}}>
                       {/* Link 1 */}
                       <li className="checkbox-links">
                         <input type="checkbox" className="check-box" />

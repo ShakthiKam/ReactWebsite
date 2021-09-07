@@ -51,7 +51,7 @@
   }
   
   #our-team .teams .teams-wrapper .teams-member:hover {
-    color: var(--orange-200);
+    color: #dea531;
   }
   
   #our-team .teams .teams-wrapper .teams-member:hover .member-inmage {

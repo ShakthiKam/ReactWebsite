@@ -32,7 +32,7 @@ return (
             <div className="row">
               <div className="col-12 header-content">
                 <div className="logo-container">
-                  <a className="logo" onClick ={() => {history.push("/homefile");}} style={{marginLeft:"-30px",marginTop:"-15px"}}>
+                  <a className="logo" onClick ={() => {history.push("/homefile");}} style={{marginLeft:"-30px",marginTop:"-15px",cursor:"pointer"}}>
                     <span>Wellness</span>
                   </a>
                 </div>
@@ -96,13 +96,13 @@ return (
                   <div className="card-links text-center">
                     <a className="links" href="#">
                       Try it 
-                      <span className="arrow-icon"><i className="far fa-arrow-right" /></span>
+                      <span className="arrow-icon"><svg class="svg-inline--fa fa-arrow-right fa-w-14" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M264.547 70.633L440.547 238.633C445.297 243.164 447.984 249.445 447.984 256.008S445.297 268.852 440.547 273.383L264.547 441.383C254.953 450.508 239.766 450.164 230.609 440.57C221.453 431.07 221.797 415.82 231.422 406.633L364.09 280.008H24C10.75 280.008 0 269.258 0 256.008S10.75 232.008 24 232.008H364.09L231.422 105.383C221.797 96.227 221.453 80.977 230.609 71.445C239.766 61.852 254.953 61.508 264.547 70.633Z"></path></svg></span>
                     </a>
                   </div>
                 </div>
               </div>
               <div className="text-center mb-2">
-                <a className="title-desc self-care-link" href="./../self-care/self-care.html">Explore more self-care activities here</a>
+                <a href="#" onClick ={() => {history.push("/selfcare");}} className="title-desc self-care-link"  style={{color:"#fff"}}>Explore more self-care activities here</a>
               </div>
               <div className="hr-line" />
             </div>
@@ -112,7 +112,7 @@ return (
             <div className="col-lg-3 col-md-2 col-sm-1 d-none d-sm-block" />
             <div className="col-lg-6 col-md-8 col-sm-10 col-12">
               <div className="linear-btn-container condition-btn-lg">
-                <a className="linear-btn condition-link" href="./../individuals/schedule.html">Get help with a free consultation</a>
+                <a href="#" onClick ={() => {history.push("/schedule");}} className="linear-btn condition-link" >Get help with a free consultation</a>
               </div>
             </div>
             <div className="col-lg-3 col-md-2 col-sm-1 d-none d-sm-block" />
@@ -131,7 +131,7 @@ return (
                 <p style={{color:"#c5c5c5",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Mental health counseling and life coaching to change your life!</p></div>
                 {/* What We offer links */}
                 <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
-                  <h5 style={{lineHeight:2,fontFamily: 'Roboto',fontSize: "1.2rem",marginTop:"-8px",color:"#fff",marginLeft:"-2px"}}>What We Offer</h5>
+                  <h5 style={{lineHeight:2.5,fontFamily: 'Roboto',fontSize: "1.2rem",marginTop:"-10px",color:"#fff",marginLeft:"-2px"}}>What We Offer</h5>
                   <ul className="footer-links-list" style={{marginLeft:"-33px",cursor: "pointer"}}>
                   <li><a onClick ={() => {history.push("/individual");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Individuals</a></li>
                     <li><a href="#" onClick ={() => {history.push("/couple");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Couples</a></li>
@@ -145,7 +145,7 @@ return (
                 {/* Condition links */}
                 <div className="col-lg-3 col-md-2 col-sm-3 col-6 links-container">
                   <div className="condition-links">
-                    <h5 style= {{lineHeight:2,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-8px",color:"#fff",marginLeft:"-4px"}}>Conditions</ h5>
+                    <h5 style= {{lineHeight:2.5,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-10px",color:"#fff",marginLeft:"-4px"}}>Conditions</ h5>
                     <ul className="footer-links-list" style={{marginLeft:"-35px",cursor: "pointer"}}>
                       <li><a href="#" onClick ={() => {history.push("/depression");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Feeling Sad </a></li>
                       <li><a href="#" onClick ={() => {history.push("/anxiety");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}} >Anxiety</a></li>
@@ -161,7 +161,7 @@ return (
                 {/* Our Company links */}
              
                 <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
-                  <h5 style= {{lineHeight:2,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-5px",color:"#fff",marginLeft:"-3px"}}>Our Company</h5>
+                  <h5 style= {{lineHeight:2.5,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-10px",color:"#fff",marginLeft:"-3px"}}>Our Company</h5>
                   <ul className="footer-links-list" style={{marginLeft:"-35px",cursor: "pointer"}}>
                     <li><a  href="#" onClick ={() => {history.push("/aboutus");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>About Us</a></li>
                     <li><a href="#" onClick ={() => {history.push("/howitworks");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>How it Works</a></li>

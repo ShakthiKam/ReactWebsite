@@ -54,7 +54,7 @@ function Other() {
                 <h4 className="text-center hero-title" style={{fontSize:"2rem",fontWeight: 500,marginLeft:"10px",marginTop:"5px"}}>Other Conditions</h4>
                 <p className="title-desc" style={{color:"#FFFFFF"}}>You may need someone to help guide your through a difficult and important life changing decision.  We can provide this to you as well.  We can help you through the myriad of Life's Challenges and help you find effective, and often, life changing solutions.</p>
                 <p className="title-desc" style={{color:"#FFFFFF"}}>In addition to the specific conditions listed, here are other challenges we help with:</p>
-                <ul className="list" style={{marginLeft:"-5px"}} >
+                <ul className="list" style={{marginLeft:"-38px"}} >
                   <li>Life Coaching</li>
                   <li>Aging &amp; Caregiver Support</li>
                   <li>Grief &amp; Loss</li>
@@ -116,7 +116,7 @@ function Other() {
                   </div>
                 </div>
                 <div className="text-center mb-2">
-                  <a className="title-desc self-care-link" href="./../self-care/self-care.html">Explore more self-care activities here</a>
+                  <a href="#" onClick ={() => {history.push("/selfcare");}} className="title-desc self-care-link"  style={{color:"#fff"}}>Explore more self-care activities here</a>
                 </div>
                 <div className="hr-line" />
               </div>
@@ -126,7 +126,7 @@ function Other() {
               <div className="col-lg-3 col-md-2 col-sm-1 d-none d-sm-block" />
               <div className="col-lg-6 col-md-8 col-sm-10 col-12">
                 <div className="linear-btn-container condition-btn-lg">
-                  <a className="linear-btn condition-link" href="./../individuals/schedule.html">Get help with a free consultation</a>
+                  <a href="#" onClick ={() => {history.push("/schedule");}} className="linear-btn condition-link">Get help with a free consultation</a>
                 </div>
               </div>
               <div className="col-lg-3 col-md-2 col-sm-1 d-none d-sm-block" />
@@ -145,7 +145,7 @@ function Other() {
                 <p style={{color:"#c5c5c5",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Mental health counseling and life coaching to change your life!</p></div>
                 {/* What We offer links */}
                 <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
-                  <h5 style={{lineHeight:2,fontFamily: 'Roboto',fontSize: "1.2rem",marginTop:"-8px",color:"#fff",marginLeft:"-2px"}}>What We Offer</h5>
+                  <h5 style={{lineHeight:2.5,fontFamily: 'Roboto',fontSize: "1.2rem",marginTop:"-10px",color:"#fff",marginLeft:"-2px"}}>What We Offer</h5>
                   <ul className="footer-links-list" style={{marginLeft:"-33px",cursor: "pointer"}}>
                   <li><a  href="#" onClick ={() => {history.push("/individual");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Individuals</a></li>
                     <li><a href="#" onClick ={() => {history.push("/couple");}}  style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontSize:16,fontFamily: 'Roboto'}}>For Couples</a></li>
@@ -159,7 +159,7 @@ function Other() {
                 {/* Condition links */}
                 <div className="col-lg-3 col-md-2 col-sm-3 col-6 links-container">
                   <div className="condition-links">
-                    <h5 style= {{lineHeight:2,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-8px",color:"#fff",marginLeft:"-4px"}}>Conditions</ h5>
+                    <h5 style= {{lineHeight:2.5,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-10px",color:"#fff",marginLeft:"-4px"}}>Conditions</ h5>
                     <ul className="footer-links-list" style={{marginLeft:"-35px",cursor: "pointer"}}>
                       <li><a href="#" onClick ={() => {history.push("/depression");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>Feeling Sad </a></li>
                       <li><a href="#" onClick ={() => {history.push("/anxiety");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}} >Anxiety</a></li>
@@ -174,7 +174,7 @@ function Other() {
                 </div>
                 {/* Our Company links */}
                 <div className="col-lg-2 col-md-3 col-sm-3 col-6 links-container">
-                  <h5 style= {{lineHeight:2,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-5px",color:"#fff",marginLeft:"-3px"}}>Our Company</h5>
+                  <h5 style= {{lineHeight:2.5,fontSize: "1.2rem",fontFamily: 'Roboto',marginTop:"-10px",color:"#fff",marginLeft:"-3px"}}>Our Company</h5>
                   <ul className="footer-links-list" style={{marginLeft:"-35px",cursor: "pointer"}}>
                     <li><a href="#" onClick ={() => {history.push("/aboutus");}}style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>About Us</a></li>
                     <li><a href="#" onClick ={() => {history.push("/howitworks");}} style={{color:"#C5C5C5",lineHeight:1.5,textDecorationLine:"none",fontFamily: 'Roboto',fontWeight: 400,fontSize:16}}>How it Works</a></li>

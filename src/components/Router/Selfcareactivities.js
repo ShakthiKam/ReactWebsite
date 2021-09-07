@@ -151,7 +151,7 @@ function Selfcareactivities() {
                 </div>
                 <div className="link-wrapper text-center">
                   <h5>
-                  <span><a href="#" style={{display:"inline",fontWeight: 400}}>Learn more about Enthrive,</a></span><p style={{display:"inline", fontSize:"1.2rem", marginLeft:"-15px",fontWeight: 400,color:"#37383D"}}> or<span><a onClick ={() => {history.push("/enrollment");}} style={{display:"inline",marginLeft:"-16px",fontWeight: 400,cursor:"pointer"}}>enroll!</a></span></p> 
+                  <span><a href="#" style={{display:"inline",fontWeight: 400}}>Learn more about Enthrive,</a></span><p style={{display:"inline", fontSize:"1.2rem", marginLeft:"-15px",fontWeight: 400,color:"#37383D"}}> or<span><a href="#" onClick ={() => {history.push("/selfcare");}}onClick ={() => {history.push("/enrollment");}} style={{display:"inline",marginLeft:"-16px",fontWeight: 400,cursor:"pointer"}}>enroll!</a></span></p> 
                   </h5>
                 </div>
               </div>

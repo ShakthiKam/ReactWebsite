@@ -21,9 +21,9 @@ function Selfcare() {
           <link rel="stylesheet" href="./../assets/css/app.css" />
           <title>Self Care</title>
           {/* Start of page content */}
-          <div id="selfcare-page">
+          <div id="selfcare-page" style={{background:"#f3f3f3"}}>
             {/* Star of Header */}
-            <header className="header blue-header">
+            <header className="header blue-header" >
               <div className="container">
                 <div className="row">
                   <div className="col-12 header-content">
@@ -99,7 +99,7 @@ function Selfcare() {
                   <div className="links-container p-0" />
                   <div className="link-wrapper text-center">
                     <h5>
-                      <span><a href="#" style={{display:"inline",fontWeight: 400}}>Learn more about Enthrive,</a></span><p style={{display:"inline", fontSize:"1.2rem", marginLeft:"-15px",fontWeight: 400,color:"#37383D"}}> or<span><a onClick ={() => {history.push("/enrollment");}} style={{display:"inline",marginLeft:"-16px",fontWeight: 400,cursor:"pointer"}}>enroll!</a></span></p> 
+                      <span><a href="#" style={{display:"inline",fontWeight: 400}}>Learn more about Enthrive,</a></span><p style={{display:"inline", fontSize:"1.2rem", marginLeft:"-15px",fontWeight: 400,color:"#37383D"}}> or<span><a href="#" onClick ={() => {history.push("/enrollment");}} style={{display:"inline",marginLeft:"-16px",fontWeight: 400,cursor:"pointer"}}>enroll!</a></span></p> 
                     </h5>
                   </div>
                 </div>

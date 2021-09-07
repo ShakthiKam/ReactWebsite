@@ -48,7 +48,7 @@ function Employers() {
                     <p className="hero-text">What are some areas that you want<br></br> to help your employees with?</p>
                   </div>
                   <div className="checkbox-container" >
-                    <ul className="checkbox-lists" >
+                    <ul className="checkbox-lists"style={{marginLeft:"-30px"}} >
                       {/* Link 1 */}
                       <li className="checkbox-links" >
                         <input type="checkbox" className="check-box" />

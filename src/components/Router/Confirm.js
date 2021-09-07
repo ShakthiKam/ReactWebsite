@@ -50,12 +50,12 @@ function Confirm() {
               <div className="row">
                 <div className="col-12">
                   <div className="content-container">
-                    <div className="texts-wrapper">
+                    <div className="texts-wrapper" style={{textAlign:"center",marginLeft:"0px"}}>
                       <p style={{fontSize:"1rem",color: "#394d5c"}}>We have sent you an email with your appointment details.</p>
                       <p style={{fontSize:"1rem",color: "#394d5c"}}>The day before your appointment, we will send you a confirmation message to make sure your schedule has not changed.</p>
                       <p style={{fontSize:"1rem",color: "#394d5c"}}>There will be instructions for how to join your counselor using an online video call.</p>
                     </div>
-                    <p style={{fontSize:"1rem"}} className="link-text">Your complimentary consultation: Monday May 17th 10:30AM <span>&nbsp; &nbsp;<a onClick ={() => {history.push("/Schedule");}} className="underline-link dark-text" style={{display:"inline",marginLeft:"-20px",fontWeight: 400,fontSize: "1rem",cursor:"pointer"}}>Change</a></span></p>
+                    <p style={{fontSize:"1rem",color: "#394d5c",marginLeft:"0px",textAlign:"center"}} className="link-text">Your free online consultation: Monday May 17th 10:30AM <span>&nbsp; &nbsp;<a onClick ={() => {history.push("/Schedule");}} className="underline-link dark-text" style={{display:"inline",marginLeft:"-20px",fontWeight: 400,fontSize: "1rem",cursor:"pointer"}}>Change</a></span></p>
                   </div>
                 </div>
                 {/* Start of large bottom button */}

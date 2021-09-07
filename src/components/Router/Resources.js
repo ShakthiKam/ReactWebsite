@@ -28,12 +28,12 @@ function Resources() {
         {/* Start of Page content */}
         <div id="resources-page" className="page-wrapper dark-white-page">
           {/* Star of Header */}
-          <header className="header blue-header">
+          <header className="header blue-header" style={{height:"50px"}}>
             <div className="container">
               <div className="row">
                 <div className="col-12 header-content">
-                  <div className="logo-container" style={{marginLeft:"-42px"}}>
-                    <a className="logo" href="./../index.html">
+                  <div className="logo-container" style={{marginLeft:"-42px",marginTop:"-5px"}}>
+                    <a className="logo" href="#"  onClick ={() => {history.push("/homefile");}}>
                       <span>Wellness</span>
                     </a>
                   </div>
@@ -206,8 +206,8 @@ function Resources() {
               </div>
             
                 <div className="col-12 copyrights">
-                <p style={{color:"#fff"}}>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). <span class="additionl-resource"><a 
-                href="#"  class="underline-link" style={{marginLeft:"-13px",fontSize: ".9rem",display:"inline-block",cursor:"pointer"}}>Resources.</a></span></p>
+                <p style={{color:"#fff"}}>If you feel you are in crisis, don't use this site. Call 911, or 1.800.273 TALK (8255). <span class="additionl-resource"><a href="#" 
+                 class="underline-link" style={{marginLeft:"-13px",fontSize: ".9rem",display:"inline-block",cursor:"pointer"}}>Resources.</a></span></p>
 
                   <p style={{fontSize: ".9rem",color:"#fff",lineHeight:2}}>Copyright © <span id="copyright_date">2021</span> Wellness Inc, All rights reserved.</p>
                 </div>
