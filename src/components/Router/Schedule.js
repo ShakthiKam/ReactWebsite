@@ -194,7 +194,7 @@ function Schedule() {
                   </div>
                 </div>
                 <div className="text-center shedule-bnt-wrapper">
-                  <button type="button" id="schedule-appointment" onClick ={() => {history.push("/emailconfirmation");}}>Schedule appointment</button>
+                  <button type="button" id="schedule-appointment" onClick ={() => {history.push("/confirm");}}>Schedule appointment</button>
                 </div>
               </form>
             </div>
