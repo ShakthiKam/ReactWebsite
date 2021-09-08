@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React, { useState, useEffect }  from 'react'; 
 import {useHistory} from "react-router-dom";
 // import "./Home.css"
 // import "./Header.css"
@@ -20,6 +20,71 @@ function Schedule() {
     
   let history = useHistory(); 
   console.log(history, "ddddd")
+  useEffect(() => 
+  {
+    var list1 = document.getElementsByTagName('script');
+    var i1 = list1.length, flag1 = false;
+    while (i1--) {
+      if (list1[i1].src === 'jquery.min.js') {
+          flag1 = true;
+          break;
+      }
+    }
+    
+    // if we didn't already find it on the page, add it
+    if (!flag1) {
+    
+    let script = document.createElement("script");
+    script.src = "jquery.min.js";
+    script.async = false;
+    //script.onload = () =>window.A.sort();
+    document.getElementsByTagName('head')[0].appendChild(script);
+
+    //document.body.appendChild(script);
+    }
+    var list = document.getElementsByTagName('script');
+    var i = list.length, flag = false;
+    while (i--) {
+      if (list[i].src === 'Calendar.js') {
+          flag = true;
+          break;
+      }
+    }
+    
+    // if we didn't already find it on the page, add it
+    if (!flag) {
+      var tag = document.createElement('script');
+      tag.src = 'Calendar.js';
+      document.getElementsByTagName('head')[0].appendChild(tag);
+  
+    // script = document.createElement("script");
+    // script.src = "Calendar.js";
+    // script.async = false;
+    // //script.onload = () =>window.A.sort();
+    
+    // document.body.appendChild(script);
+    }
+    var list2 = document.getElementsByTagName('script');
+    var i2 = list2.length, flag2 = false;
+    while (i2--) {
+      if (list2[i2].src === 'Schedule.js') {
+          flag2 = true;
+          break;
+      }
+    }
+    
+    // if we didn't already find it on the page, add it
+    if (!flag) {
+    
+  let  script = document.createElement("script");
+    script.src = "Schedule.js";
+    script.async = false;
+    //script.onload = () =>window.A.sort();
+    document.getElementsByTagName('body')[0].appendChild(script);
+
+    //document.body.appendChild(script);
+    }
+  })
 
   return (
     <div>
@@ -61,33 +126,6 @@ function Schedule() {
               <div className="calendar-container" style={{display:"block"}}>
                 <div className="calendar-flex" >
                   <div className="calendar-wrapper">
-                    <div class="calendar-box"><div class="weeks-container">
-                      <div class="buttons-container">
-                        <button class="prev-button" style={{color:"#37383d",width:"12px",margin: 0}}>Prev</button>
-                        <span class="label-container month-container">
-                          <span class="month-label" style={{margin:0,padding:"5px"}}>august</span> 
-                          <span class="year-label" >2021</span>
-                          </span><button class="next-button" style={{color:"#37383d",width:"50px",margin: 0}}>Next</button></div>
-                          <div class="weeks-wrapper header">
-                            <div class="week start-on-monday" data-week-no="0">
-                              <div class="day header" data-day="1">m</div>
-                              <div class="day header" data-day="2">t</div>
-                              <div class="day header" data-day="3">w</div>
-                              <div class="day header" data-day="4">t</div>
-                              <div class="day header" data-day="5">f</div>
-                              <div class="day header highlight" data-day="6">s</div>
-                              <div class="day header" data-day="7">s</div></div></div>
-                              <div class="weeks-wrapper">
-                                <div class="week start-on-monday" data-week-no="1">
-                                  <div class="day" data-date="Sun Aug 01 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>1</span></div>
-                                  <div class="day" data-date="Mon Aug 02 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>2</span></div>
-                                  <div class="day" data-date="Tue Aug 03 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>3</span></div>
-                                  <div class="day" data-date="Wed Aug 04 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>4</span></div>
-                                  <div class="day" data-date="Thu Aug 05 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>5</span></div>
-                                  <div class="day highlight" data-date="Fri Aug 06 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>6</span></div>
-                                  <div class="day" data-date="Sat Aug 07 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>7</span></div></div>
-                                  <div class="week start-on-monday" data-week-no="2"><div class="day" data-date="Mon Aug 09 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>9</span></div>
-                                  <div class="day" data-date="Tue Aug 10 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>10</span></div><div class="day" data-date="Wed Aug 11 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>11</span></div><div class="day" data-date="Thu Aug 12 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>12</span></div><div class="day" data-date="Fri Aug 13 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>13</span></div><div class="day highlight" data-date="Sat Aug 14 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>14</span></div><div class="day" data-date="Sun Aug 15 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>15</span></div></div><div class="week start-on-monday highlight" data-week-no="3"><div class="day" data-date="Mon Aug 16 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>16</span></div><div class="day" data-date="Tue Aug 17 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>17</span></div><div class="day" data-date="Wed Aug 18 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>18</span></div><div class="day" data-date="Thu Aug 19 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>19</span></div><div class="day selected today" data-date="Fri Aug 20 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>20</span></div><div class="day highlight" data-date="Sat Aug 21 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>21</span></div><div class="day" data-date="Sun Aug 22 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>22</span></div></div><div class="week start-on-monday" data-week-no="4"><div class="day" data-date="Mon Aug 23 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>23</span></div><div class="day" data-date="Tue Aug 24 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>24</span></div><div class="day" data-date="Wed Aug 25 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>25</span></div><div class="day" data-date="Thu Aug 26 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>26</span></div><div class="day" data-date="Fri Aug 27 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>27</span></div><div class="day highlight" data-date="Sat Aug 28 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>28</span></div><div class="day" data-date="Sun Aug 29 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>29</span></div></div><div class="week start-on-monday" data-week-no="5"><div class="day" data-date="Mon Aug 30 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>30</span></div><div class="day" data-date="Tue Aug 31 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>31</span></div><div class="day disabled" data-date="Wed Sep 01 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>1</span></div><div class="day disabled" data-date="Thu Sep 02 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>2</span></div><div class="day disabled" data-date="Fri Sep 03 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>3</span></div><div class="day disabled highlight" data-date="Sat Sep 04 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>4</span></div><div class="day disabled" data-date="Sun Sep 05 2021 00:00:00 GMT+0530 (India Standard Time)" ola=""><span>5</span></div></div></div></div><div class="special-buttons"><button class="today-button" style={{color:"#37383d"}}>Today</button></div></div>
                     <div id="calendar" />
                   </div>
                   <div className="btn-wrapper text-center">
@@ -95,7 +133,8 @@ function Schedule() {
                   </div>
                 </div>
               </div>
-            </div>         {/* Start of Calendar */}
+          </div>
+          {/* Start of Calendar */}
             <div className="col-lg-8 col-md-7">
               <div className="pick-date-wrapper">
                 <button type="button" id="show-calendar" onclick="showCalendar()">
