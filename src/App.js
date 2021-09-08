@@ -31,6 +31,7 @@ import Substanceabuse from "./components/Router/Sustanceabuse"
 import Aboutus from "./components/Router/Aboutus"
 import Howitworks from "./components/Router/Howitworks";
 import Counselors from "./components/Router/Counselors";
+import Employerform from "./components/Router/Employerform";
 
 
 
@@ -69,6 +70,7 @@ function App() {
      <Route exact path={"/aboutus"} component={Aboutus}/>
      <Route exact path={"/howitworks"} component={Howitworks}/>
      <Route exact path={"/counselors"} component={Counselors}/>
+     <Route exact path={"/employerform"} component={Employerform}/>
 
    </Switch>
 

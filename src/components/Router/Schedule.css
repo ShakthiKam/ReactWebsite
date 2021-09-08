@@ -129,7 +129,7 @@
   color: #fff;;
   width: 124px;
   padding: .4em 1em;
-  margin-right: .3em;
+  margin-right: .10em;
   margin-bottom: .5em;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -291,10 +291,10 @@
   border-radius: 6px;
   background-color: #4ca9e0;
   color: #fff;
-  width: 120px;
+  width: 124px;
   height:40px;
   padding: .4em 1em;
-  margin-right: -.1em;
+  margin-right: 0.5em;
   margin-bottom: .5em;
   transition: all 0.3s ease;
 
@@ -349,4 +349,7 @@ button, input, optgroup, select, textarea {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
+}
+.dark-white-page { 
+  background:#f3f3f3;
 }

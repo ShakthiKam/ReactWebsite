@@ -43,7 +43,7 @@ function Depression() {
                   </div>
                   <div className="login-container">
                     <div className="counseling">
-                      <a className="direct-counseling" href="./../members/enrollment.html">Member Enrollment</a>
+                      <a className="direct-counseling" href="#" onClick ={() => {history.push("/enrollment");}} >Member Enrollment</a>
                     </div>
                   </div>
                 </div>

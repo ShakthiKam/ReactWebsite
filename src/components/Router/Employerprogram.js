@@ -4,6 +4,9 @@ import './bootstrap.min.css'
 import './Aboutapp.css'
 import './Module.css'
 import './Global.css'
+import "./Module.css"
+import "./Theme.css"
+import "./Style.css"
 // import './Schedule.css'
 import './Employerprogram.css'
 import client1 from '../images/client1.png'
@@ -94,7 +97,7 @@ function Employerprogram() {
                 <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
                 <div className="col-lg-4 col-md-6 col-8">
                   <div className="linear-btn-container">
-                    <a className="linear-btn" onClick ={() => {history.push("/schedule");}} style={{cursor:"pointer"}}>Schedule consultation</a>
+                    <a className="linear-btn" onClick ={() => {history.push("/employerschedule");}} style={{cursor:"pointer"}}>Schedule consultation</a>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-3 col-2" />
