@@ -37,7 +37,7 @@ function Depression() {
               <div className="row">
                 <div className="col-12 header-content">
                   <div className="logo-container" style={{marginLeft:"-35px", marginTop:"-17px"}}>
-                    <a className="logo" href="./../index.html">
+                    <a className="logo" onClick ={() => {history.push("/homefile");}} >
                       <span>Wellness</span>
                     </a>
                   </div>

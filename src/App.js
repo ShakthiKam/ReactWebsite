@@ -32,7 +32,7 @@ import Aboutus from "./components/Router/Aboutus"
 import Howitworks from "./components/Router/Howitworks";
 import Counselors from "./components/Router/Counselors";
 import Employerform from "./components/Router/Employerform";
-
+import Memberschedule from "./components/Router/Memberschedule";
 
 
 
@@ -71,6 +71,7 @@ function App() {
      <Route exact path={"/howitworks"} component={Howitworks}/>
      <Route exact path={"/counselors"} component={Counselors}/>
      <Route exact path={"/employerform"} component={Employerform}/>
+     <Route exact path={"/memberschedule"} component={Memberschedule}/>
 
    </Switch>
 
