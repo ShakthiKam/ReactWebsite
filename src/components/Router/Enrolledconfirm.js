@@ -13,7 +13,7 @@ import logo from "../images/logo.png"
 
 
 
-function Confirm() {
+function Enrolledconfirm() {
   let history = useHistory(); 
 
   return (
@@ -38,9 +38,9 @@ function Confirm() {
           <div className="row">
             <div className="col-12 return-link-container">
               <a className="return-link black-text" href="#" onclick="history.go(-1)">
-              <svg class="svg-inline--fa fa-chevron-left fa-w-10" style={{marginLeft:"5px",marginTop:"20px"}} href="#" onClick ={() => {history.push("/emailconfirmation");}} aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M243.658 43.114C227.69 27.834 202.362 28.365 187.096 44.364L11.098 228.356C-3.699 243.824 -3.699 268.198 11.098 283.666L187.096 467.657C194.955 475.875 205.471 480 216.002 480C225.94 480 235.908 476.313 243.658 468.907C259.611 453.626 260.174 428.315 244.908 412.347L95.363 256.011L244.908 99.674C260.174 83.706 259.611 58.395 243.658 43.114Z"></path></svg>
+              <svg class="svg-inline--fa fa-chevron-left fa-w-10" style={{marginLeft:"5px",marginTop:"20px"}} onClick ={() => {history.push("/emailconfirmation");}} aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M243.658 43.114C227.69 27.834 202.362 28.365 187.096 44.364L11.098 228.356C-3.699 243.824 -3.699 268.198 11.098 283.666L187.096 467.657C194.955 475.875 205.471 480 216.002 480C225.94 480 235.908 476.313 243.658 468.907C259.611 453.626 260.174 428.315 244.908 412.347L95.363 256.011L244.908 99.674C260.174 83.706 259.611 58.395 243.658 43.114Z"></path></svg>
               </a>
-              <h4 className="sub-title black-text" style={{color:"#37383d",marginTop:"20px",fontSize: "2rem"}}>Thank You! Appointment scheduled.</h4>
+              <h4 className="sub-title black-text" style={{color:"#37383d",marginTop:"20px",fontSize: "2rem"}}>Thank You! You are enrolled!</h4>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ function Confirm() {
                   <div className="col-lg-4 col-md-6 col-8">
                     <div className="linear-btn-container" >
                       
-<button  style={{marginLeft:"5px"}} type="button" className="linear-btn blue-btn" onClick ={() => {history.push("/selfcare");}} style={{height:"38px"}}>Finished</button>
+<button  style={{marginLeft:"5px"}} type="button" className="linear-btn blue-btn" style={{height:"38px"}} onClick ={() => {history.push("/selfcare");}}>Finished</button>
 
                     </div>
                   </div>
@@ -156,4 +156,4 @@ function Confirm() {
         </div>
       );
     }
-export default Confirm
+export default Enrolledconfirm
