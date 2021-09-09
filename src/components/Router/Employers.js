@@ -48,7 +48,7 @@ function Employers() {
                     <p className="hero-text">What are some areas that you want<br></br> to help your employees with?</p>
                   </div>
                   <div className="checkbox-container" >
-                    <ul className="checkbox-lists"style={{marginLeft:"-30px"}} >
+                    <ul className="checkbox-lists"style={{marginLeft:"3px"}} >
                       {/* Link 1 */}
                       <li className="checkbox-links" >
                         <input type="checkbox" className="check-box" />
@@ -96,7 +96,7 @@ function Employers() {
                 <div className="col-lg-4 col-md-3 col-sm-2 col-2" />
                 <div className="col-lg-4 col-md-6 col-8">
                   <div className="linear-btn-container" style={{height:"5px"}}>
-                    <a onClick ={() => {history.push("/employerprogram");}} className="linear-btn" style={{textDecoration:"none",cursor:"pointer",lineHeight: 1.5,height:"38px"}}>Continue</a>
+                    <a onClick ={() => {history.push("/schedule");}} className="linear-btn" style={{textDecoration:"none",cursor:"pointer",lineHeight: 1.5,height:"38px"}}>Continue</a>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-3 col-2" />

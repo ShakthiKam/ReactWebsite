@@ -61,7 +61,7 @@ function Selfcare() {
                 {/* Buttons Wraper */}
                 <div className="col-12 selfcare-links-wrapper">
                   {/* Links container 1 */}
-                  <ul className="links-container">
+                  <ul className="links-container"  style={{margin:0}}>
                     <li className="links-list">
                       <a className="links"  onClick ={() => {history.push("/selfcareactivities");}} style={{lineHeight:"35px"}}>Feeling Down</a>
                     </li>
@@ -73,7 +73,7 @@ function Selfcare() {
                     </li>
                   </ul>
                   {/* Links container 2 */}
-                  <ul className="links-container" >
+                  <ul className="links-container" style={{margin:0}} >
                     <li className="links-list" >
                       <a className="links" onClick ={() => {history.push("/selfcareactivities");}} style={{lineHeight:"35px"}}>Sleep</a>
                     </li>
@@ -85,7 +85,7 @@ function Selfcare() {
                     </li>
                   </ul>
                   {/* Links container 3 */}
-                  <ul className="links-container">
+                  <ul className="links-container"  style={{margin:0}}>
                     <li className="links-list">
                       <a className="links" onClick ={() => {history.push("/selfcareactivities");}} style={{lineHeight:"35px"}}>Relationships</a>
                     </li>
@@ -97,7 +97,7 @@ function Selfcare() {
                     </li>
                   </ul>
                   <div className="links-container p-0" />
-                  <div className="link-wrapper text-center">
+                  <div className="link-wrapper text-center" style={{marginTop:"-35px"}}>
                     <h5>
                       <span><a href="#" style={{display:"inline",fontWeight: 400}}>Learn more about Enthrive,</a></span><p style={{display:"inline", fontSize:"1.2rem", marginLeft:"-15px",fontWeight: 400,color:"#37383D"}}> or<span><a href="#" onClick ={() => {history.push("/enrollment");}} style={{display:"inline",marginLeft:"-16px",fontWeight: 400,cursor:"pointer"}}>enroll!</a></span></p> 
                     </h5>

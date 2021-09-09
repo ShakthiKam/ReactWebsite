@@ -75,7 +75,7 @@ function Enrollment() {
                       <div className="col-lg-4 col-md-3 col-sm-2 col-1" />
                       <div className="col-lg-4 col-md-6 col-sm-8 col-10">
                         <div className="linear-btn-container" style={{cursor:"pointer"}}>
-                          <a onClick ={() => {history.push("/payment");}} className="linear-btn yellow-btn">Pay and Enroll</a>
+                          <a href="#" onClick ={() => {history.push("/payment");}} className="linear-btn yellow-btn">Pay and Enroll</a>
                           {/* <button type="button" class="linear-btn yellow-btn" onclick="window.location = './payment.html'">Pay and Enroll</button> */}
                         </div>
                       </div>
