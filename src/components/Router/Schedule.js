@@ -22,9 +22,11 @@ function Schedule() {
   console.log(history, "ddddd")
   useEffect(() => 
   {
+    console.log( "useEfffectttttt")
+
     var script = document.createElement("script");
     script.src = "jquery.min.js";
-    script.async = true;
+    script.async = false;
     //script.setAttribute("type","text/javascript");
 
     //script.setAttribute("src", "jquery.min.js");
@@ -36,7 +38,7 @@ function Schedule() {
     
     script = document.createElement("script");
     script.src = "Calendar.js";
-    script.async = true;
+    script.async = false;
 
     //script.onload = () =>window.A.sort();
     //script.setAttribute("type","text/javascript");
@@ -46,10 +48,9 @@ function Schedule() {
 
     document.body.appendChild(script);
     
-    
   script = document.createElement("script");
-    script.src = "Schedule.js";
-    script.async = true;
+    script.src = "Schedule.min.js";
+    script.async = false;
 
     //script.setAttribute("type","text/javascript");
 
@@ -60,7 +61,7 @@ function Schedule() {
     document.body.appendChild(script);
 
     return () => {
-      document.body.removeChild(script);
+      //document.body.removeChild(script);
     }
   }, []);
   return (
