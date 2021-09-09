@@ -98,7 +98,7 @@ function Payment() {
                         <div className="col-lg-4 col-md-3 col-sm-2 col-1" />
                         <div className="col-lg-4 col-md-6 col-sm-8 col-10">
                           <div className="linear-btn-container">
-                            <button type="button" className="linear-btn blue-btn" href="#" onClick ={() => {history.push("/memberschedule");}} >Pay and Continue</button>
+                            <a href="#">< button type="button" className="linear-btn blue-btn" onClick ={() => {history.push("/memberschedule");}} >Pay and Continue</button></a>
                           </div>
                         </div>
                         <div className="col-lg-4 col-md-3 col-sm-2 col-1" />

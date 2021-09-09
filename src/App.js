@@ -34,7 +34,7 @@ import Counselors from "./components/Router/Counselors";
 import Employerform from "./components/Router/Employerform";
 import Memberschedule from "./components/Router/Memberschedule";
 import Enrolledconfirm from "./components/Router/Enrolledconfirm";
-import Schedule1 from "./components/Router/Schedule1";
+
 
 
 function App() {
@@ -74,7 +74,7 @@ function App() {
      <Route exact path={"/employerform"} component={Employerform}/>
      <Route exact path={"/memberschedule"} component={Memberschedule}/>
      <Route exact path={"/enrolledconfirm"} component={Enrolledconfirm}/>
-     <Route exact path={"/schedule1"} component={Schedule1}/>
+
 
 
    </Switch>

@@ -54,7 +54,7 @@ function Other() {
                 <h4 className="text-center hero-title" style={{fontSize:"2rem",fontWeight: 500,marginLeft:"10px",marginTop:"5px"}}>Other Conditions</h4>
                 <p className="title-desc" style={{color:"#FFFFFF"}}>You may need someone to help guide your through a difficult and important life changing decision.  We can provide this to you as well.  We can help you through the myriad of Life's Challenges and help you find effective, and often, life changing solutions.</p>
                 <p className="title-desc" style={{color:"#FFFFFF"}}>In addition to the specific conditions listed, here are other challenges we help with:</p>
-                <ul className="list" style={{marginLeft:"-38px"}} >
+                <ul className="list" style={{marginLeft:"-5px"}} >
                   <li>Life Coaching</li>
                   <li>Aging &amp; Caregiver Support</li>
                   <li>Grief &amp; Loss</li>

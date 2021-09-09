@@ -22,71 +22,49 @@ function Schedule() {
   console.log(history, "ddddd")
   useEffect(() => 
   {
-    var list1 = document.getElementsByTagName('script');
-    var i1 = list1.length, flag1 = false;
-    while (i1--) {
-      if (list1[i1].src === 'jquery.min.js') {
-          flag1 = true;
-          break;
-      }
-    }
-    
-    // if we didn't already find it on the page, add it
-    if (!flag1) {
-    
-    let script = document.createElement("script");
+    var script = document.createElement("script");
     script.src = "jquery.min.js";
-    script.async = false;
-    //script.onload = () =>window.A.sort();
-    document.getElementsByTagName('head')[0].appendChild(script);
+    script.async = true;
+    //script.setAttribute("type","text/javascript");
 
-    //document.body.appendChild(script);
-    }
-    var list = document.getElementsByTagName('script');
-    var i = list.length, flag = false;
-    while (i--) {
-      if (list[i].src === 'Calendar.js') {
-          flag = true;
-          break;
-      }
-    }
+    //script.setAttribute("src", "jquery.min.js");
+    //document.getElementsByTagName("head")[0].appendChild(script);
+
+    //script.onload = () =>window.A.sort();
+    document.body.appendChild(script);
     
-    // if we didn't already find it on the page, add it
-    if (!flag) {
-      var tag = document.createElement('script');
-      tag.src = 'Calendar.js';
-      document.getElementsByTagName('head')[0].appendChild(tag);
-  
-    // script = document.createElement("script");
-    // script.src = "Calendar.js";
-    // script.async = false;
-    // //script.onload = () =>window.A.sort();
     
-    // document.body.appendChild(script);
-    }
-    var list2 = document.getElementsByTagName('script');
-    var i2 = list2.length, flag2 = false;
-    while (i2--) {
-      if (list2[i2].src === 'Schedule.js') {
-          flag2 = true;
-          break;
-      }
-    }
+    script = document.createElement("script");
+    script.src = "Calendar.js";
+    script.async = true;
+
+    //script.onload = () =>window.A.sort();
+    //script.setAttribute("type","text/javascript");
+
+    //script.setAttribute("src", "Calendar.js");
+    //document.getElementsByTagName("head")[0].appendChild(script);
+
+    document.body.appendChild(script);
     
-    // if we didn't already find it on the page, add it
-    if (!flag) {
     
-  let  script = document.createElement("script");
+  script = document.createElement("script");
     script.src = "Schedule.js";
-    script.async = false;
+    script.async = true;
+
+    //script.setAttribute("type","text/javascript");
+
+    //script.setAttribute("src", "Schedule.js");
+    //document.getElementsByTagName("head")[0].appendChild(script);
+
     //script.onload = () =>window.A.sort();
-    document.getElementsByTagName('body')[0].appendChild(script);
+    document.body.appendChild(script);
 
-    //document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
     }
-  })
-
+  }, []);
   return (
+    
     <div>
       <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -111,9 +89,10 @@ function Schedule() {
           <div className="row">
             <div className="col-12 return-link-container">
               <a className="return-link black-text" href="#" onclick="history.go(-1)">
-              <svg class="svg-inline--fa fa-chevron-left fa-w-10" onClick ={() => {history.push("/payment");}}aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M243.658 43.114C227.69 27.834 202.362 28.365 187.096 44.364L11.098 228.356C-3.699 243.824 -3.699 268.198 11.098 283.666L187.096 467.657C194.955 475.875 205.471 480 216.002 480C225.94 480 235.908 476.313 243.658 468.907C259.611 453.626 260.174 428.315 244.908 412.347L95.363 256.011L244.908 99.674C260.174 83.706 259.611 58.395 243.658 43.114Z"></path></svg>
+              <svg class="svg-inline--fa fa-chevron-left fa-w-10" onClick ={() => {history.goBack()}}aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M243.658 43.114C227.69 27.834 202.362 28.365 187.096 44.364L11.098 228.356C-3.699 243.824 -3.699 268.198 11.098 283.666L187.096 467.657C194.955 475.875 205.471 480 216.002 480C225.94 480 235.908 476.313 243.658 468.907C259.611 453.626 260.174 428.315 244.908 412.347L95.363 256.011L244.908 99.674C260.174 83.706 259.611 58.395 243.658 43.114Z"></path></svg>
               </a>
-              <h4 className="sub-title black-text" style={{fontSize: "2rem"}}>Schedule your first online counseling session</h4>
+              <h4 className="sub-title black-text" style={{fontSize: "2rem"}}>
+Schedule your first online counseling session</h4>
             </div>
           </div>
         </div>
@@ -233,7 +212,7 @@ function Schedule() {
                   </div>
                 </div>
                 <div className="text-center shedule-bnt-wrapper">
-                  <button type="button" id="schedule-appointment" onClick ={() => {history.push("/enrolledconfirm");}}>Schedule appointment</button>
+                  <a href="#"><button type="button" id="schedule-appointment" onClick ={() => {history.push("/emailconfirmation");}}>Schedule appointment</button></a>
                 </div>
               </form>
             </div>
