@@ -122,7 +122,7 @@ function Depression() {
               <div className="col-lg-3 col-md-2 col-sm-1 d-none d-sm-block" />
               <div className="col-lg-6 col-md-8 col-sm-10 col-12">
                 <div className="linear-btn-container condition-btn-lg">
-                  <a className="linear-btn condition-link" href="#" onClick ={() => {history.push("/schedule");}}>Get help with a free consultation</a>
+                  <a className="linear-btn condition-link" href="#" onClick ={() => {history.push("/schedule1");}}>Get help with a free consultation</a>
                 </div>
               </div>
               <div className="col-lg-3 col-md-2 col-sm-1 d-none d-sm-block" />

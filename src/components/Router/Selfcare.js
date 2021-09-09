@@ -73,8 +73,8 @@ function Selfcare() {
                     </li>
                   </ul>
                   {/* Links container 2 */}
-                  <ul className="links-container">
-                    <li className="links-list">
+                  <ul className="links-container" >
+                    <li className="links-list" >
                       <a className="links" onClick ={() => {history.push("/selfcareactivities");}} style={{lineHeight:"35px"}}>Sleep</a>
                     </li>
                     <li className="links-list">
